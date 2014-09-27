@@ -13,6 +13,7 @@
 #import "AudioVideoControllerViewController.h"
 #import "AppData.h"
 #import "ATCAnimatedTransitioningFade.h"
+#import "TutorialManager.h"
 
 @interface ScaleViewController : UIViewController <UIScrollViewDelegate,UINavigationControllerDelegate,UIViewControllerTransitioningDelegate>
 {
@@ -40,5 +41,6 @@
 - (IBAction)emergencyClicked:(id)sender;
 - (IBAction)level8Clicked:(id)sender;
 - (IBAction)levelClicked:(id)sender;
+- (IBAction)menuClicked:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *btnEmergency;
 @end

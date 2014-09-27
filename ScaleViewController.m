@@ -40,11 +40,11 @@
  
     NSString* splashVideoName = @"splash4";
     
-    // If it is iphone 4
-    CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
-    if (screenRect.size.height == 568)
+    // If it is iphone 5 change splash name
+    CGSize screenSize = [[UIScreen mainScreen] bounds].size;
+    if (screenSize.height == 568)
     {
-        splashVideoName = @"splash";
+        splashVideoName = @"splashVideo";
     }
     
     // Setting video
@@ -72,6 +72,7 @@
 
             [self.navigationController popToRootViewControllerAnimated:YES];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:Nil];
+    
 }
 
 - (void)viewDidLoad
@@ -146,7 +147,6 @@
 {
     self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     
-    
     if ([AppData sharedInstance].shouldEvaluateTension)
     {
         // Going to level 1
@@ -162,6 +162,9 @@
     self.imgbigDown.alpha = 0.0;
     self.imgBigUp.alpha = 0.0;
     
+    // Show Tutorial if needed
+    [[TutorialManager sharedInstance] showTutorial];
+    
     // Arranging scrole view
     [self arrangeScroleView];
     
@@ -171,10 +174,15 @@
 {
     // Arranging scrole view
     [self arrangeScroleView];
+    
+
 }
+
 
 - (void) viewDidDisappear:(BOOL)animated{
     [self returnToFirstLevel];
+    // Arranging scrole view
+    [self arrangeScroleView];
 }
 
 - (void) revaluteLevel
@@ -556,23 +564,24 @@
                 [AppData sharedInstance].isInStorm = YES;
             }
             
+            // If video level
             if ([self getCurrentLevel] > 6)
             {
-                // Go to next screen
-                LevelViewController* vcLevel = [self.storyboard instantiateViewControllerWithIdentifier:@"levelVC"];
-                
+
+                // Getting all exercises
                 NSMutableArray* exercises = [[AppData sharedInstance].videos objectForKey:[NSNumber numberWithInt:[self getCurrentLevel]]];
                 
                 // Getting a random number
                 NSInteger exerciseIndex = [UIHelper getRandomNumbergWithMaxNumber:exercises.count - 1];
                 
+                // getting the videio
                 VideoFile* theVideo = [exercises objectAtIndex:exerciseIndex];
                 
-                // Setting the video to load
-                [vcLevel setVideo:theVideo];
+                // Showing video screen
+                [[FlowManager sharedInstance] showVideoViewControllerWithVideo:theVideo];
                 
-                [self.navigationController pushViewController:vcLevel animated:YES];
             }
+            // Consciense level
             else if ([self getCurrentLevel] <= 6)
             {
                 NSMutableArray* audios = [[AppData sharedInstance].audioFiles objectForKey:[NSNumber numberWithInt:[self getCurrentLevel]]];
@@ -678,6 +687,12 @@
     }
     
     currentPressedButton = sender;
+}
+
+- (IBAction)menuClicked:(id)sender {
+    
+    // Showing menu
+    [[FlowManager sharedInstance] showMenuVCWithType:menuTablePrincipal];
 }
 
 

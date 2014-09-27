@@ -17,7 +17,7 @@ static AppData* shareData;
 @synthesize shakeLevel = _shakeLevel;
 @synthesize pinCode = _pinCode;
 @synthesize isInStorm;
-@synthesize currentLevel;
+@synthesize currentLevel,wasTutorialShown;
 
 + (AppData*) sharedInstance
 {

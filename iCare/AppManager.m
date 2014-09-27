@@ -153,6 +153,13 @@ static AppManager* sharedManager;
     //[data.audioFiles setObject:audios7 forKey:level7];
     
     [self createAudiosDictFromArray:audios7];
+    
+    
+    // Enabling sound in silent mode
+     NSError *setCategoryErr = nil;
+     NSError *activationErr  = nil;
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&setCategoryErr];
+    [[AVAudioSession sharedInstance] setActive:YES error:&activationErr];
 }
 
 - (void) loadAllVideos

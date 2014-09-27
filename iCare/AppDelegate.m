@@ -25,9 +25,6 @@
     [[AppManager sharedInstance] performStartupProcedures];
     
     
-    
-    //NSLog(@"%@", [NSTimeZone knownTimeZoneNames]);
-    
     return YES;
 }
 							

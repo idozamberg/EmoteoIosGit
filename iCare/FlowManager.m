@@ -9,6 +9,7 @@
 #import "FlowManager.h"
 #import "LevelViewController.h"
 
+
 @implementation FlowManager
 
 @synthesize storyBoard,navigationController;
@@ -20,7 +21,7 @@ static FlowManager* manager;
     if (!manager)
     {
         manager = [FlowManager new];
-        manager.storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        manager.storyBoard = [UIStoryboard storyboardWithName:@"NavigationBoard" bundle:nil];
         manager.navigationController = (UINavigationController*)[UIApplication sharedApplication].keyWindow.rootViewController;
     }
     
@@ -240,6 +241,18 @@ static FlowManager* manager;
     [navigationController pushViewController:credits animated:YES];
 }
 
+- (void) ShowTutorialVC
+{
+    UIStoryboard* autoBoard = [UIStoryboard storyboardWithName:@"AutoLayoutBoard" bundle:nil];
+    
+    
+    TutorialViewController* tutorial = [autoBoard instantiateViewControllerWithIdentifier:@"tutorialVC"];
+    
+    [tutorial setModalPresentationStyle:UIModalPresentationOverCurrentContext];
+    [navigationController presentViewController:tutorial animated:YES completion:Nil];
+    
+}
+
 #pragma mark - THPinViewControllerDelegate
 
 - (NSUInteger)pinLengthForPinViewController:(THPinViewController *)pinViewController
@@ -257,6 +270,7 @@ static FlowManager* manager;
         return NO;
     }
 }
+
 
 - (BOOL)userCanRetryInPinViewController:(THPinViewController *)pinViewController
 {

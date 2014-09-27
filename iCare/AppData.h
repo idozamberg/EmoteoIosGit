@@ -39,7 +39,7 @@
 @property (nonatomic,strong) NSMutableArray * stormsHistory;
 @property (nonatomic)        BOOL             isInStorm;
 @property (nonatomic)        NSInteger        currentLevel;
-
+@property (nonatomic)        BOOL             wasTutorialShown;
 
 
 @end

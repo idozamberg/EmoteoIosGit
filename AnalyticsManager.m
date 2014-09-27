@@ -33,8 +33,16 @@ static AnalyticsManager* theManager = nil;
     
     [Flurry setCrashReportingEnabled:YES];
     
+    // If it's production
+    // 2ZD3DGCZQKDSPYPZNSB3
+       //2ZD3DGCZQKDSPYPZNSB3
+    // Testing
+    //NXJWC6WPMXSDZ6YYRQ49
     // Replace YOUR_API_KEY with the api key in the downloaded package
-    [Flurry startSession:@"NXJWC6WPMXSDZ6YYRQ49"];
+    [Flurry startSession:@"2ZD3DGCZQKDSPYPZNSB3"];
+    //
+    //PTRVWW6XGBKCHSTN78WM - ADHD
+    // 2ZD3DGCZQKDSPYPZNSB3 - PROD
   
     // Optional: automatically send uncaught exceptions to Google Analytics.
     [GAI sharedInstance].trackUncaughtExceptions = YES;

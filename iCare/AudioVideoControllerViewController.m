@@ -275,7 +275,9 @@
       
       //[self showAnimation];
       
-      [moviePlayer performSelectorInBackground:@selector(play) withObject:Nil];
+     // [moviePlayer performSelectorInBackground:@selector(play) withObject:Nil];
+      
+      [moviePlayer play];
       [thumbView removeFromSuperview];
       
       [self.btnPlayAudio setBackgroundImage:[UIImage imageNamed:@"pause_off.gif"]  forState:UIControlStateNormal];

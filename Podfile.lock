@@ -1,7 +1,7 @@
 PODS:
-  - FlurrySDK (5.1.2):
+  - FlurrySDK (5.2.0):
     - FlurrySDK/FlurrySDK
-  - FlurrySDK/FlurrySDK (5.1.2)
+  - FlurrySDK/FlurrySDK (5.2.0)
   - GoogleAnalytics-iOS-SDK (3.0.7)
   - THPinViewController (1.1.2)
 
@@ -11,7 +11,7 @@ DEPENDENCIES:
   - THPinViewController (~> 1.1.2)
 
 SPEC CHECKSUMS:
-  FlurrySDK: 63cb886aca456c3d0a05b0cf9bf456e4c6a4b1df
+  FlurrySDK: 5322b9eb0d0b538f1a1983a6717f3a2e2ba03047
   GoogleAnalytics-iOS-SDK: bb285d8eef15a682f1b82971becd0d22edd0e53b
   THPinViewController: 1a054e6854fe3a3ae6919fc8f4954a15fe1467b1
 

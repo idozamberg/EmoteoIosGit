@@ -29,6 +29,8 @@
 {
     [aCoder encodeObject:self.exercises forKey:@"Exercises"];
     [aCoder encodeObject:self.date forKey:@"Date"];
+    [aCoder encodeObject:self.tensions forKey:@"Tensions"];
+
 }
 
 - (id) initWithCoder:(NSCoder *)aDecoder
@@ -37,6 +39,7 @@
     
     self.date = [aDecoder decodeObjectForKey:@"Date"];
     self.exercises = [aDecoder decodeObjectForKey:@"Exercises"];
+    self.tensions = [aDecoder decodeObjectForKey:@"Tensions"];
     
     return self;
 }
@@ -56,6 +59,8 @@
 - (void) addTension :(NSNumber*) level
 {
     [self.tensions addObject:level];
+    
+    [[AppData sharedInstance] saveStorms];
 }
 
 @end

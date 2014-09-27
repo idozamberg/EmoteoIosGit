@@ -24,6 +24,8 @@
 #import "THViewController.h"
 #import "THPinViewController.H"
 #import "CreditsViewController.h"
+#import "TutorialViewController.h"
+
 
 @interface FlowManager : NSObject <THPinViewControllerDelegate>
 
@@ -46,6 +48,7 @@
 - (void) showPinConfigurationVCanimated : (BOOL) animated;
 - (void) showEnterPinVC : (BOOL) animated;
 - (void) showCreditsVC;
+- (void) ShowTutorialVC;
 
 @property (strong,nonatomic) UIStoryboard* storyBoard;
 @property (strong,nonatomic) UINavigationController* navigationController;
