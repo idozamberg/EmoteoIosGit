@@ -30,7 +30,8 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>ITCAvaGarMM.otf</string>
+		<string>ITCBook.ttf</string>
+		<string>ITCAvaGarMM.ttf</string>
 	</array>
 	<key>UIApplicationExitsOnSuspend</key>
 	<true/>

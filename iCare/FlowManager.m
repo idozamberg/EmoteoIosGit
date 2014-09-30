@@ -119,7 +119,7 @@ static FlowManager* manager;
     
     [vcLevel setAudioFile:file];
     
-    [navigationController popToRootViewControllerAnimated:NO];
+  //  [navigationController popToRootViewControllerAnimated:NO];
     
     [navigationController pushViewController:vcLevel animated:YES];
 }

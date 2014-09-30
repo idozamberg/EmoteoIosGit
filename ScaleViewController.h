@@ -42,5 +42,6 @@
 - (IBAction)level8Clicked:(id)sender;
 - (IBAction)levelClicked:(id)sender;
 - (IBAction)menuClicked:(id)sender;
+- (IBAction)emergencyClicked:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *btnEmergency;
 @end

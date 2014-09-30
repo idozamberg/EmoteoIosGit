@@ -222,7 +222,7 @@
         // Setting label color
         newLevelLable.text = [NSString stringWithFormat:@"%li",buttonCounter];
         [newLevelLable setTextColor:[UIColor whiteColor]];
-        [newLevelLable setFont:[UIFont fontWithName:@"Avenir Light" size:80]];
+        [newLevelLable setFont:[UIFont fontWithName:@"ITC Avant Garde Gothic MM" size:80]];
         [newLevelLable setTextAlignment:NSTextAlignmentCenter];
         
         // Setting tag for future use
@@ -236,8 +236,11 @@
         [newLevelButton setWidth:131];
         [newLevelButton setHeight:131];
         
-
-        [newLevelLable sizeToFit];
+        // Setting width and height
+        [newLevelLable setWidth:131];
+        [newLevelLable setHeight:131];
+        
+       // [newLevelLable sizeToFit];
         
         // Placing buttons
         [newLevelButton setXPosition:self.view.frame.size.width / 2 - newLevelButton.frame.size.width / 2];
@@ -292,7 +295,7 @@
     // Setting text and title
     info.lblText.text = text;
     info.lblTitle.text = title;
-    [info.lblText setFont:[UIFont fontWithName:@"Avenir" size:14]];
+    [info.lblText setFont:[UIFont fontWithName:@"ITC Avant Garde Gothic MM" size:14]];
     
     info.alpha = 0;
     [info setYPosition:100];
@@ -394,9 +397,7 @@
 
 - (IBAction)emergencyClicked:(id)sender {
     
-    UrgenceViewController* vwEmergency = [[UrgenceViewController alloc] initWithNibName:@"UrgenceViewController" bundle:Nil];
-    
-    [self.navigationController pushViewController:vwEmergency animated:YES];
+    [[FlowManager sharedInstance] showEmergencyVC];
 }
 
 
@@ -694,8 +695,6 @@
     // Showing menu
     [[FlowManager sharedInstance] showMenuVCWithType:menuTablePrincipal];
 }
-
-
 
 
 -(id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {

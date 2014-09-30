@@ -188,7 +188,9 @@
 }
 
 - (IBAction)backClicked:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+    
+    // Going back to root view controller
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning

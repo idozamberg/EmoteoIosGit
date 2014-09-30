@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ITCAvaGarMM.ttf">
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+            <string>ITCAvantGardeMM</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Urgence View Controller-->
         <scene sceneID="0gP-tI-0na">
@@ -17,11 +47,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blS-6s-Cpi">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blS-6s-Cpi">
                                 <rect key="frame" x="94" y="217" width="133" height="133"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="133" id="pSh-Ej-1dj"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" backgroundImage="urgence_off.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -30,12 +57,8 @@
                                     <action selector="emergencyClicked:" destination="w6y-kZ-Bzt" eventType="touchUpInside" id="qrk-EF-ZrX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q50-Z2-qMZ">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q50-Z2-qMZ">
                                 <rect key="frame" x="97" y="508" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="PGc-me-iT5"/>
-                                    <constraint firstAttribute="width" constant="40" id="XWg-Rp-P0I"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" backgroundImage="emergency_on.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -45,7 +68,7 @@
                                     <action selector="backClicked:" destination="w6y-kZ-Bzt" eventType="touchUpInside" id="LMs-ss-ABe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDU-A9-VES">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDU-A9-VES">
                                 <rect key="frame" x="184" y="508" width="40" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" backgroundImage="settings_off.png">
@@ -58,17 +81,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.15760332099999999" blue="0.084156535879999994" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Q50-Z2-qMZ" secondAttribute="bottom" constant="20" symbolic="YES" id="0ZL-HF-mGK"/>
-                            <constraint firstItem="blS-6s-Cpi" firstAttribute="centerX" secondItem="vgl-m0-Lwz" secondAttribute="centerX" id="74I-s8-jDP"/>
-                            <constraint firstItem="blS-6s-Cpi" firstAttribute="top" secondItem="3rf-gm-eEp" secondAttribute="bottom" constant="197" id="FSv-mv-rLN"/>
-                            <constraint firstItem="BDU-A9-VES" firstAttribute="leading" secondItem="Q50-Z2-qMZ" secondAttribute="trailing" constant="47" id="Jmg-mv-8fR"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="BDU-A9-VES" secondAttribute="trailing" constant="80" id="LJK-Ob-IEd"/>
-                            <constraint firstItem="Q50-Z2-qMZ" firstAttribute="leading" secondItem="vgl-m0-Lwz" secondAttribute="leadingMargin" constant="81" id="R8o-Xq-ynf"/>
-                            <constraint firstItem="BDU-A9-VES" firstAttribute="top" secondItem="Q50-Z2-qMZ" secondAttribute="top" id="eBf-wK-jC8"/>
-                            <constraint firstItem="Q50-Z2-qMZ" firstAttribute="bottom" secondItem="BDU-A9-VES" secondAttribute="bottom" id="gvZ-zn-HJJ"/>
-                            <constraint firstItem="blS-6s-Cpi" firstAttribute="leading" secondItem="vgl-m0-Lwz" secondAttribute="leadingMargin" constant="78" id="rrD-ft-oQd"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1HO-c7-15A"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -136,26 +148,26 @@
                                 <rect key="frame" x="27" y="33" width="267" height="424"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dd8-ae-3YT">
-                                <rect key="frame" x="0.0" y="58" width="320" height="64"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="72"/>
+                                <rect key="frame" x="0.0" y="59" width="320" height="73"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="72"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NIVEAU DE TENSION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3M-iE-H71">
-                                <rect key="frame" x="77" y="34" width="167" height="21"/>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                <rect key="frame" x="77" y="35" width="167" height="21"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hl9-67-7oZ">
                                 <rect key="frame" x="29" y="129" width="264" height="21"/>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AUTRES EXERCICES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aS0-tf-vbP">
                                 <rect key="frame" x="60" y="432" width="200" height="21"/>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -185,7 +197,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="b0V-Td-cZq"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -202,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rRa-7p-Jn7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="767"/>
+            <point key="canvasLocation" x="30" y="758"/>
         </scene>
         <!--Level View Controller-->
         <scene sceneID="wrL-zJ-RTe">
@@ -255,13 +267,13 @@
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CIEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BiM-12-X2w">
                                 <rect key="frame" x="29" y="35" width="264" height="20"/>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AUTRES EXERCICES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVg-BV-j2v">
                                 <rect key="frame" x="60" y="432" width="200" height="21"/>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -282,7 +294,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaF-3Q-Jth">
                                 <rect key="frame" x="29" y="426" width="264" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="15"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -403,32 +415,32 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GS9-NM-G5S">
-                                        <rect key="frame" x="0.0" y="58" width="320" height="64"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="72"/>
+                                        <rect key="frame" x="0.0" y="62" width="320" height="64"/>
+                                        <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="72"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NIVEAU DE TENSION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFn-ff-K6K">
-                                        <rect key="frame" x="77" y="34" width="167" height="21"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                        <rect key="frame" x="77" y="35" width="167" height="21"/>
+                                        <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EXERCICE DE L’EAU FROIDE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrH-In-1tf">
                                         <rect key="frame" x="29" y="129" width="264" height="21"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="04:50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q26-c1-Dc4">
-                                        <rect key="frame" x="30" y="273" width="264" height="21"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                        <rect key="frame" x="30" y="275" width="264" height="21"/>
+                                        <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AUTRES EXERCICES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQa-8o-dzt">
                                         <rect key="frame" x="60" y="432" width="200" height="21"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -637,15 +649,9 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frame_alpha0.png" translatesAutoresizingMaskIntoConstraints="NO" id="yiQ-bn-Zi9">
                                         <rect key="frame" x="27" y="33" width="267" height="424"/>
                                     </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVh-3s-qGB">
-                                        <rect key="frame" x="0.0" y="58" width="320" height="64"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="72"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NIVEAU DE TENSION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOn-vn-xWD">
-                                        <rect key="frame" x="77" y="34" width="167" height="21"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                        <rect key="frame" x="77" y="35" width="167" height="21"/>
+                                        <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -661,8 +667,14 @@
                                             <outlet property="delegate" destination="qxm-ej-IA0" id="gBl-Gm-8By"/>
                                         </connections>
                                     </tableView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVh-3s-qGB">
+                                        <rect key="frame" x="0.0" y="60" width="320" height="73"/>
+                                        <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="72"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -694,12 +706,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsC-xt-VMO">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsC-xt-VMO">
                                 <rect key="frame" x="97" y="508" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="AuO-NS-yU6"/>
-                                    <constraint firstAttribute="width" constant="40" id="WdL-qy-w2g"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" backgroundImage="emergency_off.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -709,7 +717,7 @@
                                     <segue destination="w6y-kZ-Bzt" kind="push" id="9so-wq-hIf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTP-Ii-wMt">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTP-Ii-wMt">
                                 <rect key="frame" x="184" y="508" width="40" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" backgroundImage="settings_on.png">
@@ -720,40 +728,31 @@
                                     <action selector="menuClicked:" destination="Bwg-uO-P1B" eventType="touchUpInside" id="6rR-aE-mh7"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sep_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="t8P-xJ-phN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sep_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="t8P-xJ-phN">
                                 <rect key="frame" x="27" y="54" width="267" height="1"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="2S6-LX-05F"/>
-                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sep_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="oZf-zh-boy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sep_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="oZf-zh-boy">
                                 <rect key="frame" x="27" y="75" width="267" height="1"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="C5l-7m-gPE"/>
-                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sep_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="0CP-OQ-13e">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sep_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="0CP-OQ-13e">
                                 <rect key="frame" x="27" y="429" width="267" height="1"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="6Bc-Tw-4jn"/>
-                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame_alpha0.png" translatesAutoresizingMaskIntoConstraints="NO" id="439-Fv-jJd">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frame_alpha0.png" translatesAutoresizingMaskIntoConstraints="NO" id="439-Fv-jJd">
                                 <rect key="frame" x="27" y="33" width="267" height="424"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MENU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8n-dE-EF5">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MENU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8n-dE-EF5">
                                 <rect key="frame" x="28" y="34" width="266" height="21"/>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREDITS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRo-RW-a7Z">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CREDITS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRo-RW-a7Z">
                                 <rect key="frame" x="77" y="433" width="167" height="21"/>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mX9-Rl-V8g">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mX9-Rl-V8g">
                                 <rect key="frame" x="28" y="76" width="264" height="354"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -765,7 +764,7 @@
                                     <outlet property="delegate" destination="Bwg-uO-P1B" id="osk-Yp-Ihs"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJU-Tx-GG9">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJU-Tx-GG9">
                                 <rect key="frame" x="31" y="428" width="261" height="30"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -776,40 +775,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.26274509800000001" green="0.82745098039999998" blue="0.99215686270000003" alpha="1" colorSpace="deviceRGB"/>
-                        <constraints>
-                            <constraint firstItem="h8n-dE-EF5" firstAttribute="centerX" secondItem="IJU-Tx-GG9" secondAttribute="centerX" id="1Vd-N2-jIx"/>
-                            <constraint firstItem="439-Fv-jJd" firstAttribute="leading" secondItem="0CP-OQ-13e" secondAttribute="leading" id="2TB-e8-hVB"/>
-                            <constraint firstItem="vRo-RW-a7Z" firstAttribute="centerX" secondItem="0CP-OQ-13e" secondAttribute="centerX" id="BQ0-oX-dtT"/>
-                            <constraint firstItem="h8n-dE-EF5" firstAttribute="leading" secondItem="mX9-Rl-V8g" secondAttribute="leading" id="BXX-WK-pCr"/>
-                            <constraint firstItem="IJU-Tx-GG9" firstAttribute="centerY" secondItem="vRo-RW-a7Z" secondAttribute="centerY" id="CVv-ef-Uwj"/>
-                            <constraint firstItem="vRo-RW-a7Z" firstAttribute="centerX" secondItem="ut5-tI-ert" secondAttribute="centerX" id="DjO-RL-irk"/>
-                            <constraint firstItem="vRo-RW-a7Z" firstAttribute="leading" secondItem="ut5-tI-ert" secondAttribute="leadingMargin" constant="61" id="G9R-ds-b0X"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gTP-Ii-wMt" secondAttribute="trailing" constant="80" id="HXw-Td-M3o"/>
-                            <constraint firstItem="vRo-RW-a7Z" firstAttribute="top" secondItem="mX9-Rl-V8g" secondAttribute="bottom" constant="3" id="IJY-wL-U2Y"/>
-                            <constraint firstItem="hsC-xt-VMO" firstAttribute="leading" secondItem="ut5-tI-ert" secondAttribute="leadingMargin" constant="81" id="JNe-0t-Pgy"/>
-                            <constraint firstItem="mX9-Rl-V8g" firstAttribute="bottom" secondItem="0CP-OQ-13e" secondAttribute="bottom" id="Jn6-vL-0pK"/>
-                            <constraint firstItem="t8P-xJ-phN" firstAttribute="bottom" secondItem="h8n-dE-EF5" secondAttribute="bottom" id="Mef-By-oaG"/>
-                            <constraint firstItem="oZf-zh-boy" firstAttribute="leading" secondItem="t8P-xJ-phN" secondAttribute="leading" id="N0T-gq-2mG"/>
-                            <constraint firstItem="439-Fv-jJd" firstAttribute="trailing" secondItem="oZf-zh-boy" secondAttribute="trailing" id="NDZ-is-YPZ"/>
-                            <constraint firstItem="gTP-Ii-wMt" firstAttribute="top" secondItem="hsC-xt-VMO" secondAttribute="top" id="NJ0-NB-rEK"/>
-                            <constraint firstItem="h8n-dE-EF5" firstAttribute="top" secondItem="mO6-6d-5OX" secondAttribute="bottom" constant="14" id="Oj8-6I-azc"/>
-                            <constraint firstItem="hsC-xt-VMO" firstAttribute="bottom" secondItem="gTP-Ii-wMt" secondAttribute="bottom" id="QFQ-de-PMf"/>
-                            <constraint firstItem="gTP-Ii-wMt" firstAttribute="top" secondItem="439-Fv-jJd" secondAttribute="bottom" constant="51" id="QO2-PY-A9v"/>
-                            <constraint firstItem="hsC-xt-VMO" firstAttribute="top" secondItem="IJU-Tx-GG9" secondAttribute="bottom" constant="50" id="REd-kI-Pbk"/>
-                            <constraint firstItem="439-Fv-jJd" firstAttribute="top" secondItem="mO6-6d-5OX" secondAttribute="bottom" constant="13" id="T3R-3K-ymY"/>
-                            <constraint firstAttribute="bottom" secondItem="hsC-xt-VMO" secondAttribute="bottom" constant="20" symbolic="YES" id="UuU-4l-5m2"/>
-                            <constraint firstItem="h8n-dE-EF5" firstAttribute="leading" secondItem="ut5-tI-ert" secondAttribute="leadingMargin" constant="12" id="YRo-Xg-EaY"/>
-                            <constraint firstItem="t8P-xJ-phN" firstAttribute="leading" secondItem="ut5-tI-ert" secondAttribute="leadingMargin" constant="11" id="a5g-DH-oLz"/>
-                            <constraint firstItem="oZf-zh-boy" firstAttribute="trailing" secondItem="t8P-xJ-phN" secondAttribute="trailing" id="ceg-Bc-cJ8"/>
-                            <constraint firstItem="t8P-xJ-phN" firstAttribute="trailing" secondItem="h8n-dE-EF5" secondAttribute="trailing" id="cuT-sC-5ud"/>
-                            <constraint firstItem="mX9-Rl-V8g" firstAttribute="top" secondItem="oZf-zh-boy" secondAttribute="bottom" id="enh-B9-rB6"/>
-                            <constraint firstItem="oZf-zh-boy" firstAttribute="trailing" secondItem="0CP-OQ-13e" secondAttribute="trailing" id="jCX-0d-eBM"/>
-                            <constraint firstItem="gTP-Ii-wMt" firstAttribute="leading" secondItem="hsC-xt-VMO" secondAttribute="trailing" constant="47" id="nna-w2-xw6"/>
-                            <constraint firstItem="IJU-Tx-GG9" firstAttribute="trailing" secondItem="mX9-Rl-V8g" secondAttribute="trailing" id="r4V-Kc-hHY"/>
-                            <constraint firstItem="0CP-OQ-13e" firstAttribute="centerX" secondItem="mX9-Rl-V8g" secondAttribute="centerX" id="rNK-h9-bVR"/>
-                            <constraint firstItem="oZf-zh-boy" firstAttribute="leading" secondItem="0CP-OQ-13e" secondAttribute="leading" id="sQp-01-Awg"/>
-                            <constraint firstItem="oZf-zh-boy" firstAttribute="top" secondItem="t8P-xJ-phN" secondAttribute="bottom" constant="20" id="tfL-aB-ltE"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sUk-jV-RkH"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -889,25 +854,25 @@
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONIFIGURER PIN DE SECURITÉ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEX-8V-KlU">
                                         <rect key="frame" x="27" y="25" width="267" height="42"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CREDITS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccf-cQ-6CI">
                                         <rect key="frame" x="77" y="433" width="167" height="21"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enregistrer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iye-3h-cDS">
                                         <rect key="frame" x="102" y="284" width="122" height="28"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="24"/>
+                                        <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ACTIVER/DESACTIVER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlt-fp-JAK">
                                         <rect key="frame" x="27" y="82" width="192" height="21"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -923,7 +888,7 @@
                                     <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="SAISIR PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yix-BK-qsr">
                                         <rect key="frame" x="110" y="125" width="97" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                         <connections>
                                             <outlet property="delegate" destination="XAR-uW-BlU" id="rQk-b4-4mv"/>
@@ -999,9 +964,6 @@
                                                             <action selector="backClicked:" destination="WgV-4p-Rgk" eventType="touchUpInside" id="IuH-gr-zPl"/>
                                                         </connections>
                                                     </button>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sep_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="y1z-hM-Ct4">
-                                                        <rect key="frame" x="27" y="54" width="267" height="1"/>
-                                                    </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sep_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="aBE-cv-JTe">
                                                         <rect key="frame" x="27" y="75" width="267" height="1"/>
                                                     </imageView>
@@ -1023,12 +985,6 @@
                                                             <action selector="saveClicked:" destination="WgV-4p-Rgk" eventType="touchUpInside" id="dz0-xr-pvm"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONIFIGURER NUMERO APPEL D'URGENCE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hi8-7k-3xo">
-                                                        <rect key="frame" x="27" y="34" width="267" height="42"/>
-                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CREDITS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9XT-Sy-MCI">
                                                         <rect key="frame" x="77" y="433" width="167" height="21"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
@@ -1060,6 +1016,12 @@
                                                             <action selector="creditsClicked:" destination="WgV-4p-Rgk" eventType="touchUpInside" id="Rc2-nf-45f"/>
                                                         </connections>
                                                     </button>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONIFIGURER NUMERO APPEL D'URGENCE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hi8-7k-3xo">
+                                                        <rect key="frame" x="27" y="35" width="267" height="42"/>
+                                                        <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.99215686274509807" green="0.20414760781765337" blue="0.03662013957940586" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
@@ -1117,9 +1079,6 @@
                                     <action selector="backClicked:" destination="lp0-8P-OCh" eventType="touchUpInside" id="L0f-NK-eMI"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sep_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="RmP-Gx-ujD">
-                                <rect key="frame" x="27" y="54" width="267" height="1"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sep_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="jnx-sp-CSD">
                                 <rect key="frame" x="27" y="75" width="267" height="1"/>
                             </imageView>
@@ -1143,19 +1102,19 @@
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONIFIGURER NIVEAU DE TENSION SHAKE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaU-0U-kfw">
                                 <rect key="frame" x="27" y="34" width="267" height="42"/>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CREDITS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgy-G1-gqN">
                                 <rect key="frame" x="77" y="433" width="167" height="21"/>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enregistrer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ady-9n-Jvx">
                                 <rect key="frame" x="102" y="284" width="122" height="28"/>
-                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1168,7 +1127,7 @@
                             </pickerView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Niveau en Shake : 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzn-6L-clp">
                                 <rect key="frame" x="30" y="84" width="261" height="21"/>
-                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1230,6 +1189,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="AHP-ia-eKb"/>
+        <segue reference="9so-wq-hIf"/>
     </inferredMetricsTieBreakers>
 </document>

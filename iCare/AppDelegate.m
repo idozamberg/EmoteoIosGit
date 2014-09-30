@@ -24,6 +24,17 @@
     // Loading videos
     [[AppManager sharedInstance] performStartupProcedures];
     
+
+    for (NSString* family in [UIFont familyNames])
+    {
+        NSLog(@"%@", family);
+        
+        for (NSString* name in [UIFont fontNamesForFamilyName: family])
+        {
+            NSLog(@"  %@", name);
+        }
+    }
+    
     
     return YES;
 }
