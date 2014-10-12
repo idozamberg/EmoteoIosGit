@@ -30,6 +30,7 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>ITCAvantGardeGothic.ttf</string>
 		<string>ITCBook.ttf</string>
 		<string>ITCAvaGarMM.ttf</string>
 	</array>

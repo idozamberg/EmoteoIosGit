@@ -61,4 +61,12 @@
 }
 */
 
+
+- (NSInteger) sumNumbers : (NSInteger) a : (NSInteger) b
+{
+    NSInteger c = a + b;
+    
+    return c;
+}
+
 @end

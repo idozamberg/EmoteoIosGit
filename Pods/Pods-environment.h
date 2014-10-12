@@ -9,24 +9,30 @@
 // FlurrySDK
 #define COCOAPODS_POD_AVAILABLE_FlurrySDK
 #define COCOAPODS_VERSION_MAJOR_FlurrySDK 5
-#define COCOAPODS_VERSION_MINOR_FlurrySDK 2
+#define COCOAPODS_VERSION_MINOR_FlurrySDK 4
 #define COCOAPODS_VERSION_PATCH_FlurrySDK 0
 
 // FlurrySDK/FlurrySDK
 #define COCOAPODS_POD_AVAILABLE_FlurrySDK_FlurrySDK
 #define COCOAPODS_VERSION_MAJOR_FlurrySDK_FlurrySDK 5
-#define COCOAPODS_VERSION_MINOR_FlurrySDK_FlurrySDK 2
+#define COCOAPODS_VERSION_MINOR_FlurrySDK_FlurrySDK 4
 #define COCOAPODS_VERSION_PATCH_FlurrySDK_FlurrySDK 0
 
 // GoogleAnalytics-iOS-SDK
 #define COCOAPODS_POD_AVAILABLE_GoogleAnalytics_iOS_SDK
 #define COCOAPODS_VERSION_MAJOR_GoogleAnalytics_iOS_SDK 3
 #define COCOAPODS_VERSION_MINOR_GoogleAnalytics_iOS_SDK 0
-#define COCOAPODS_VERSION_PATCH_GoogleAnalytics_iOS_SDK 7
+#define COCOAPODS_VERSION_PATCH_GoogleAnalytics_iOS_SDK 9
 
 // THPinViewController
 #define COCOAPODS_POD_AVAILABLE_THPinViewController
 #define COCOAPODS_VERSION_MAJOR_THPinViewController 1
 #define COCOAPODS_VERSION_MINOR_THPinViewController 1
 #define COCOAPODS_VERSION_PATCH_THPinViewController 2
+
+// UIView+draggable
+#define COCOAPODS_POD_AVAILABLE_UIView_draggable
+#define COCOAPODS_VERSION_MAJOR_UIView_draggable 0
+#define COCOAPODS_VERSION_MINOR_UIView_draggable 2
+#define COCOAPODS_VERSION_PATCH_UIView_draggable 0
 

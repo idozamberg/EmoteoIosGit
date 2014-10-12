@@ -12,8 +12,6 @@
 
 @interface THViewController () <THPinViewControllerDelegate>
 
-
-
 @property (nonatomic, strong) UIImageView *secretContentView;
 @property (nonatomic, strong) UIButton *loginLogoutButton;
 @property (nonatomic, copy) NSString *correctPin;

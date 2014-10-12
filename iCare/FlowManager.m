@@ -32,7 +32,9 @@ static FlowManager* manager;
 {
     UrgenceViewController* uVC = [storyBoard instantiateViewControllerWithIdentifier:@"emergencyVC"];
     
-    [navigationController pushViewController:uVC animated:YES];
+    //[navigationController pushViewController:uVC animated:YES];
+    
+    //[navigationController presen];
 }
 
 - (void) showExerciseListWithList : (NSArray*) list forLevel : (NSNumber*) level andType :(exerciseListType) type
@@ -83,7 +85,7 @@ static FlowManager* manager;
     // Setting the video to load
     [vcLevel setVideo:video];
     
-    [navigationController popToRootViewControllerAnimated:NO];
+   // [navigationController popToRootViewControllerAnimated:NO];
     
     [navigationController pushViewController:vcLevel animated:YES];
     
@@ -104,7 +106,7 @@ static FlowManager* manager;
     // Setting the video to load
     [vcLevel setVideo:video];
     
-    [navigationController popToRootViewControllerAnimated:NO];
+    //[navigationController popToRootViewControllerAnimated:NO];
     
     [navigationController pushViewController:vcLevel animated:YES];
     

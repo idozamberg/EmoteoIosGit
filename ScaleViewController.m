@@ -206,9 +206,9 @@
 - (void) createAndPlaceButtons
 {
     
-    [self.btnEmergency setXPosition:self.view.frame.size.width / 2 - self.btnEmergency.frame.size.width / 2 - 40];
+    //[self.btnEmergency setXPosition:self.view.frame.size.width / 2 - self.btnEmergency.frame.size.width / 2 - 40];
     
-    [self.btnMenu setXPosition:self.view.frame.size.width / 2  - self.btnMenu.frame.size.width / 2 + 40];
+   // [self.btnMenu setXPosition:self.view.frame.size.width / 2  - self.btnMenu.frame.size.width / 2 + 40];
     
     long buttonCounter = 0;
     
@@ -222,7 +222,7 @@
         // Setting label color
         newLevelLable.text = [NSString stringWithFormat:@"%li",buttonCounter];
         [newLevelLable setTextColor:[UIColor whiteColor]];
-        [newLevelLable setFont:[UIFont fontWithName:@"ITC Avant Garde Gothic MM" size:80]];
+        [newLevelLable setFont:[UIFont fontWithName:@"ITC Avant Garde Gothic" size:80]];
         [newLevelLable setTextAlignment:NSTextAlignmentCenter];
         
         // Setting tag for future use

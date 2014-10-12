@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BA2D852700614537A11FA128"
+               BlueprintIdentifier = "8B9EB3F7571B4EF3A9AD910E"
                BuildableName = "libPods-THPinViewController.a"
                BlueprintName = "Pods-THPinViewController"
                ReferencedContainer = "container:Pods.xcodeproj">

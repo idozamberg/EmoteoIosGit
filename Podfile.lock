@@ -1,18 +1,21 @@
 PODS:
-  - FlurrySDK (5.2.0):
+  - FlurrySDK (5.4.0):
     - FlurrySDK/FlurrySDK
-  - FlurrySDK/FlurrySDK (5.2.0)
-  - GoogleAnalytics-iOS-SDK (3.0.7)
+  - FlurrySDK/FlurrySDK (5.4.0)
+  - GoogleAnalytics-iOS-SDK (3.0.9)
   - THPinViewController (1.1.2)
+  - UIView+draggable (0.2)
 
 DEPENDENCIES:
   - FlurrySDK (~> 5.1)
   - GoogleAnalytics-iOS-SDK (~> 3.0)
   - THPinViewController (~> 1.1.2)
+  - UIView+draggable
 
 SPEC CHECKSUMS:
-  FlurrySDK: 5322b9eb0d0b538f1a1983a6717f3a2e2ba03047
-  GoogleAnalytics-iOS-SDK: bb285d8eef15a682f1b82971becd0d22edd0e53b
+  FlurrySDK: bed9e5598353f867508d164795a451e3ada92cb6
+  GoogleAnalytics-iOS-SDK: d9e198b1f955259a72886769be7377cdfcdb2250
   THPinViewController: 1a054e6854fe3a3ae6919fc8f4954a15fe1467b1
+  UIView+draggable: ad1c3a0f862aca1923c45c3e05d68c7852014436
 
 COCOAPODS: 0.33.1
