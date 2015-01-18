@@ -39,7 +39,7 @@ static AnalyticsManager* theManager = nil;
     // Testing
     //NXJWC6WPMXSDZ6YYRQ49
     // Replace YOUR_API_KEY with the api key in the downloaded package
-    [Flurry startSession:@"2ZD3DGCZQKDSPYPZNSB3"];
+    [Flurry startSession:@"NXJWC6WPMXSDZ6YYRQ49"];
     //
     //PTRVWW6XGBKCHSTN78WM - ADHD
     // 2ZD3DGCZQKDSPYPZNSB3 - PROD
