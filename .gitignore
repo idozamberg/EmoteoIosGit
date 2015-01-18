@@ -16,6 +16,8 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+*.mp4
+*.m4v
 
 # CocoaPods
 #
