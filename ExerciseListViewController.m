@@ -37,7 +37,7 @@
 {
     [super viewDidLoad];
     
-    vwFrame.backgroundColor = [UIHelper generateRandomColor];
+    self.view.backgroundColor = [UIHelper generateRandomColor];
 
     
 	// Do any additional setup after loading the view.
@@ -50,7 +50,7 @@
     // Checking if we should activate timer for changing bgColor
     if (_shouldPerformColorTherapy)
     {
-        vwFrame.backgroundColor = [UIHelper generateRandomColor];
+        self.view.backgroundColor = [UIHelper generateRandomColor];
         self.imgBg.hidden = YES;
         
         
@@ -69,7 +69,7 @@
 {
     [UIView animateWithDuration:1.5 animations:^{
         
-        vwFrame.backgroundColor = [UIHelper generateRandomColor];
+        self.view.backgroundColor = [UIHelper generateRandomColor];
         
     }];
      

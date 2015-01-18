@@ -32,9 +32,11 @@ static FlowManager* manager;
 {
     UrgenceViewController* uVC = [storyBoard instantiateViewControllerWithIdentifier:@"emergencyVC"];
     
-    //[navigationController pushViewController:uVC animated:YES];
+    // Showing view controls
+    [navigationController pushViewController:uVC animated:YES];
+   // navigationController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     
-    //[navigationController presen];
+    //[navigationController presentViewController:uVC animated:YES completion:Nil];
 }
 
 - (void) showExerciseListWithList : (NSArray*) list forLevel : (NSNumber*) level andType :(exerciseListType) type
@@ -141,7 +143,7 @@ static FlowManager* manager;
     
     [vcLevel setAudioFile:file];
     
-    [navigationController popToRootViewControllerAnimated:NO];
+  //  [navigationController popToRootViewControllerAnimated:NO];
     
     [navigationController pushViewController:vcLevel animated:YES];
 }
@@ -156,6 +158,18 @@ static FlowManager* manager;
     
     [navigationController pushViewController:menuVC animated:YES];
 
+}
+
+- (void) showInformationsViewControllerWithText : (NSString*) text andTitle : (NSString*) title
+{
+    UIStoryboard* autoBoard = [UIStoryboard storyboardWithName:@"NavigationBoard" bundle:nil];
+
+    SpecificInformationViewController* infoVC = [autoBoard instantiateViewControllerWithIdentifier:@"InformationVC"];
+    
+    // Setting text and title
+    [infoVC setTextAndTitle:text andTitle:title];
+    
+    [navigationController pushViewController:infoVC animated:YES];
 }
 
 - (void) showEmergencySettings
@@ -176,7 +190,7 @@ static FlowManager* manager;
 
 - (void) showRecentStormsAnimated : (BOOL) animated
 {
-    UIStoryboard* autoBoard = [UIStoryboard storyboardWithName:@"AutoLayoutBoard" bundle:nil];
+    UIStoryboard* autoBoard = [UIStoryboard storyboardWithName:@"NavigationBoard" bundle:nil];
     //stormsVC
     
     RecentStormesViewController* stormsVC = [autoBoard instantiateViewControllerWithIdentifier:@"stormsVC"];
@@ -188,7 +202,7 @@ static FlowManager* manager;
 
 - (void) showStormDetailesForStorm : (Storm*) storm
 {
-    UIStoryboard* autoBoard = [UIStoryboard storyboardWithName:@"AutoLayoutBoard" bundle:nil];
+    UIStoryboard* autoBoard = [UIStoryboard storyboardWithName:@"NavigationBoard" bundle:nil];
     //stormsVC
     
     StormDetailsViewController* stormVC = [autoBoard instantiateViewControllerWithIdentifier:@"stormsDetVC"];
@@ -200,7 +214,7 @@ static FlowManager* manager;
 
 - (void) showGraphForStorm : (Storm*) storm
 {
-    UIStoryboard* autoBoard = [UIStoryboard storyboardWithName:@"AutoLayoutBoard" bundle:nil];
+    UIStoryboard* autoBoard = [UIStoryboard storyboardWithName:@"NavigationBoard" bundle:nil];
     //stormsVC
     
     CPTStormGraphViewController* stormVC = [autoBoard instantiateViewControllerWithIdentifier:@"graphVC"];
@@ -235,7 +249,7 @@ static FlowManager* manager;
 
 - (void) showCreditsVC
 {
-    UIStoryboard* autoBoard = [UIStoryboard storyboardWithName:@"AutoLayoutBoard" bundle:nil];
+    UIStoryboard* autoBoard = [UIStoryboard storyboardWithName:@"NavigationBoard" bundle:nil];
 
     
     CreditsViewController* credits = [autoBoard instantiateViewControllerWithIdentifier:@"creditsVC"];
@@ -247,11 +261,19 @@ static FlowManager* manager;
 {
     UIStoryboard* autoBoard = [UIStoryboard storyboardWithName:@"AutoLayoutBoard" bundle:nil];
     
-    
     TutorialViewController* tutorial = [autoBoard instantiateViewControllerWithIdentifier:@"tutorialVC"];
     
     [tutorial setModalPresentationStyle:UIModalPresentationOverCurrentContext];
-    [navigationController presentViewController:tutorial animated:YES completion:Nil];
+    
+    // Create segue
+    //UIStoryboardSegue* segue = [[UIStoryboardSegue alloc] initWithIdentifier:@"tutorialVC" source:tutorial destination:navigationController];
+    
+    
+    //[UIStoryboardSegue segueWithIdentifier:@"tutorialVC" source:[[navigationController viewControllers] objectAtIndex:0] destination:tutorial performHandler:Nil];
+
+    //[segue perform];
+    [navigationController presentViewController:tutorial animated:NO completion:Nil];
+    //[navigationController presentModalViewController:tutorial animated:YES];
     
 }
 

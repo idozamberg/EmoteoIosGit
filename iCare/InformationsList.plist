@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Questions</key>
+	<array>
+		<string>De quoi s’agit-il?</string>
+		<string>Qu’est-ce que le trouble de la personnalité borderline ?</string>
+		<string>Quel est son traitement ?</string>
+		<string>Comment fonctionne l’application ?</string>
+		<string>Quelles sont les limites de l’application?</string>
+		<string>Qui sommes-nous ?</string>
+		<string>Où nous trouver ?</string>
+	</array>
+	<key>Informations</key>
+	<array>
+		<string>Emoteo est une application destinée aux patients souffrant d’un trouble de la personnalité borderline, appelé également trouble de personnalité émotionnellement labile. Elle a été conçue pour les aider à gérer une crise émotionnelle.</string>
+		<string>Il s’agit d’un trouble psychique fréquent qui concerne environ 2 à 4% de la population générale. Les signes principaux sont :- une sensibilité à fleur de peau avec des changements émotionnels intenses et rapides qui peuvent se manifester par des colères excessives et souvent disproportionnées- une forte impulsivité, des relations interpersonnelles instables - une sensibilité particulière et un  sentiment d’abandon. Les personnes qui en souffrent sont en proie à de fréquentes crises au cours desquelles des conduites auto-dommageables peuvent survenir et mettre en danger leur intégrité corporelle. Ces gestes comprennent, par exemple, des scarifications, des coupures, des abus de médicaments ou de toxiques. Ces comportements visent souvent à mettre fin à la souffrance ressentie durant une crise. S’ils aident à réguler les émotions à l’origine des crises, leurs conséquences à moyen et long terme sont négatives pour les personnes. Pour en savoir plus, consultez la vidéo du Dr Nader Perroud, des HUG:http://www.rts.ch/video/decouverte/3917070-qu-est-ce-qu-etre-borderline-dr-nader-perroud-dpt-psychiatrie-hug-unige.html</string>
+		<string>Le traitement du trouble de personnalité borderline est avant tout psychologique. Plusieurs types de psychothérapies sont reconnues comme efficaces telles que la thérapie comportementale dialectique, la thérapie basée sur la mentalisation, la thérapie centrée sur le transfert ou la thérapie focalisée sur les schémas. Les médicaments complètent la psychothérapie pour certains symptômes comme l’impulsivité, les émotions labiles (instables) et les troubles associés, que ce soit la dépression ou l’anxiété par exemple.</string>
+		<string>L’application propose des exercices pratiques pour diminuer la tension interne et éviter un comportement auto-dommageable.  La personne évalue sa tension interne sur une échelle de 1 à 10 et au travers des images de ciel plus ou moins dégagé. Une tension légère est donc représentée par un ciel clair et une valeur de 1 tandis qu’une tension extrême est représentée par un ciel orageux et une valeur de 10. En fonction de la valeur de la tension interne, l’application suggère de pratiquer des exercices de pleine conscience (Mindfulness). La pratique de la mindfullness a fait ses preuves dans la gestion et la régulation des émotions. De même, s’exercer régulièrement à évaluer sa tension interne et à la réguler diminue la survenue de crises avec des ? comportements auto-dommageables.L’application permet également de consulter, sous forme de graphiques, l’évolution des crises et leur priodicité et de juger ainsi de l’efficacité des exercices proposés. Enfin, Il existe une fonction « appel d’urgence »  qui signale l’importance de faire appel à une aide extérieure en cas de grande difficulté.</string>
+		<string>Attention, cette application n’est en aucun cas un traitement du trouble de personnalité borderline. Elle constitue une aide pour gérer les crises, mais ne remplace pas une psychothérapie ou un traitement pharmacologique. Elle s’appuie sur des techniques à l’efficacité reconnue pour faire face à certains symptômes.</string>
+		<string>Cette application a été mise au point par une équipe pluridisciplinaire spécialisée (médecins, psychologues, infirmiers) dans le traitement du trouble de la personnalité borderline. Ces spécialistes  travaillent tous aux Hôpitaux universitaires de Genève (HUG), dans le département de santé mentale et de psychiatrie.</string>
+		<string>Adresse :	Service des spécialités psychiatriques	Programme des Troubles de la Régulation Emotionnelle (TRE)Soin spécialisé borderline (ex-CARE)	Rue de Lausanne, 20 bis	1201 Genève	Tél : +4122 305 45 11	Fax : +4122 305 45 99</string>
+	</array>
+</dict>
+</plist>

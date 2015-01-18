@@ -10,6 +10,10 @@
 #import "ExerciseCell.h"
 
 @implementation MenuViewController
+{
+    NSMutableArray* questionsArray;
+    NSMutableArray* informationArray;
+}
 
 @synthesize tableType = _tableType;
 
@@ -18,6 +22,8 @@
 #define REGLAGES_ROW 0
 #define EXERCISES 1
 #define STORMS_RECENT 2
+#define INFORMATIONS 3
+
 
 # pragma mark macro settings
 #define SECURITE 0
@@ -27,8 +33,6 @@
 #pragma mark macro exercies
 #define AUDIO 0
 #define VIDEO 1
-
-
 
 
 
@@ -73,16 +77,33 @@
 - (void) viewWillAppear:(BOOL)animated
 {
     [self.tblMenu reloadData];
+    
+    // If we are informations mode
+    if (_tableType == menuTableInformations)
+    {
+        // Load arrays
+        [self loadInformationsArrays];
+    }
    
 }
 
+- (void) loadInformationsArrays
+{
+    // Getting the dictionary
+    NSDictionary* infoDictionary = [UIHelper dictionaryFromPlistWithName:@"InformationsList"];
+    
+    // Getting arrays form dictionary
+    questionsArray = [infoDictionary objectForKey:@"Questions"];
+    informationArray = [infoDictionary objectForKey:@"Informations"];
+    
+}
 # pragma mark TableView DataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (_tableType == menuTablePrincipal)
     {
-        return 3;
+        return 4;
     }
     else if (_tableType == menuTableSettings)
     {
@@ -91,6 +112,10 @@
     else if (_tableType == menuTableExercises)
     {
         return 2;
+    }
+    else if (_tableType == menuTableInformations)
+    {
+        return 7;
     }
     
     return 0;
@@ -126,8 +151,9 @@
             case STORMS_RECENT:
                 cell.lblName.text = @"DONNÉES";
                 break;
-
-                
+            case INFORMATIONS:
+                cell.lblName.text = @"INFORMATIONS";
+                break;
             default:
                 break;
         }
@@ -162,7 +188,14 @@
             default:
                 break;
         }
-
+    }
+    else if (_tableType == menuTableInformations)
+    {
+        // Changing font size
+        [cell.lblName setFont:[UIFont fontWithName:@"ITCAvantGardeMM" size:12]];
+        
+        // Setting question
+        cell.lblName.text = [questionsArray objectAtIndex:indexPath.row];
     }
     
     return cell;
@@ -196,7 +229,9 @@
                     [[FlowManager sharedInstance] showEnterPinVC:YES];
                 }
                 break;
-                
+            case INFORMATIONS:
+                [[FlowManager sharedInstance] showMenuVCWithType:menuTableInformations];
+                break;
             default:
                 break;
         }
@@ -238,6 +273,15 @@
             default:
                 break;
         }
+    }
+    else if (_tableType == menuTableInformations)
+    {
+        // Getting title and text
+        NSString* question = [questionsArray objectAtIndex:indexPath.row];
+        NSString* information = [informationArray objectAtIndex:indexPath.row];
+        
+        // Showing info
+        [[FlowManager sharedInstance] showInformationsViewControllerWithText:information andTitle:question];
     }
     
 }

@@ -138,7 +138,7 @@ typedef enum ScrollDirection {
     // Checking if we should activate timer for changing bgColor
     if (_shouldPerformColorTherapy)
     {
-        self.vwFrame.backgroundColor = [UIHelper generateRandomColor];
+        self.view.backgroundColor = [UIHelper generateRandomColor];
         self.imgBg.hidden = YES;
         
         // Setting timer
@@ -151,7 +151,7 @@ typedef enum ScrollDirection {
 {
     [UIView animateWithDuration:1.5 animations:^{
         
-        self.vwFrame.backgroundColor = [UIHelper generateRandomColor];
+        self.view.backgroundColor = [UIHelper generateRandomColor];
         
     }];
     
@@ -198,6 +198,10 @@ typedef enum ScrollDirection {
     if (_shouldPerformColorTherapy)
     {
         [[AnalyticsManager sharedInstance] sendEventWithName:@"Exercise Chosen from menu" Category:@"Exercises" Label:[NSString stringWithFormat:@"%@",self.currentAudioFile.title]];
+        
+        [self setUpLables];
+        [self updateTimeLeft];
+        [self showAnimation];
     }
     else
     {

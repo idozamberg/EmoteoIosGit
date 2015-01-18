@@ -10,6 +10,7 @@
 #define MAX_TUTORIAL_TIMES 5
 
 @implementation TutorialManager
+@synthesize tutorial;
 
 static TutorialManager* manager;
 
@@ -53,7 +54,11 @@ static TutorialManager* manager;
     if ([self shouldShowTutorial] && ! [AppData sharedInstance].wasTutorialShown)
     {
         [AppData sharedInstance].wasTutorialShown = YES;
-        [[FlowManager sharedInstance] ShowTutorialVC];
+        //[[FlowManager sharedInstance] ShowTutorialVC];
+        
+        self.tutorial.alpha = 1;
+
+    
         [self setTutorialShown];
     }
 }

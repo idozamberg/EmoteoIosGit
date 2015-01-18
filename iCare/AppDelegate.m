@@ -18,13 +18,16 @@
 {
     // Override point for customization after application launch.
     
+    // Show Splash
+    [self showSplashWithDuration:2];
+    
     // Init Analytics manager
     [[AnalyticsManager sharedInstance] setUpAnalyticsCollectors];
     
     // Loading videos
     [[AppManager sharedInstance] performStartupProcedures];
     
-
+    
     for (NSString* family in [UIFont familyNames])
     {
         NSLog(@"%@", family);
@@ -34,7 +37,6 @@
             NSLog(@"  %@", name);
         }
     }
-    
     
     return YES;
 }
@@ -79,4 +81,29 @@
     [[AppManager sharedInstance] performShutDownProcedures];
 }
 
+- (void)showSplashWithDuration:(CGFloat)duration
+{
+    // add splash screen subview ...
+    
+    UIImage *image          = [UIImage imageNamed:@"splashBig.png"];
+    UIImageView *splash     = [[UIImageView alloc] initWithImage:image];
+    splash.frame            = self.window.bounds;
+    splash.autoresizingMask = UIViewAutoresizingNone;
+    [self.window addSubview:splash];
+    
+    
+    // block thread, so splash will be displayed for duration ...
+    
+    CGFloat fade_duration = (duration >= 0.5f) ? 0.5f : 0.0f;
+    [NSThread sleepForTimeInterval:duration - fade_duration];
+    
+    
+    // animate fade out and remove splash from superview ...
+    
+    [UIView animateWithDuration:fade_duration animations:^ {
+        splash.alpha = 0.0f;
+    } completion:^ (BOOL finished) {
+        [splash removeFromSuperview];
+    }];
+}
 @end

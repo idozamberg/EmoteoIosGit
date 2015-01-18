@@ -25,6 +25,7 @@
 #import "THPinViewController.H"
 #import "CreditsViewController.h"
 #import "TutorialViewController.h"
+#import "SpecificInformationViewController.h"
 
 
 @interface FlowManager : NSObject <THPinViewControllerDelegate>
@@ -35,6 +36,7 @@
 - (void) showExerciseListWithList : (NSArray*) list forLevel : (NSNumber*) level andType :(exerciseListType) type WithColorTherapy : (BOOL) shouldShowColorTherapy;
 - (void) showVideoViewControllerWithVideo : (VideoFile*) video WithBackgroundColor : (UIColor*) color;
 - (void) showAudioViewControllerWithAudioFile : (AudioFile*) file withBackgroundColor : (UIColor*) color;
+- (void) showInformationsViewControllerWithText : (NSString*) text andTitle : (NSString*) title;
 
 - (void) showVideoViewControllerWithVideo : (VideoFile*) video;
 - (void) showAudioViewControllerWithAudioFile : (AudioFile*) file;

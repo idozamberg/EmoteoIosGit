@@ -36,7 +36,8 @@
 }
 
 - (IBAction)backClicked:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+    //[self dismissViewControllerAnimated:YES completion:Nil];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (IBAction)emergencyClicked:(id)sender {

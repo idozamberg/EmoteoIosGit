@@ -14,6 +14,7 @@
 #import "AppData.h"
 #import "ATCAnimatedTransitioningFade.h"
 #import "TutorialManager.h"
+#import "TutorialView.h"
 
 @interface ScaleViewController : UIViewController <UIScrollViewDelegate,UINavigationControllerDelegate,UIViewControllerTransitioningDelegate>
 {
@@ -36,6 +37,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imgDown;
 @property (weak, nonatomic) IBOutlet UIImageView *imgArrowUp;
 @property (weak, nonatomic) IBOutlet UIImageView *imgArrowDown;
+@property (weak, nonatomic) IBOutlet TutorialView *vwTutorial;
 @property (nonatomic, strong) ATCAnimatedTransitioningFade* animator;
 
 - (IBAction)emergencyClicked:(id)sender;

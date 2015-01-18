@@ -23,7 +23,9 @@ typedef enum
     menuTablePrincipal,
     menuTableExercises,
     menuTableSettings,
-    menuTableExerciseType
+    menuTableExerciseType,
+    menuTableInformations
+    
 }menuTableType;
 
 typedef enum

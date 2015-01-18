@@ -13,5 +13,6 @@
 + (void) showMessage : (NSString*) message;
 + (UIColor*) generateRandomColor;
 + (NSInteger) getRandomNumbergWithMaxNumber : (NSInteger) max;
++ (NSMutableDictionary*) dictionaryFromPlistWithName : (NSString*) plistName;
 
 @end

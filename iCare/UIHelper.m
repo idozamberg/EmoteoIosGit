@@ -34,4 +34,14 @@
     return number;
 }
 
++ (NSMutableDictionary*) dictionaryFromPlistWithName : (NSString*) plistName
+{
+    // Getting files's path
+    NSString *dataPath = [[NSBundle mainBundle] pathForResource:plistName ofType:@"plist"];
+    
+    // Getting data from plist
+    NSMutableDictionary* data = [NSMutableDictionary dictionaryWithContentsOfFile:dataPath];
+    
+    return data;
+}
 @end

@@ -78,11 +78,11 @@
 - (void)viewDidLoad
 {
     levelLabelsArray = [NSMutableArray new];
-    
+    self.vwTutorial.alpha = 0;
     [super viewDidLoad];
     
     // Showing splash video
-    [self showSplash];
+    //[self showSplash];
     
     // Do any additional setup after loading the view from its nib.
    /* [self.svScales setHeight:self.view.bounds.size.height];
@@ -162,6 +162,7 @@
     self.imgbigDown.alpha = 0.0;
     self.imgBigUp.alpha = 0.0;
     
+    [TutorialManager sharedInstance].tutorial = self.vwTutorial;
     // Show Tutorial if needed
     [[TutorialManager sharedInstance] showTutorial];
     
@@ -174,8 +175,6 @@
 {
     // Arranging scrole view
     [self arrangeScroleView];
-    
-
 }
 
 

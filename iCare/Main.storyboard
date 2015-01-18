@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Klk-SG-IuY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Klk-SG-IuY">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--Scale View Controller-->
@@ -82,6 +83,25 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view alpha="0.80000001192092896" contentMode="scaleToFill" id="Wu9-6z-pCI" customClass="TutorialView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.png" id="XEz-fR-bj0">
+                                        <rect key="frame" x="171" y="51" width="135" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings.png" id="yop-TF-kCb">
+                                        <rect key="frame" x="180" y="450" width="86" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emergency.png" id="gI6-Fi-6Mt">
+                                        <rect key="frame" x="54" y="434" width="86" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
@@ -100,6 +120,7 @@
                         <outlet property="ivScales" destination="Uq9-oA-Uj7" id="LrW-lS-XMv"/>
                         <outlet property="lblLevelNumber" destination="0DI-o0-oQc" id="7f6-OC-d6l"/>
                         <outlet property="svScales" destination="B6a-JU-acG" id="Sk2-1h-OW5"/>
+                        <outlet property="vwTutorial" destination="Wu9-6z-pCI" id="gAE-Nk-D9C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zkl-2N-se6" sceneMemberID="firstResponder"/>
@@ -135,10 +156,13 @@
         <image name="4_off.png" width="262" height="262"/>
         <image name="day.png" width="1" height="1"/>
         <image name="down.png" width="53" height="63"/>
+        <image name="emergency.png" width="175" height="104"/>
         <image name="emergency_off.png" width="81" height="81"/>
         <image name="emergency_on.png" width="81" height="81"/>
+        <image name="hand.png" width="269" height="281"/>
         <image name="round_off.png" width="262" height="262"/>
         <image name="round_on.png" width="262" height="262"/>
+        <image name="settings.png" width="173" height="71"/>
         <image name="settings_off.png" width="81" height="81"/>
         <image name="settings_on.png" width="81" height="81"/>
         <image name="up.png" width="53" height="63"/>
