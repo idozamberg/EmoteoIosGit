@@ -1448,7 +1448,7 @@
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="48" baselineAdjustment="alignBaselines" minimumFontSize="6" id="RiT-lM-7v9">
                                         <rect key="frame" x="3" y="30" width="261" height="313"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <mutableString key="text">Concepteurs :
+                                        <string key="text">Concepteurs :
 Dr Paco Prada, Dr Julien Zimmermann, Gérald Bouillault
 
 Programmation :
@@ -1472,7 +1472,7 @@ Karen Dieben, Vénus Kaby, Sophie Blin,Caroline Waeber, Jean-Jacques Kunckler, A
 
 Soutien financier :
 Fondation Artères
-</mutableString>
+</string>
                                         <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="11"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -1874,15 +1874,15 @@ Fondation Artères
             <objects>
                 <viewController storyboardIdentifier="InformationVC" id="g8r-Da-LJZ" customClass="SpecificInformationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kvU-Dl-Lxg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame_alpha0.png" id="JGL-1t-fA9">
-                                <rect key="frame" x="26" y="31" width="270" height="428"/>
+                                <rect key="frame" x="27" y="33" width="267" height="424"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" id="FM9-SK-aDv">
-                                <rect key="frame" x="27" y="33" width="267" height="424"/>
+                                <rect key="frame" x="28" y="35" width="265" height="420"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sep_bar.png" id="5XW-yR-pOT">
@@ -1901,9 +1901,14 @@ Fondation Artères
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">Il s’agit d’un trouble psychique fréquent qui concerne environ 2 à 4% de la population générale. Les signes principaux sont :- une sensibilité à fleur de peau avec des changements émotionnels intenses et rapides qui peuvent se manifester par des colères excessives et souvent disproportionnées- une forte impulsivité, des relations interpersonnelles instables - une sensibilité particulière et un  sentiment d’abandon. Les personnes qui en souffrent sont en proie à de fréquentes crises au cours desquelles des conduites auto-dommageables peuvent survenir et mettre en danger leur intégrité corporelle. Ces gestes comprennent, par exemple, des scarifications, des coupures, des abus de médicaments ou de toxiques. Ces comportements visent souvent à mettre fin à la souffrance ressentie durant une crise. S’ils aident à réguler les émotions à l’origine des crises, leurs conséquences à moyen et long terme sont négatives pour les personnes. </mutableString>
+                                        <string key="text">Il s’agit d’un trouble psychique fréquent qui concerne environ 2 à 4% de la population générale. Les signes principaux sont :
+- une sensibilité à fleur de peau avec des changements émotionnels intenses et rapides qui peuvent se manifester par des colères excessives et souvent disproportionnées
+- une forte impulsivité, des relations interpersonnelles instables 
+- une sensibilité particulière et un  sentiment d’abandon. 
+Les personnes qui en souffrent sont en proie à de fréquentes crises au cours desquelles des conduites auto-dommageables peuvent survenir et mettre en danger leur intégrité corporelle. Ces gestes comprennent, par exemple, des scarifications, des coupures, des abus de médicaments ou de toxiques. Ces comportements visent souvent à mettre fin à la souffrance ressentie durant une crise. S’ils aident à réguler les émotions à l’origine des crises, leurs conséquences à moyen et long terme sont négatives pour les personnes. 
+</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="10"/>
+                                        <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="11"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                     </textView>
@@ -1919,7 +1924,7 @@ Fondation Artères
                                 </state>
                                 <state key="highlighted" backgroundImage="settings_off.png"/>
                                 <connections>
-                                    <action selector="backClicked:" destination="g8r-Da-LJZ" eventType="touchUpInside" id="BwA-FF-Cfh"/>
+                                    <action selector="backClicked:" destination="g8r-Da-LJZ" eventType="touchUpInside" id="uwI-45-w1u"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bVA-rL-Iji">
@@ -1931,7 +1936,7 @@ Fondation Artères
                                 </state>
                                 <state key="highlighted" backgroundImage="emergency_on.png"/>
                                 <connections>
-                                    <action selector="Emergencyclicked:" destination="g8r-Da-LJZ" eventType="touchUpInside" id="dIP-6d-AGu"/>
+                                    <action selector="emergencyClicked:" destination="g8r-Da-LJZ" eventType="touchUpInside" id="1xh-rk-snK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1939,6 +1944,7 @@ Fondation Artères
                         <color key="tintColor" red="0.26666668059999998" green="0.82745105029999999" blue="0.98431378599999997" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="EVF-C1-LWD"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="lblTitle" destination="kcb-B0-04j" id="7jj-Ge-d7A"/>
                         <outlet property="tvInformationText" destination="CX3-bM-9qv" id="dLL-G7-Thn"/>
@@ -1977,6 +1983,6 @@ Fondation Artères
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="jkJ-Kb-Ber"/>
-        <segue reference="4D9-uu-DF3"/>
+        <segue reference="9so-wq-hIf"/>
     </inferredMetricsTieBreakers>
 </document>

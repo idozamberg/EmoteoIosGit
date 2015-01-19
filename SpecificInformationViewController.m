@@ -7,6 +7,7 @@
 //
 
 #import "SpecificInformationViewController.h"
+#import "FlowManager.h"
 
 @interface SpecificInformationViewController ()
 
@@ -43,6 +44,15 @@
     lblTitle.text = _questionTitle;
     tvInformationText.text = _text;
 }
+
+- (IBAction)backClicked:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)emergencyClicked:(id)sender {
+    [[FlowManager sharedInstance] showEmergencyVC];
+}
+
 /*
 #pragma mark - Navigation
 

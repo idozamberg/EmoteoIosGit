@@ -18,5 +18,7 @@
 @property (strong,nonatomic) NSString* questionTitle;
 @property (strong,nonatomic) NSString* text;
 
+- (IBAction)backClicked:(id)sender;
+- (IBAction)emergencyClicked:(id)sender;
 
 @end
