@@ -17,10 +17,8 @@ DerivedData
 *.ipa
 *.xcuserstate
 *.m4v
-*.ipa
-*.mp4
-
-
+*.mp3
+*.wav
 
 # CocoaPods
 #
