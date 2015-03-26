@@ -16,11 +16,13 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+<<<<<<< HEAD
 *.m4v
 *.ipa
+=======
 *.mp4
-
-
+*.m4v
+>>>>>>> 4d30e446c18e9ebdae46dc80a6aa5e67515e6a17
 
 # CocoaPods
 #
