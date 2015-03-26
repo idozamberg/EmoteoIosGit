@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E4A58F8D-E025-456B-B7F8-1CFF2357BFE7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iCare</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DFFF234E-AF37-4DEA-8C46-AFABC2621187</key>
+		<string>ssh://github.com/idozamberg/Emoteo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iCare.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DFFF234E-AF37-4DEA-8C46-AFABC2621187</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/idozamberg/Emoteo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DFFF234E-AF37-4DEA-8C46-AFABC2621187</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DFFF234E-AF37-4DEA-8C46-AFABC2621187</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iCare</string>
+		</dict>
+	</array>
+</dict>
+</plist>
