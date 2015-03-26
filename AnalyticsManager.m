@@ -36,13 +36,15 @@ static AnalyticsManager* theManager = nil;
     // If it's production
     // 2ZD3DGCZQKDSPYPZNSB3
        //2ZD3DGCZQKDSPYPZNSB3
-    // Testing
-    //NXJWC6WPMXSDZ6YYRQ49
+  
     // Replace YOUR_API_KEY with the api key in the downloaded package
-    [Flurry startSession:@"NXJWC6WPMXSDZ6YYRQ49"];
+    [Flurry startSession:@"2ST4498D3J776QKZPM9K"];
     //
     //PTRVWW6XGBKCHSTN78WM - ADHD
     // 2ZD3DGCZQKDSPYPZNSB3 - PROD
+    // 2ST4498D3J776QKZPM9K - APPStore
+    // Testing
+    //NXJWC6WPMXSDZ6YYRQ49
   
     // Optional: automatically send uncaught exceptions to Google Analytics.
     [GAI sharedInstance].trackUncaughtExceptions = YES;

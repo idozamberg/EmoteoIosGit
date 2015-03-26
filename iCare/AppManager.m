@@ -94,7 +94,7 @@ static AppManager* sharedManager;
     NSMutableArray* audios7 = [NSMutableArray new];
 
     AudioFile* audio1 = [AudioFile new];
-    audio1.fileName = @"eau.wav";
+    audio1.fileName = @"eau.mp3";
     audio1.title = @"EAU FROIDE";
     audio1.level = [NSNumber numberWithInteger:7];
     audio1.levels = [NSMutableArray arrayWithObjects:[NSNumber numberWithInteger:7],[NSNumber numberWithInteger:8],[NSNumber numberWithInteger:9],[NSNumber numberWithInteger:10], nil];
@@ -140,7 +140,21 @@ static AppManager* sharedManager;
     audio8.title = @"MUSIQUE APAISANTE 2";
     audio8.levels = [NSMutableArray arrayWithObjects:[NSNumber numberWithInteger:7],[NSNumber numberWithInteger:8],[NSNumber numberWithInteger:9],[NSNumber numberWithInteger:10], nil];
     
+   
+    AudioFile* audio9 = [AudioFile new];
+    audio9.fileName = @"MusInsc.mp3";
+    audio9.title = @"MUSIQUE INSECTES";
+    audio9.level = [NSNumber numberWithInteger:7];
+    audio9.levels = [NSMutableArray arrayWithObjects:[NSNumber numberWithInteger:1],[NSNumber numberWithInteger:2],[NSNumber numberWithInteger:3],[NSNumber numberWithInteger:4],[NSNumber numberWithInteger:5],[NSNumber numberWithInteger:6], nil];
     
+    AudioFile* audio10 = [AudioFile new];
+    audio10.fileName = @"RespArbre.mp3";
+    audio10.title = @"RESPIRATION ARBRE";
+    audio10.level = [NSNumber numberWithInteger:7];
+    audio10.levels = [NSMutableArray arrayWithObjects:[NSNumber numberWithInteger:1],[NSNumber numberWithInteger:2],[NSNumber numberWithInteger:3],[NSNumber numberWithInteger:4],[NSNumber numberWithInteger:5],[NSNumber numberWithInteger:6], nil];
+    
+    
+    // Creating array
     [audios7 addObject:audio1];
     [audios7 addObject:audio2];
     [audios7 addObject:audio3];
@@ -149,6 +163,9 @@ static AppManager* sharedManager;
     [audios7 addObject:audio6];
     [audios7 addObject:audio7];
     [audios7 addObject:audio8];
+    [audios7 addObject:audio9];
+    [audios7 addObject:audio10];
+
     
     //[data.audioFiles setObject:audios7 forKey:level7];
     
@@ -185,12 +202,12 @@ static AppManager* sharedManager;
     vdTwo.level = [NSNumber numberWithInt:8];
     vdTwo.levels = [NSMutableArray arrayWithObjects:[NSNumber numberWithInteger:7],[NSNumber numberWithInteger:8],[NSNumber numberWithInteger:9],[NSNumber numberWithInteger:10], nil];
     
-    /*VideoFile* vdThree = [VideoFile new];
-    vdThree.fileName = @"arbre";
+    VideoFile* vdThree = [VideoFile new];
+    vdThree.fileName = @"insectes";
     vdThree.fileType = @"m4v";
-    vdThree.title    = @"ARBRE ET VENT";
+    vdThree.title    = @"FLEURS ET INSECTES";
     vdThree.level = [NSNumber numberWithInt:8];
-    vdThree.levels = [NSMutableArray arrayWithObjects:[NSNumber numberWithInteger:7],[NSNumber numberWithInteger:8],[NSNumber numberWithInteger:9],[NSNumber numberWithInteger:10], nil];*/
+    vdThree.levels = [NSMutableArray arrayWithObjects:[NSNumber numberWithInteger:7],[NSNumber numberWithInteger:8],[NSNumber numberWithInteger:9],[NSNumber numberWithInteger:10], nil];
     
     VideoFile* vdFour = [VideoFile new];
     vdFour.fileName = @"fleur";
@@ -212,12 +229,13 @@ static AppManager* sharedManager;
     vdSix.title    = @"CHAMP";
     vdSix.level = [NSNumber numberWithInt:8];
     vdSix.levels = [NSMutableArray arrayWithObjects:[NSNumber numberWithInteger:7],[NSNumber numberWithInteger:8],[NSNumber numberWithInteger:9],[NSNumber numberWithInteger:10], nil];
+    
 
     
     // Adding videos to array
     [videos8 addObject:vdOne];
     [videos8 addObject:vdTwo];
-    //[videos8 addObject:vdThree];
+    [videos8 addObject:vdThree];
     [videos8 addObject:vdFour];
     [videos8 addObject:vdFive];
     [videos8 addObject:vdSix];
