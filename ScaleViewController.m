@@ -320,67 +320,6 @@
     return (10-level);
 }
     
-/* TODO: DELETE
-- (void) levelWasClicked: (UIButton*) sender
-{
-    // If it's the second time we click
-    if (isButtonFlashing)
-    {
-        // On the same tension level?
-        if ([self getCurrentLevel] == currentButtonClicked)
-        {
-            // Cancel timer
-            [self resetFlashingButton:sender];
-            
-            if ([self getCurrentLevel] == 8)
-            {
-                // Go to next screen
-                LevelViewController* vcLevel = [self.storyboard instantiateViewControllerWithIdentifier:@"levelVC"];
-                
-                
-                [self.navigationController pushViewController:vcLevel animated:YES];
-            }
-            else if ([self getCurrentLevel] == 7)
-            {
-                // Go to next screen
-                LevelViewController* vcLevel = [self.storyboard instantiateViewControllerWithIdentifier:@"audioVC"];
-                
-                [self.navigationController pushViewController:vcLevel animated:YES];
-            }
-            
-            [info removeFromSuperview];
-        }
-        
-        currentButtonClicked = [self getCurrentLevel];
-    }
-    else
-    {
-        // Saving current button clicked
-        currentButtonClicked = [self getCurrentLevel];
-        
-        NSString* text = [NSString stringWithFormat:@"VOUS ÉVALUEZ VOTRE TENSION À %li, SI VOUS CONFIRMEZ EN APPUYANT À NOUVEAU, NOUS ALLONS ESSAYER DE BAISSER CETTE TENSION AVEC VOUS !",(long)currentButtonClicked];
-        
-        // Reset for flashing reasons
-        buttonOn = NO;
-        
-        // Show info view
-        [self showInfoViewWithTitle:@"ATTENTION" andText:text];
-        
-        // If not already flashing
-        if (!timerFlash)
-        {
-            // Creating parameters dictionary
-            NSMutableDictionary* params = [NSMutableDictionary dictionaryWithObject:sender forKey:@"button"];
-            
-            // Creating flash
-            timerFlash = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(buttonFlash:) userInfo:params repeats:YES];
-            
-            isButtonFlashing = YES;
-        }
-    }
-    
-    currentPressedButton = sender;
-}*/
 
 - (void)orientationChanged:(NSNotification *)notification {
     // Respond to changes in device orientation
@@ -465,8 +404,7 @@
     [AppData sharedInstance].shouldEvaluateTension = NO;
     
     long level = [self getCurrentLevel];
-
-    
+ 
     self.imgDown.image = [UIImage imageNamed:[NSString stringWithFormat:@"%li_off",level-1]];
     self.imgUp.image = [UIImage imageNamed:[NSString stringWithFormat:@"%li_off",level + 1]];
     
@@ -539,6 +477,163 @@
         [self.svScales setContentOffset:CGPointMake(0, (10 - shakeLevel) * self.svScales.frame.size.height) animated:YES];
     }
 }
+
+// Going to exercise page
+- (void) GoToExercisesForButton: (UIButton*) sender
+{
+    // On the same tension level?
+    if ([self getCurrentLevel] == currentButtonClicked)
+    {
+        // Cancel timer
+        [self resetFlashingButton:sender];
+        
+        // Save current level chosed
+        [AppData sharedInstance].currentLevel = [self getCurrentLevel];
+        
+        if (![AppData sharedInstance].isInStorm)
+        {
+            // Adding new storm
+            [[AppData sharedInstance] addNewStorm];
+            
+            [AppData sharedInstance].isInStorm = YES;
+        }
+        
+        // If video level
+        if ([self getCurrentLevel] > 6)
+        {
+            
+            // Getting all exercises
+            NSMutableArray* exercises = [[AppData sharedInstance].videos objectForKey:[NSNumber numberWithInt:[self getCurrentLevel]]];
+            
+            // Getting a random number
+            NSInteger exerciseIndex = [UIHelper getRandomNumbergWithMaxNumber:exercises.count - 1];
+            
+            // getting the videio
+            VideoFile* theVideo = [exercises objectAtIndex:exerciseIndex];
+            
+            // Showing video screen
+            [[FlowManager sharedInstance] showVideoViewControllerWithVideo:theVideo];
+            
+        }
+        // Consciense level
+        else if ([self getCurrentLevel] <= 6)
+        {
+            NSMutableArray* audios = [[AppData sharedInstance].audioFiles objectForKey:[NSNumber numberWithInt:[self getCurrentLevel]]];
+            
+            NSInteger exerciseIndex = [UIHelper getRandomNumbergWithMaxNumber:audios.count - 1];
+            
+            AudioFile* file = [audios objectAtIndex:exerciseIndex];
+            
+            [[FlowManager sharedInstance] showAudioViewControllerWithAudioFile:file];
+        }
+        
+        // Collection States
+        [AnalyticsManager sharedInstance].sendToGoogle =YES;
+        [AnalyticsManager sharedInstance].sendToFlurry =YES;
+        [AnalyticsManager sharedInstance].flurryParameters = [NSDictionary dictionaryWithObject:[NSString stringWithFormat:@"%i",[self getCurrentLevel]] forKey:@"Tension Level"];
+        [[AnalyticsManager sharedInstance] sendEventWithName:@"Tension Button Clicked" Category:@"Exercises" Label:[NSString stringWithFormat:@"%i",[self getCurrentLevel]]];
+        
+        [info removeFromSuperview];
+        
+        // Add tension level to storm
+        [[AppData sharedInstance].currentStorm addTension:[NSNumber numberWithInteger:[self getCurrentLevel]]];
+    }
+    
+    currentButtonClicked = [self getCurrentLevel];
+}
+
+- (void) HandleTensionFirstClickForButton: (UIButton*) sender
+{
+    // Saving current button clicked
+    currentButtonClicked = [self getCurrentLevel];
+    
+    Exercise* lastExercisesPlayed = [AnalyticsManager sharedInstance].lastExercise;
+    
+    // If tension was lowered because of the last exercise send info about it
+    if (lastExercisesPlayed &&
+        [AppData sharedInstance].currentLevel > [self getCurrentLevel])
+    {
+        // Send statistics about how much the tensio was lowered
+        [AnalyticsManager sharedInstance].sendToFlurry = YES;
+        
+        // Sending analytics
+        [AnalyticsManager sharedInstance].flurryParameters = [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"%i",[AppData sharedInstance].currentLevel - [self getCurrentLevel]],lastExercisesPlayed.name,Nil];
+        
+        [[AnalyticsManager sharedInstance] sendEventWithName:@"Tension Change after exercise" Category:@"Tension" Label:Nil];
+    }
+    
+    
+    // Check if tension was lowered
+    if ([self getCurrentLevel] <= 6)
+    {
+        if ([AppData sharedInstance].currentLevel > [self getCurrentLevel])
+        {
+            // Mark that tension was lowered
+            tensionLowered = YES;
+            [AppData sharedInstance].currentLevel = 0;
+        }
+    }
+    
+    NSString* text;
+    // Set text by level
+    if ([self getCurrentLevel] <= 6 )
+    {
+        if (tensionLowered)
+        {
+            text = @"Votre tension a baissé, vous pouvez continuer vos activités ou vous entraîner à la pratique de pleine conscience";
+            tensionLowered = NO;
+        }
+        else
+        {
+            text = [NSString stringWithFormat:@"Vous évaluez votre tension à %li, si vous confirmez, nous allons vous proposer un exercice de pleine conscience !",(long)currentButtonClicked];
+        }
+    }
+    else
+    {
+        if ([AppData sharedInstance].currentStorm.exercises.count > 0)
+        {
+            text = [NSString stringWithFormat:@"Vous évaluez votre tension à %li, si vous confirmez, nous allons continuer à essayer de baisser cette tension avec vous !",(long)currentButtonClicked];
+        }
+        else
+        {
+            text = [NSString stringWithFormat:@"Vous évaluez votre tension à %li, si vous confirmez, nous allons essayer de baisser cette tension avec vous !",(long)currentButtonClicked];
+        }
+    }
+    
+    text = [text uppercaseString];
+    
+    // Reset for flashing reasons
+    buttonOn = NO;
+    
+    // Show info view
+    [self showInfoViewWithTitle:@"ATTENTION" andText:text];
+    
+    // If not already flashing
+    if (!timerFlash)
+    {
+        // Creating parameters dictionary
+        NSMutableDictionary* params = [NSMutableDictionary dictionaryWithObject:sender forKey:@"button"];
+        
+        // Creating flash
+        timerFlash = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(buttonFlash:) userInfo:params repeats:YES];
+        
+        isButtonFlashing = YES;
+    }
+    
+    // showing menu
+    NSArray* images = [NSArray arrayWithObjects:
+                       [UIImage imageNamed:@"round_notercompr"],
+                       [UIImage imageNamed:@"round_pc"],
+                       nil];
+    
+    LIVBubbleMenu* bubbleMenu = [[LIVBubbleMenu alloc] initWithPoint:((UIButton*)sender).center radius:150 menuItems:images inView:self.view];
+    bubbleMenu.delegate = self;
+    bubbleMenu.easyButtons = YES;
+    [bubbleMenu show];
+
+}
+
+
 //When a gesture is detected (and ended) the showAlert method is called.
 
 - (IBAction)levelClicked:(id)sender {
@@ -546,144 +641,12 @@
     // If it's the second time we click
     if (isButtonFlashing)
     {
-        // On the same tension level?
-        if ([self getCurrentLevel] == currentButtonClicked)
-        {
-            // Cancel timer
-            [self resetFlashingButton:sender];
-            
-            
-            // Save current level chosed
-            [AppData sharedInstance].currentLevel = [self getCurrentLevel];
-            
-            if (![AppData sharedInstance].isInStorm)
-            {
-                // Adding new storm
-                [[AppData sharedInstance] addNewStorm];
-                
-                [AppData sharedInstance].isInStorm = YES;
-            }
-            
-            // If video level
-            if ([self getCurrentLevel] > 6)
-            {
-
-                // Getting all exercises
-                NSMutableArray* exercises = [[AppData sharedInstance].videos objectForKey:[NSNumber numberWithInt:[self getCurrentLevel]]];
-                
-                // Getting a random number
-                NSInteger exerciseIndex = [UIHelper getRandomNumbergWithMaxNumber:exercises.count - 1];
-                
-                // getting the videio
-                VideoFile* theVideo = [exercises objectAtIndex:exerciseIndex];
-                
-                // Showing video screen
-                [[FlowManager sharedInstance] showVideoViewControllerWithVideo:theVideo];
-                
-            }
-            // Consciense level
-            else if ([self getCurrentLevel] <= 6)
-            {
-                NSMutableArray* audios = [[AppData sharedInstance].audioFiles objectForKey:[NSNumber numberWithInt:[self getCurrentLevel]]];
-                
-                NSInteger exerciseIndex = [UIHelper getRandomNumbergWithMaxNumber:audios.count - 1];
-                
-                AudioFile* file = [audios objectAtIndex:exerciseIndex];
-                
-                [[FlowManager sharedInstance] showAudioViewControllerWithAudioFile:file];
-            }
-            
-            // Collection States
-            [AnalyticsManager sharedInstance].sendToGoogle =YES;
-            [AnalyticsManager sharedInstance].sendToFlurry =YES;
-            [AnalyticsManager sharedInstance].flurryParameters = [NSDictionary dictionaryWithObject:[NSString stringWithFormat:@"%i",[self getCurrentLevel]] forKey:@"Tension Level"];
-            [[AnalyticsManager sharedInstance] sendEventWithName:@"Tension Button Clicked" Category:@"Exercises" Label:[NSString stringWithFormat:@"%i",[self getCurrentLevel]]];
-            
-            [info removeFromSuperview];
-            
-            // Add tension level to storm
-            [[AppData sharedInstance].currentStorm addTension:[NSNumber numberWithInteger:[self getCurrentLevel]]];
-        }
-        
-        currentButtonClicked = [self getCurrentLevel];
+        // Going to exercise page
+        [self GoToExercisesForButton:sender];
     }
     else
     {
-        // Saving current button clicked
-        currentButtonClicked = [self getCurrentLevel];
-        
-        Exercise* lastExercisesPlayed = [AnalyticsManager sharedInstance].lastExercise;
-        
-        // If tension was lowered because of the last exercise send info about it 
-        if (lastExercisesPlayed &&
-            [AppData sharedInstance].currentLevel > [self getCurrentLevel])
-        {
-            // Send statistics about how much the tensio was lowered
-            [AnalyticsManager sharedInstance].sendToFlurry = YES;
-           /* [AnalyticsManager sharedInstance].flurryParameters = [NSDictionary dictionaryWithObjectsAndKeys:lastExercisesPlayed.name,@"Exercise Name",[NSString stringWithFormat:@"%i",[AppData sharedInstance].currentLevel],lastExercisesPlayed.name,[NSString stringWithFormat:@"%i",[self getCurrentLevel]],@"Tension After",[NSString stringWithFormat:@"%i",[AppData sharedInstance].currentLevel - [self getCurrentLevel]],@"Total tension change",nil];*/
-            
-            [AnalyticsManager sharedInstance].flurryParameters = [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"%i",[AppData sharedInstance].currentLevel - [self getCurrentLevel]],lastExercisesPlayed.name,Nil];
-         
-            [[AnalyticsManager sharedInstance] sendEventWithName:@"Tension Change after exercise" Category:@"Tension" Label:Nil];
-        }
-        
-        
-        // Check if tension was lowered
-        if ([self getCurrentLevel] <= 6)
-        {
-            if ([AppData sharedInstance].currentLevel > [self getCurrentLevel])
-            {
-                // Mark that tension was lowered
-                tensionLowered = YES;
-                [AppData sharedInstance].currentLevel = 0;
-            }
-        }
-        
-        NSString* text;
-        // Set text by level
-        if ([self getCurrentLevel] <= 6 )
-        {
-            if (tensionLowered)
-            {
-                text = @"Votre tension a baissé, vous pouvez continuer vos activités ou vous entraîner à la pratique de pleine conscience";
-                tensionLowered = NO;
-            }
-            else
-            {
-                text = [NSString stringWithFormat:@"Vous évaluez votre tension à %li, si vous confirmez, nous allons vous proposer un exercice de pleine conscience !",(long)currentButtonClicked];
-            }
-        }
-        else
-        {
-            if ([AppData sharedInstance].currentStorm.exercises.count > 0)
-            {
-                text = [NSString stringWithFormat:@"Vous évaluez votre tension à %li, si vous confirmez, nous allons continuer à essayer de baisser cette tension avec vous !",(long)currentButtonClicked];
-            }
-            else
-            {
-                text = [NSString stringWithFormat:@"Vous évaluez votre tension à %li, si vous confirmez, nous allons essayer de baisser cette tension avec vous !",(long)currentButtonClicked];
-            }
-        }
-        
-        text = [text uppercaseString];
-        
-        // Reset for flashing reasons
-        buttonOn = NO;
-        
-        // Show info view
-        [self showInfoViewWithTitle:@"ATTENTION" andText:text];
-        
-        // If not already flashing
-        if (!timerFlash)
-        {
-            // Creating parameters dictionary
-            NSMutableDictionary* params = [NSMutableDictionary dictionaryWithObject:sender forKey:@"button"];
-            
-            // Creating flash
-            timerFlash = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(buttonFlash:) userInfo:params repeats:YES];
-            
-            isButtonFlashing = YES;
-        }
+        [self HandleTensionFirstClickForButton:sender];
     }
     
     currentPressedButton = sender;
@@ -736,6 +699,28 @@
             [(ATCAnimatedTransitioning *)self.animator setDirection:ATCTransitionAnimationDirectionLeft];
         }
     }
+    
+}
+
+// On buttons pressed
+-(void)livBubbleMenu:(LIVBubbleMenu *)bubbleMenu tappedBubbleWithIndex:(NSUInteger)index annButton:(UIButton *)button
+{
+    // Save current level chosed
+    [AppData sharedInstance].currentLevel = [self getCurrentLevel];
+    
+    if (index == 0)
+    {
+        [[FlowManager sharedInstance] showNoteVC];
+    }
+    else
+    {
+        
+    }
+}
+
+// On bubbles hide
+-(void)livBubbleMenuDidHide:(LIVBubbleMenu *)bubbleMenu
+{
     
 }
 

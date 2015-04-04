@@ -50,7 +50,7 @@ static AnalyticsManager* theManager = nil;
     [GAI sharedInstance].trackUncaughtExceptions = YES;
     
     // Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
-    [GAI sharedInstance].dispatchInterval = 20;
+   /// [GAI sharedInstance].dispatchInterval = 20;
     
     // Optional: set Logger to VERBOSE for debug information.
     [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
@@ -100,12 +100,12 @@ static AnalyticsManager* theManager = nil;
     if (sendToGoogle)
     {
         // Sending event to google analytics
-        [[GAI sharedInstance].defaultTracker send:[[GAIDictionaryBuilder
+     /*   [[GAI sharedInstance].defaultTracker send:[[GAIDictionaryBuilder
                                                     createEventWithCategory:category
                                                     // Event category (required)
                                                     action:eventName  // Event action (required)
                                                     label:label          // Event label
-                                                    value:googleParameters] build]];    // Event value
+                                                    value:googleParameters] build]];    // Event value*/
         
         NSLog(@"\n[GOOGLE] CATEGORY: %@\t EVENT: %@\tLABEL: %@\n", category ,eventName, label);
     }

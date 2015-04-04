@@ -277,6 +277,58 @@ static FlowManager* manager;
     
 }
 
+
+- (void) showNoteVC
+{
+   
+    UIStoryboard* autoBoard = [UIStoryboard storyboardWithName:@"NavigationBoard" bundle:nil];
+    
+    NoteViewController* noteVC = [autoBoard instantiateViewControllerWithIdentifier:@"NoteViewController"];
+    
+    [navigationController pushViewController:noteVC animated:YES];
+    
+}
+
+- (void) showEstimateViewController
+{
+    UIStoryboard* autoBoard = [UIStoryboard storyboardWithName:@"NavigationBoard" bundle:nil];
+    
+    EstimateFeelingViewController* noteVC = [autoBoard instantiateViewControllerWithIdentifier:@"EstimateFeelingViewController"];
+    
+    [navigationController pushViewController:noteVC animated:YES];
+}
+
+- (void) showFeelingsViewController
+{
+    UIStoryboard* autoBoard = [UIStoryboard storyboardWithName:@"NavigationBoard" bundle:nil];
+    
+    FeelingsViewController* noteVC = [autoBoard instantiateViewControllerWithIdentifier:@"FeelingsViewController"];
+    
+    [navigationController pushViewController:noteVC animated:YES];
+}
+
+- (void) showCotationViewController
+{
+    UIStoryboard* autoBoard = [UIStoryboard storyboardWithName:@"NavigationBoard" bundle:nil];
+    
+    CotationViewController* noteVC = [autoBoard instantiateViewControllerWithIdentifier:@"CotationViewController"];
+    
+    [navigationController pushViewController:noteVC animated:YES];
+}
+
+
+- (void) showNoteBehaviorVC
+{
+    
+    UIStoryboard* autoBoard = [UIStoryboard storyboardWithName:@"NavigationBoard" bundle:nil];
+    
+    NoteBehaviorViewController* noteVC = [autoBoard instantiateViewControllerWithIdentifier:@"NoteBehaviorViewController"];
+    
+    [navigationController pushViewController:noteVC animated:YES];
+ 
+}
+
+//NoteBehaviorViewController
 #pragma mark - THPinViewControllerDelegate
 
 - (NSUInteger)pinLengthForPinViewController:(THPinViewController *)pinViewController

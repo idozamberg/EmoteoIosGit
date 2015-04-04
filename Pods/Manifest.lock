@@ -3,19 +3,25 @@ PODS:
     - FlurrySDK/FlurrySDK
   - FlurrySDK/FlurrySDK (5.4.0)
   - GoogleAnalytics-iOS-SDK (3.0.9)
+  - LIVBubbleMenu (1.1.0):
+    - pop (~> 1.0.7)
+  - pop (1.0.7)
   - THPinViewController (1.1.2)
   - UIView+draggable (0.2)
 
 DEPENDENCIES:
   - FlurrySDK (~> 5.1)
   - GoogleAnalytics-iOS-SDK (~> 3.0)
+  - LIVBubbleMenu (~> 1.1)
   - THPinViewController (~> 1.1.2)
   - UIView+draggable
 
 SPEC CHECKSUMS:
   FlurrySDK: bed9e5598353f867508d164795a451e3ada92cb6
   GoogleAnalytics-iOS-SDK: d9e198b1f955259a72886769be7377cdfcdb2250
+  LIVBubbleMenu: 74618ee8943c175169c7df6c72441949ebeb3c8b
+  pop: 2f14a1ea61339767af9e66741b418c831b3844df
   THPinViewController: 1a054e6854fe3a3ae6919fc8f4954a15fe1467b1
   UIView+draggable: ad1c3a0f862aca1923c45c3e05d68c7852014436
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.34.2

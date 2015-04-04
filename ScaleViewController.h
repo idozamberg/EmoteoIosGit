@@ -15,8 +15,9 @@
 #import "ATCAnimatedTransitioningFade.h"
 #import "TutorialManager.h"
 #import "TutorialView.h"
+#import "LIVBubbleMenu.h"
 
-@interface ScaleViewController : UIViewController <UIScrollViewDelegate,UINavigationControllerDelegate,UIViewControllerTransitioningDelegate>
+@interface ScaleViewController : UIViewController <UIScrollViewDelegate,UINavigationControllerDelegate,UIViewControllerTransitioningDelegate,LIVBubbleButtonDelegate>
 {
     BOOL buttonOn;
     BOOL isButtonFlashing;

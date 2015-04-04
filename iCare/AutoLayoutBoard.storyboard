@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="yzK-0a-bT3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="yzK-0a-bT3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -655,7 +655,12 @@ Fondation Artères
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZT-iR-Hau">
                                         <rect key="frame" x="0.0" y="22" width="267" height="403"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">Il s’agit d’un trouble psychique fréquent qui concerne environ 2 à 4% de la population générale. Les signes principaux sont :- une sensibilité à fleur de peau avec des changements émotionnels intenses et rapides qui peuvent se manifester par des colères excessives et souvent disproportionnées- une forte impulsivité, des relations interpersonnelles instables - une sensibilité particulière et un  sentiment d’abandon. Les personnes qui en souffrent sont en proie à de fréquentes crises au cours desquelles des conduites auto-dommageables peuvent survenir et mettre en danger leur intégrité corporelle. Ces gestes comprennent, par exemple, des scarifications, des coupures, des abus de médicaments ou de toxiques. Ces comportements visent souvent à mettre fin à la souffrance ressentie durant une crise. S’ils aident à réguler les émotions à l’origine des crises, leurs conséquences à moyen et long terme sont négatives pour les personnes. </mutableString>
+                                        <string key="text">Il s’agit d’un trouble psychique fréquent qui concerne environ 2 à 4% de la population générale. Les signes principaux sont :
+- une sensibilité à fleur de peau avec des changements émotionnels intenses et rapides qui peuvent se manifester par des colères excessives et souvent disproportionnées
+- une forte impulsivité, des relations interpersonnelles instables 
+- une sensibilité particulière et un  sentiment d’abandon. 
+Les personnes qui en souffrent sont en proie à de fréquentes crises au cours desquelles des conduites auto-dommageables peuvent survenir et mettre en danger leur intégrité corporelle. Ces gestes comprennent, par exemple, des scarifications, des coupures, des abus de médicaments ou de toxiques. Ces comportements visent souvent à mettre fin à la souffrance ressentie durant une crise. S’ils aident à réguler les émotions à l’origine des crises, leurs conséquences à moyen et long terme sont négatives pour les personnes. 
+</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -721,12 +726,12 @@ Fondation Artères
     </scenes>
     <resources>
         <image name="dot1.png" width="37" height="37"/>
-        <image name="emergency.png" width="175" height="104"/>
+        <image name="emergency.png" width="173" height="104"/>
         <image name="emergency_off.png" width="81" height="81"/>
         <image name="emergency_on.png" width="81" height="81"/>
         <image name="frame_alpha0.png" width="534" height="848"/>
         <image name="graph_icon.png" width="70" height="60"/>
-        <image name="hand.png" width="269" height="281"/>
+        <image name="hand.png" width="289" height="314"/>
         <image name="screen4png.png" width="534" height="848"/>
         <image name="sep_bar.png" width="530" height="2"/>
         <image name="settings.png" width="173" height="71"/>

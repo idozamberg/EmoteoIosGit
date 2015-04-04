@@ -7,501 +7,785 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		021C6DA5A0894AA2B3D189E2 /* libPods-GoogleAnalytics-iOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CA571751714FA2B6796272 /* libPods-GoogleAnalytics-iOS-SDK.a */; };
-		0287A7A55DC64217B750419F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B395BC516ED45C5833DF0C5 /* UIKit.framework */; };
-		038FFDA56F854C3880B65600 /* GAIEcommerceProductAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EC7A98E6E7B4D60B67709EA /* GAIEcommerceProductAction.h */; };
-		040E8B4284814B2791E44AAD /* GAITrackedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E7425BDFE6DE40C9ABCAC0B6 /* GAITrackedViewController.h */; };
-		04CA7BE000FA4D9F92F39361 /* TAGDataLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = D3BA3B2CF0784F0ABE2004C0 /* TAGDataLayer.h */; };
-		09E6E25B50064E529B21042F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F9CECE305854C82ABDF4035 /* CFNetwork.framework */; };
-		12E92C2B8CC5412F92603BD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8FCB9FD672439BAD0B34B3 /* Foundation.framework */; };
-		12EB3A0B1A7E4C199F0DC6B6 /* TAGLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DC67A1ADBDE4F4881004087 /* TAGLogger.h */; };
-		1DE3EE0BD6D04BA99AC31033 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC031D9179B4E4AAAE87694 /* SystemConfiguration.framework */; };
-		2D16291344204C9583B8E4D6 /* GAITracker.h in Headers */ = {isa = PBXBuildFile; fileRef = A5F8A27D2CD54C039A02B159 /* GAITracker.h */; };
-		2F3874F5278E44B983A5C517 /* GAIFields.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE869BCE4514AD6BB185993 /* GAIFields.h */; };
-		31AA728276404C6090A2A689 /* THPinNumButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B7D302833624BF7B1795D5F /* THPinNumButton.h */; };
-		36A10D2EBAF0464C9EB60AF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8FCB9FD672439BAD0B34B3 /* Foundation.framework */; };
-		3C4A7A3133364E278200B83D /* THPinInputCircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = AE47E20303D549EA88E5ECBA /* THPinInputCircleView.h */; };
-		3CCEF04FD38D4900ADBA5BFB /* Pods-GoogleAnalytics-iOS-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6A4F6EF6A149CC9053B2E1 /* Pods-GoogleAnalytics-iOS-SDK-dummy.m */; };
-		41A773AF15E7419B812CF153 /* THPinView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA3AD2F887D4820B3F50E8F /* THPinView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		4BC643BDA86948939AFC8598 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C690CCF1324488B8E65F723 /* CoreGraphics.framework */; };
-		56B709C890674564B7B269B3 /* THPinViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 220F84278A48447D8934BE80 /* THPinViewController.h */; };
-		609F41AAE831415DB19A98A8 /* GAIDictionaryBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = A3C00E8C8AE9490CB79D1323 /* GAIDictionaryBuilder.h */; };
-		60EDD2A8B085416CB6B85261 /* GAIEcommercePromotion.h in Headers */ = {isa = PBXBuildFile; fileRef = B04B2CA5001D45539C5B0821 /* GAIEcommercePromotion.h */; };
-		6A1A594FD2C94CEDA6BA1FC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8FCB9FD672439BAD0B34B3 /* Foundation.framework */; };
-		6DFC9FAEA694463680B3AAC8 /* THPinInputCirclesView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC773988202448A081DB7D6B /* THPinInputCirclesView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		6E1FD236CCD84C92AFC8B905 /* GAILogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA0C96BB2F74962BA804C90 /* GAILogger.h */; };
-		749C8F2C765B47DAB0C760D4 /* Pods-UIView+draggable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2486A96588E948DA97CD2CB5 /* Pods-UIView+draggable-dummy.m */; };
-		79CAE319FB0947A58C2F7BFB /* THPinInputCirclesView.h in Headers */ = {isa = PBXBuildFile; fileRef = D3750B52A4DF411393A1F9AF /* THPinInputCirclesView.h */; };
-		7A44F9ACD8354CD8A5902E72 /* TAGManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A155556AD11C4A28876DB01D /* TAGManager.h */; };
-		881498BC18E549AD9BF7E0F8 /* Pods-FlurrySDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F44513BC60B04DEEAB319BD4 /* Pods-FlurrySDK-dummy.m */; };
-		8A8C9605898843DEAE31C9D4 /* libPods-FlurrySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E54EE3E94FFF410592FDB53C /* libPods-FlurrySDK.a */; };
-		8DED5EB8E3AA4A64A38B6972 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB11CED379B4753BA7BBD46 /* Pods-dummy.m */; };
-		949732799EC045BDB0148827 /* UIView+draggable.m in Sources */ = {isa = PBXBuildFile; fileRef = B47073B2023645E2A5F6063A /* UIView+draggable.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		98006AA3A6E7440FB800FA4E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AAA353B31AA4C3FA186E074 /* Security.framework */; };
-		9D52B12C6E7A4300BA229A93 /* GAIEcommerceProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = 692377CEFF8F4963A948F7EF /* GAIEcommerceProduct.h */; };
-		9E833A3174954AEBB21411B7 /* THPinNumPadView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2002C6F7BB46F7A6534C3A /* THPinNumPadView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		A7462E2DCC8144E087149B00 /* THPinNumPadView.h in Headers */ = {isa = PBXBuildFile; fileRef = C58C668BC09A4FF88946B5D6 /* THPinNumPadView.h */; };
-		A98C03E5827B4F1AA417B02E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C170A6ABF2846A9AF44C83F /* MediaPlayer.framework */; };
-		ABD796BEDBBC4F0E9C5B2BFE /* libPods-UIView+draggable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE8211F86174F7392F448EB /* libPods-UIView+draggable.a */; };
-		ACBCC0EFB67F4C9393834E62 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC031D9179B4E4AAAE87694 /* SystemConfiguration.framework */; };
-		ACD22EAF5FE34105A0B81F63 /* TAGContainerOpener.h in Headers */ = {isa = PBXBuildFile; fileRef = D18FBF7BDC6840A59ACFC78F /* TAGContainerOpener.h */; };
-		B4AE505C6BBE4F068865D2E7 /* UIView+draggable.h in Headers */ = {isa = PBXBuildFile; fileRef = 09DEAED14F6949D8A876BCBF /* UIView+draggable.h */; };
-		BBFAF90885BF4DDFA6C4704E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8FCB9FD672439BAD0B34B3 /* Foundation.framework */; };
-		BE820CEA8C4340D49201EAC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B395BC516ED45C5833DF0C5 /* UIKit.framework */; };
-		BEF78872F9A8469D8C5DEE04 /* Pods-THPinViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7EC181464941D59C9B182C /* Pods-THPinViewController-dummy.m */; };
-		C578BF4EE2624690B7A42DAD /* Flurry.h in Headers */ = {isa = PBXBuildFile; fileRef = 58B78944643E493897C6884F /* Flurry.h */; };
-		C645CBE58B874103BEBEB6CB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4250C0A0C89A4C1E9B2B2225 /* CoreData.framework */; };
-		C989DA9C52F145AC918C2C1E /* THPinInputCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1958441259D4E6A97180D23 /* THPinInputCircleView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		DBBA815A62E842F8A2832D6A /* GAI.h in Headers */ = {isa = PBXBuildFile; fileRef = F107793CD24B4D6FBE29F7D1 /* GAI.h */; };
-		DC4298FC8B6D481EB6B3DD06 /* TAGContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA799E465544C5C8DD569FD /* TAGContainer.h */; };
-		E47B186787444512BA39D3ED /* THPinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC191F946494ACE937B37B9 /* THPinViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		E94D3BC8C9CF4FAE9738BCA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8FCB9FD672439BAD0B34B3 /* Foundation.framework */; };
-		EED0FB67F5944D75A04B2188 /* libPods-THPinViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA329D07A224351865EEE44 /* libPods-THPinViewController.a */; };
-		F708697A48F74810AAF6F585 /* THPinView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20671F6696844F0B80DB08CD /* THPinView.h */; };
-		F80A6C998EFE48D795AAAE7C /* THPinNumButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F606DAF401147449FA46892 /* THPinNumButton.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		FB347BD8E63C4D37835A44F8 /* GAIEcommerceFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 1294FC17C5464F94AE3CC5D6 /* GAIEcommerceFields.h */; };
+		0240081659E803B67DC3EEE9 /* POPGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9E581CF6F3D1D6E98859C86 /* POPGeometry.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0386C0EDCC0EB39346D9E630 /* GAITracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 86DC986292EBA15D7145FAA3 /* GAITracker.h */; };
+		04EC9FE5C54AD9BC3886F382 /* TAGLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F97F39B709A491E948A0646 /* TAGLogger.h */; };
+		0C6694A3564E0A0F0968CCDE /* POPSpringAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = B171BFACA1A9218BB3A15D14 /* POPSpringAnimation.h */; };
+		0D3E7F547B8C25E5E3CEB17C /* POPSpringSolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BE8C98E771687F3175E0DCE /* POPSpringSolver.h */; };
+		13B32019A8C0930ABD3745F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CA9D8FBAD007FE14BFDF46 /* Foundation.framework */; };
+		13F9B27CC5177ACBA5BD4A1D /* POPAnimationEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = AB63FBE26FC84C16584EEF77 /* POPAnimationEvent.h */; };
+		16DB584F80F59CDB5D669E32 /* POPSpringAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = C030FAB2A260C855AB724B3C /* POPSpringAnimation.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		1853D0170D0167AEE984D41B /* POPAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 722E2F056AFE0B97BEE615B3 /* POPAnimation.h */; };
+		1A836759F27FBE8BEC4C9E35 /* GAIDictionaryBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C050E44FF57888D670DFEB /* GAIDictionaryBuilder.h */; };
+		1B0216C975B4E9030EA99790 /* POPAnimationTracer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B19BA56569AE925AA4CCB0C /* POPAnimationTracer.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		1F1016D40684AADAD674E5F1 /* POP.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A6781BEF5608FF405A9A80 /* POP.h */; };
+		1F282F3C8F49D2B06EB3C611 /* THPinViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B810A9A25AEB24418FAF7A6 /* THPinViewController.h */; };
+		2012319C643BFA25335A21A1 /* Flurry.h in Headers */ = {isa = PBXBuildFile; fileRef = D20E2355E46F713009841633 /* Flurry.h */; };
+		2458EB613A50192F6AE74050 /* POPCGUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1C3DD646EC78BCE7375513B2 /* POPCGUtils.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		25C5142BDC249DCB9CEF70E6 /* POPAnimationEventInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 765BFBB8F22E059343BEC8F6 /* POPAnimationEventInternal.h */; };
+		2689F6FB092555F9C5B1A63A /* POPCGUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCDFDA7D316388A1DEA5338 /* POPCGUtils.h */; };
+		282F603E979F0EB3DD0A2B2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A0F4D3A1399DDB6C2A5C92 /* UIKit.framework */; };
+		28D9850E672CBB27301E9105 /* POPAction.h in Headers */ = {isa = PBXBuildFile; fileRef = F0ECADB0505113961FD6E1EA /* POPAction.h */; };
+		2AA80C4D59499DB379752970 /* THPinView.h in Headers */ = {isa = PBXBuildFile; fileRef = E4C2E97157CCA0DB82545BE6 /* THPinView.h */; };
+		2CCEED1861E710BC66FDCA10 /* POPVector.h in Headers */ = {isa = PBXBuildFile; fileRef = C5DDA22B49D0633B78B7B36E /* POPVector.h */; };
+		2CF01E7BA29022A26917C707 /* POPAnimatorPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F71CB7821887C88E1EF257D /* POPAnimatorPrivate.h */; };
+		2D5862DC46306D40AFF0076A /* THPinNumPadView.h in Headers */ = {isa = PBXBuildFile; fileRef = AF5D48B16A104F5393CCCA77 /* THPinNumPadView.h */; };
+		2D5F94F05C4E2D70C82316E0 /* UIView+draggable.h in Headers */ = {isa = PBXBuildFile; fileRef = D79436EEDF02EBFAF83B8BF6 /* UIView+draggable.h */; };
+		2FA052D8501035D683290B39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CA9D8FBAD007FE14BFDF46 /* Foundation.framework */; };
+		32312592F81A72FA44FEF320 /* TAGManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 51595E4D84D8CF52E35702FB /* TAGManager.h */; };
+		36211C0F83BB0EF682CCA900 /* POPCustomAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 29885483EF7BEAEE4FEBE0E1 /* POPCustomAnimation.h */; };
+		3B5613A3B2B95D3413950358 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B38D6EADE169ED5AFA2A09 /* CoreGraphics.framework */; };
+		3B60A3F8BE115D666935DBE2 /* GAILogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 101C433943E455AF519D31C7 /* GAILogger.h */; };
+		3DF415C60024F63E469B48B8 /* THPinInputCirclesView.h in Headers */ = {isa = PBXBuildFile; fileRef = FA2B0200A7D55830D2E2F4DE /* THPinInputCirclesView.h */; };
+		3EC0B9B5A02B03984BA1069C /* POPAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAE2CDD633A2F065446733 /* POPAnimator.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		4BE7A7100E4790F5FE361EB9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB6E17E8E71BB6B755DBD15 /* Security.framework */; };
+		4CD1DE7B04DE5EFFB4B82CF0 /* POPDecayAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = C73A72699A2740630C38DF49 /* POPDecayAnimation.h */; };
+		4E0A5312B0432777019E84ED /* GAIEcommerceProductAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 27F76EED903B063AC0F007EB /* GAIEcommerceProductAction.h */; };
+		4F75C9F429ACF7626E420428 /* POPPropertyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 223D5D9AAB0FD062B812CB97 /* POPPropertyAnimation.h */; };
+		4FD014387A24986B2A01E505 /* THPinNumButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F60E52737CF73A5FD679F19C /* THPinNumButton.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		5AF2E809E86EC4F1B5CC28B8 /* Pods-UIView+draggable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA155FCDB92BA2DBB68D8BB /* Pods-UIView+draggable-dummy.m */; };
+		5E734B1B69DAD922CB540BCB /* TAGContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 09070CC0F9FCB42EF19E6A3C /* TAGContainer.h */; };
+		5F104EAF173210F5D21A6B14 /* POPAnimationRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 5972B3765EAA604A4009D07D /* POPAnimationRuntime.h */; };
+		5F2606099DC1DB8808F885E5 /* POPAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C62DE253FF1CDF214F2929A /* POPAnimation.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		601B62FE0373154AE312E8DE /* POPAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = F3968F16B2F78DF57E3609E9 /* POPAnimationInternal.h */; };
+		6060F780EE7527FDE8469AFB /* POPLayerExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6BF4DFB1B223E35F1EE62F4B /* POPLayerExtras.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6253F04CB7DB39EC9EBB4C36 /* POPAnimationTracerInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 11285A974ABC4F5D5FA0F8B1 /* POPAnimationTracerInternal.h */; };
+		64A05A3238FADC34FD4563CC /* POPAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 19C21C8434B5DD93840B2C5F /* POPAnimator.h */; };
+		6A0CFAA134E46960A81F8051 /* POPAnimationEvent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0629F9BDACB4BEC77BDE2D20 /* POPAnimationEvent.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6B4C1DFA81E28BA2D147D4D5 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FF5A6E03F53641E64A0D37 /* Pods-dummy.m */; };
+		6B9F2404BAD6ACBBE4EFBA52 /* THPinInputCirclesView.m in Sources */ = {isa = PBXBuildFile; fileRef = E01AA1C5082B5FC67435A0E2 /* THPinInputCirclesView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6C0B5D728D6191362176FEAE /* GAITrackedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 197F7FD8083B2E6B6F6CB1B4 /* GAITrackedViewController.h */; };
+		6CB71BFBD49D97DF4FC8FF98 /* FloatConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 014C27CCA6DC623E13A48DA6 /* FloatConversion.h */; };
+		6D1B24BFC5EA182283761B3C /* GAIEcommercePromotion.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BEA09D0FBA9CA182D10850C /* GAIEcommercePromotion.h */; };
+		6DD82DC440B86F0D85061863 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CA9D8FBAD007FE14BFDF46 /* Foundation.framework */; };
+		7112701C370998A285B85D50 /* THPinNumPadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7D6F7A4D31DF42D06C7A5D /* THPinNumPadView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		7194AD4778466BCAF951DCC4 /* POPBasicAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = D21533D4214B01EE9A810D73 /* POPBasicAnimation.h */; };
+		71C76D38D0CA42F8E687CF74 /* THPinInputCircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BEA04341265EA6F27B72055 /* THPinInputCircleView.h */; };
+		7364549EB588486A923536D1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A3F0FD5C2F9158F34D3AAD /* CFNetwork.framework */; };
+		73932577FA6BC34290CC4DD5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4C30C40307A635771E41A4 /* SystemConfiguration.framework */; };
+		77CD32CD079969049A3FC9ED /* GAIEcommerceFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 03CA7E3FE78B51FF5E804A35 /* GAIEcommerceFields.h */; };
+		7F89FCE257EBA758E04D62C9 /* GAIEcommerceProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = DE3716D09C5D814BD6C68A4B /* GAIEcommerceProduct.h */; };
+		8EB4A04A24E66E1320099937 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C175D561CD62D4D882E36E /* MediaPlayer.framework */; };
+		90520CCBE6D31EA3B17996D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CA9D8FBAD007FE14BFDF46 /* Foundation.framework */; };
+		90D56854250275C91EFD73D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CA9D8FBAD007FE14BFDF46 /* Foundation.framework */; };
+		9475AE34630BC8DEACA7F493 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48135D257D2D7EAFA485E0F /* CoreData.framework */; };
+		97048F3683A9EDCC57B83EF7 /* THPinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F959F8C39117005CE4913272 /* THPinViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		980636549EF6108219C82D1F /* POPBasicAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B256C92BBE57F20FDEFDBD5 /* POPBasicAnimation.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		988670CB847D508480BDD0DA /* POPAnimationPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = E48EBCC6D8AB08B727E616FC /* POPAnimationPrivate.h */; };
+		998324B579CD18A0B9029152 /* POPDecayAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 89245AA34D15C470F1AD7EA7 /* POPDecayAnimation.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		999C7CE073FDC030C9CEFE36 /* POPCustomAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = B99569BEA1A70257F38F95B2 /* POPCustomAnimation.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		9E2264D029203F27D9C4A907 /* POPMath.h in Headers */ = {isa = PBXBuildFile; fileRef = C71EC9E7B2C22DEB5C4B1251 /* POPMath.h */; };
+		9EEC24BAE42C8C35D5C4A9F9 /* POPGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 21138F56C2844CF2F3C3B1AD /* POPGeometry.h */; };
+		A427176A47561875715B9DDC /* POPAnimatableProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = A7422924C1BE9241FBE11B87 /* POPAnimatableProperty.h */; };
+		A4A564EA34C17B0FD075B204 /* POPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DB83755095A11DB9DC8FF2B /* POPDefines.h */; };
+		AC59BE3981A1C4AD6A68E624 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4C30C40307A635771E41A4 /* SystemConfiguration.framework */; };
+		B001C1FD7C522C5A210E99D3 /* POPDecayAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FA09234D58EF33834E478CC /* POPDecayAnimationInternal.h */; };
+		B321355BA697054FD189EBFC /* GAIFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 05C928947A3668CD9636309E /* GAIFields.h */; };
+		B340D2F7A6319D2FFE6532D6 /* UIView+draggable.m in Sources */ = {isa = PBXBuildFile; fileRef = B734D23A3C45B9C4D7FA7059 /* UIView+draggable.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		B3C5A9481F60F1F28B98B765 /* POPLayerExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = C20180B4DE4EE978640A8376 /* POPLayerExtras.h */; };
+		BAA978058015157274C7CED4 /* POPAnimationRuntime.mm in Sources */ = {isa = PBXBuildFile; fileRef = ECF9781ECD7BE69536DCC061 /* POPAnimationRuntime.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		BD881D4E74E49BA7FC4605CD /* THPinView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD99964E9167E1422C79C151 /* THPinView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		BF031A1A48E930D769117B75 /* TAGContainerOpener.h in Headers */ = {isa = PBXBuildFile; fileRef = 4393F125502A221DC20BEF93 /* TAGContainerOpener.h */; };
+		C03909D7491118539ED301BF /* Pods-FlurrySDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF1751A77E298CE9B14DFF2 /* Pods-FlurrySDK-dummy.m */; };
+		C12478616A390A54CFF0CEEA /* POPPropertyAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 049A60EB5588619C8659334A /* POPPropertyAnimation.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C144CA90B36D45718FB8D089 /* POPAnimationExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = CEE010760BB56FA9526AB139 /* POPAnimationExtras.h */; };
+		C16A2EEFABE0136C3A01649C /* POPAnimatableProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 67E1C271B4D41792A0C8787E /* POPAnimatableProperty.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C7187B845093FBF50C306F1B /* TAGDataLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FC325F70A2D92C6B1000B9E /* TAGDataLayer.h */; };
+		C76500D959B8BF9B9DB7C204 /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0EC759141DD09A55C724FB7 /* TransformationMatrix.cpp */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C869DB6DDB9F46CE80284AD1 /* POPMath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 34603F96BC54A67DA1FC7421 /* POPMath.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		CFE942C352AFD5255291D77D /* TransformationMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 70B810F771EF27A1055A51D0 /* TransformationMatrix.h */; };
+		D2B26B62E1830A348D0A4A10 /* POPVector.mm in Sources */ = {isa = PBXBuildFile; fileRef = D11D298CC27601DC61BF6786 /* POPVector.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D4839902E26D2D7ECE4A0114 /* Pods-LIVBubbleMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E0F635BF7A9FDD4BA40EC8 /* Pods-LIVBubbleMenu-dummy.m */; };
+		DA2D0B64E908C7BFC74DB3DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CA9D8FBAD007FE14BFDF46 /* Foundation.framework */; };
+		DEC9DBCD133F897B6C9AA932 /* POPBasicAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = C896EC9DECC8847EC9583AE4 /* POPBasicAnimationInternal.h */; };
+		E0DA4EA5F1360551CDEBC390 /* LIVBubbleMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BBAC9D05CCF84662DE57D0 /* LIVBubbleMenu.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		E146A10BCF8FB88AF48A8F38 /* Pods-GoogleAnalytics-iOS-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2895ED149CB4658B21290B78 /* Pods-GoogleAnalytics-iOS-SDK-dummy.m */; };
+		E14CED6A274B4108FD6D9647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CA9D8FBAD007FE14BFDF46 /* Foundation.framework */; };
+		E28C527C7F940D3777D46132 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A0F4D3A1399DDB6C2A5C92 /* UIKit.framework */; };
+		E2CD1C064A0441F2E9A22C27 /* Pods-pop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4582E696C13F5EAB0ECD5F09 /* Pods-pop-dummy.m */; };
+		E7BFF3D353B788FA17F6A8EC /* POPAnimationExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2AB58BA7838565EFEC3DEF5F /* POPAnimationExtras.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		E920D987C2E738D0292314F4 /* GAI.h in Headers */ = {isa = PBXBuildFile; fileRef = CCF5BB84AA090661AC79DCCF /* GAI.h */; };
+		F0446D306B26C7E4A34E73D6 /* THPinNumButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC43AA55810735BFAA7E52B /* THPinNumButton.h */; };
+		F4201CB713947AE0CF38B570 /* LIVBubbleMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ED37F7FCFFE057DE0E53076 /* LIVBubbleMenu.h */; };
+		F43CE4C25FE86CBA841BB263 /* POPAnimationTracer.h in Headers */ = {isa = PBXBuildFile; fileRef = B1F1EC84EC7837C7C0602B1C /* POPAnimationTracer.h */; };
+		F9F5B78CA4D72506C83A6F49 /* POPPropertyAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F6A48B7C0C86910F355BF1B /* POPPropertyAnimationInternal.h */; };
+		F9F78F00DBA50FC16756EED8 /* Pods-THPinViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D6AF04226A90C616B09255 /* Pods-THPinViewController-dummy.m */; };
+		FA58185483C853DE754818CE /* UnitBezier.h in Headers */ = {isa = PBXBuildFile; fileRef = E47F1A0E26034E9E90F33A08 /* UnitBezier.h */; };
+		FE1391AE2EEB8038EC10F3DE /* POPSpringAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 34177947D1C4566C08FF91CA /* POPSpringAnimationInternal.h */; };
+		FE7EBD13DCB0428DFB8D0CF6 /* THPinInputCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D396FC9E88AC6F50DED23310 /* THPinInputCircleView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		072BD142006E478F822C2D6E /* PBXContainerItemProxy */ = {
+		4ADF97AA7424E23536A11508 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 877A0744C24A4A9692D5AD8F /* Project object */;
+			containerPortal = 0A481C29F63748D15418D889 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1ABA42C3B0E2426CBFDCCFED;
-			remoteInfo = "Pods-GoogleAnalytics-iOS-SDK";
+			remoteGlobalIDString = FDF4B4F8B64FD2B021FE4C4C;
+			remoteInfo = "Pods-THPinViewController";
 		};
-		57892D4093514D669AC23246 /* PBXContainerItemProxy */ = {
+		6927757D202527C0AA3B9E50 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 877A0744C24A4A9692D5AD8F /* Project object */;
+			containerPortal = 0A481C29F63748D15418D889 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 233CE24FD5DD4FF4B9DD1857;
-			remoteInfo = "Pods-UIView+draggable";
-		};
-		C39B40C95EC348199C46C082 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 877A0744C24A4A9692D5AD8F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2B6E1D3CDD1144F6AAFD7F57;
+			remoteGlobalIDString = F55D148B9D636B47BCCEB882;
 			remoteInfo = "Pods-FlurrySDK";
 		};
-		CE70C1EEFB894CAC906CA3E3 /* PBXContainerItemProxy */ = {
+		7784BC922FE823D0BA30B7EA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 877A0744C24A4A9692D5AD8F /* Project object */;
+			containerPortal = 0A481C29F63748D15418D889 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8B9EB3F7571B4EF3A9AD910E;
-			remoteInfo = "Pods-THPinViewController";
+			remoteGlobalIDString = F0B94672E3EC7DE20C399194;
+			remoteInfo = "Pods-pop";
+		};
+		841B42453DCBD579D9771BE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A481C29F63748D15418D889 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DE8C56C8D778549B164E4F7;
+			remoteInfo = "Pods-UIView+draggable";
+		};
+		A16628E56BECBA6419F99CA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A481C29F63748D15418D889 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C02C620A41FE4E05A8708495;
+			remoteInfo = "Pods-LIVBubbleMenu";
+		};
+		CAEF4D7A216C99E796051E9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A481C29F63748D15418D889 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7979748EB8C508CE294D82B2;
+			remoteInfo = "Pods-GoogleAnalytics-iOS-SDK";
+		};
+		F05D6862AB15329F02B77017 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A481C29F63748D15418D889 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0B94672E3EC7DE20C399194;
+			remoteInfo = "Pods-pop";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01CDC05645A9440EA52EEFD7 /* Pods-THPinViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-THPinViewController-Private.xcconfig"; sourceTree = "<group>"; };
-		09DEAED14F6949D8A876BCBF /* UIView+draggable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+draggable.h"; path = "UIView+draggable/UIView+draggable.h"; sourceTree = "<group>"; };
-		0E7EC181464941D59C9B182C /* Pods-THPinViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-THPinViewController-dummy.m"; sourceTree = "<group>"; };
-		0EC7A98E6E7B4D60B67709EA /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProductAction.h; path = GoogleAnalytics/Library/GAIEcommerceProductAction.h; sourceTree = "<group>"; };
-		107BBA3CB8D048B198B91F9F /* Pods-GoogleAnalytics-iOS-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleAnalytics-iOS-SDK.xcconfig"; sourceTree = "<group>"; };
-		1294FC17C5464F94AE3CC5D6 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceFields.h; path = GoogleAnalytics/Library/GAIEcommerceFields.h; sourceTree = "<group>"; };
-		1BA3AD2F887D4820B3F50E8F /* THPinView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THPinView.m; path = THPinViewController/THPinView.m; sourceTree = "<group>"; };
-		1CB11CED379B4753BA7BBD46 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		20671F6696844F0B80DB08CD /* THPinView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THPinView.h; path = THPinViewController/THPinView.h; sourceTree = "<group>"; };
-		220F84278A48447D8934BE80 /* THPinViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THPinViewController.h; path = THPinViewController/THPinViewController.h; sourceTree = "<group>"; };
-		2486A96588E948DA97CD2CB5 /* Pods-UIView+draggable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UIView+draggable-dummy.m"; sourceTree = "<group>"; };
-		2FA0C96BB2F74962BA804C90 /* GAILogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAILogger.h; path = GoogleAnalytics/Library/GAILogger.h; sourceTree = "<group>"; };
-		38129367CEAD4DFA90F329DB /* Pods-UIView+draggable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIView+draggable.xcconfig"; sourceTree = "<group>"; };
-		3CE940E34F984A3FBBB3C16F /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		3FA329D07A224351865EEE44 /* libPods-THPinViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-THPinViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		41CA571751714FA2B6796272 /* libPods-GoogleAnalytics-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoogleAnalytics-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4250C0A0C89A4C1E9B2B2225 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
-		4B335947BC8340AAAAF2D6DC /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		4B7D302833624BF7B1795D5F /* THPinNumButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THPinNumButton.h; path = THPinViewController/THPinNumButton.h; sourceTree = "<group>"; };
-		4C170A6ABF2846A9AF44C83F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
-		4F606DAF401147449FA46892 /* THPinNumButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THPinNumButton.m; path = THPinViewController/THPinNumButton.m; sourceTree = "<group>"; };
-		58B78944643E493897C6884F /* Flurry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Flurry.h; path = Flurry/Flurry.h; sourceTree = "<group>"; };
-		5BE8211F86174F7392F448EB /* libPods-UIView+draggable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIView+draggable.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C183F50384C4B4EBE10343F /* Pods-THPinViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-THPinViewController.xcconfig"; sourceTree = "<group>"; };
-		5F9CECE305854C82ABDF4035 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		60778FFF6A88499EB04E3E70 /* Pods-UIView+draggable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UIView+draggable-prefix.pch"; sourceTree = "<group>"; };
-		62ED7A08110645FA9C6E786B /* Pods-FlurrySDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlurrySDK.xcconfig"; sourceTree = "<group>"; };
-		653E79C20BCE4A44BBE2E2D1 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		663D984EBBF8451B82A7FA06 /* Pods-THPinViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-THPinViewController-prefix.pch"; sourceTree = "<group>"; };
-		692377CEFF8F4963A948F7EF /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProduct.h; path = GoogleAnalytics/Library/GAIEcommerceProduct.h; sourceTree = "<group>"; };
-		6CC031D9179B4E4AAAE87694 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		6DC67A1ADBDE4F4881004087 /* TAGLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TAGLogger.h; path = GoogleTagManager/Library/TAGLogger.h; sourceTree = "<group>"; };
-		721FDB4BCD0A411CBD43FA5A /* Pods-GoogleAnalytics-iOS-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoogleAnalytics-iOS-SDK-prefix.pch"; sourceTree = "<group>"; };
-		7C690CCF1324488B8E65F723 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		7D6669D2BF5B4D8A923B132F /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		8AAA353B31AA4C3FA186E074 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		8B395BC516ED45C5833DF0C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		8B8FCB9FD672439BAD0B34B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A155556AD11C4A28876DB01D /* TAGManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TAGManager.h; path = GoogleTagManager/Library/TAGManager.h; sourceTree = "<group>"; };
-		A3C00E8C8AE9490CB79D1323 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIDictionaryBuilder.h; path = GoogleAnalytics/Library/GAIDictionaryBuilder.h; sourceTree = "<group>"; };
-		A40B548C54914EA495AF3C68 /* Pods-GoogleAnalytics-iOS-SDK-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleAnalytics-iOS-SDK-Private.xcconfig"; sourceTree = "<group>"; };
-		A5F8A27D2CD54C039A02B159 /* GAITracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAITracker.h; path = GoogleAnalytics/Library/GAITracker.h; sourceTree = "<group>"; };
-		A6D44E48D0B74DA9B12C75D7 /* Pods-FlurrySDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlurrySDK-prefix.pch"; sourceTree = "<group>"; };
-		AE47E20303D549EA88E5ECBA /* THPinInputCircleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THPinInputCircleView.h; path = THPinViewController/THPinInputCircleView.h; sourceTree = "<group>"; };
-		B04B2CA5001D45539C5B0821 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommercePromotion.h; path = GoogleAnalytics/Library/GAIEcommercePromotion.h; sourceTree = "<group>"; };
-		B47073B2023645E2A5F6063A /* UIView+draggable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+draggable.m"; path = "UIView+draggable/UIView+draggable.m"; sourceTree = "<group>"; };
-		BE6A4F6EF6A149CC9053B2E1 /* Pods-GoogleAnalytics-iOS-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoogleAnalytics-iOS-SDK-dummy.m"; sourceTree = "<group>"; };
-		BEA799E465544C5C8DD569FD /* TAGContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TAGContainer.h; path = GoogleTagManager/Library/TAGContainer.h; sourceTree = "<group>"; };
-		C4AE3A845DBF48C395A8A34D /* Pods-FlurrySDK-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlurrySDK-Private.xcconfig"; sourceTree = "<group>"; };
-		C58C668BC09A4FF88946B5D6 /* THPinNumPadView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THPinNumPadView.h; path = THPinViewController/THPinNumPadView.h; sourceTree = "<group>"; };
-		C792B11D29E642879F4B5985 /* Pods-UIView+draggable-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIView+draggable-Private.xcconfig"; sourceTree = "<group>"; };
-		CC773988202448A081DB7D6B /* THPinInputCirclesView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THPinInputCirclesView.m; path = THPinViewController/THPinInputCirclesView.m; sourceTree = "<group>"; };
-		CD8BF147B86F42E69E509138 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D18FBF7BDC6840A59ACFC78F /* TAGContainerOpener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TAGContainerOpener.h; path = GoogleTagManager/Library/TAGContainerOpener.h; sourceTree = "<group>"; };
-		D1958441259D4E6A97180D23 /* THPinInputCircleView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THPinInputCircleView.m; path = THPinViewController/THPinInputCircleView.m; sourceTree = "<group>"; };
-		D3750B52A4DF411393A1F9AF /* THPinInputCirclesView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THPinInputCirclesView.h; path = THPinViewController/THPinInputCirclesView.h; sourceTree = "<group>"; };
-		D3BA3B2CF0784F0ABE2004C0 /* TAGDataLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TAGDataLayer.h; path = GoogleTagManager/Library/TAGDataLayer.h; sourceTree = "<group>"; };
-		D9A8F38C800A456B8F64EC7A /* libFlurry_5.4.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libFlurry_5.4.0.a; path = Flurry/libFlurry_5.4.0.a; sourceTree = "<group>"; };
-		DAE869BCE4514AD6BB185993 /* GAIFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIFields.h; path = GoogleAnalytics/Library/GAIFields.h; sourceTree = "<group>"; };
-		DD61C616E9304F1785B8E7D8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.xcconfig; sourceTree = "<group>"; };
-		E54EE3E94FFF410592FDB53C /* libPods-FlurrySDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlurrySDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7425BDFE6DE40C9ABCAC0B6 /* GAITrackedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAITrackedViewController.h; path = GoogleAnalytics/Library/GAITrackedViewController.h; sourceTree = "<group>"; };
-		E8C798925B114C8B92431404 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		EE2002C6F7BB46F7A6534C3A /* THPinNumPadView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THPinNumPadView.m; path = THPinViewController/THPinNumPadView.m; sourceTree = "<group>"; };
-		EEC191F946494ACE937B37B9 /* THPinViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THPinViewController.m; path = THPinViewController/THPinViewController.m; sourceTree = "<group>"; };
-		F107793CD24B4D6FBE29F7D1 /* GAI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = GoogleAnalytics/Library/GAI.h; sourceTree = "<group>"; };
-		F44513BC60B04DEEAB319BD4 /* Pods-FlurrySDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlurrySDK-dummy.m"; sourceTree = "<group>"; };
+		014C27CCA6DC623E13A48DA6 /* FloatConversion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FloatConversion.h; path = pop/WebCore/FloatConversion.h; sourceTree = "<group>"; };
+		03CA7E3FE78B51FF5E804A35 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceFields.h; path = GoogleAnalytics/Library/GAIEcommerceFields.h; sourceTree = "<group>"; };
+		049A60EB5588619C8659334A /* POPPropertyAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPPropertyAnimation.mm; path = pop/POPPropertyAnimation.mm; sourceTree = "<group>"; };
+		05C928947A3668CD9636309E /* GAIFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIFields.h; path = GoogleAnalytics/Library/GAIFields.h; sourceTree = "<group>"; };
+		062009FB01718758200BA31C /* Pods-THPinViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-THPinViewController-prefix.pch"; sourceTree = "<group>"; };
+		0629F9BDACB4BEC77BDE2D20 /* POPAnimationEvent.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationEvent.mm; path = pop/POPAnimationEvent.mm; sourceTree = "<group>"; };
+		09070CC0F9FCB42EF19E6A3C /* TAGContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TAGContainer.h; path = GoogleTagManager/Library/TAGContainer.h; sourceTree = "<group>"; };
+		0DB71EB8EF09305A46C1EDAA /* Pods-LIVBubbleMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LIVBubbleMenu-prefix.pch"; sourceTree = "<group>"; };
+		0F97F39B709A491E948A0646 /* TAGLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TAGLogger.h; path = GoogleTagManager/Library/TAGLogger.h; sourceTree = "<group>"; };
+		101C433943E455AF519D31C7 /* GAILogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAILogger.h; path = GoogleAnalytics/Library/GAILogger.h; sourceTree = "<group>"; };
+		10BBAC9D05CCF84662DE57D0 /* LIVBubbleMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LIVBubbleMenu.m; path = LIVBubbleMenu/LIVBubbleMenu.m; sourceTree = "<group>"; };
+		11285A974ABC4F5D5FA0F8B1 /* POPAnimationTracerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracerInternal.h; path = pop/POPAnimationTracerInternal.h; sourceTree = "<group>"; };
+		14193D70D272B73F4E3716D1 /* Pods-FlurrySDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlurrySDK.xcconfig"; sourceTree = "<group>"; };
+		14C050E44FF57888D670DFEB /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIDictionaryBuilder.h; path = GoogleAnalytics/Library/GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		189FED92DEF9B7B5A8691AFC /* libPods-pop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		197F7FD8083B2E6B6F6CB1B4 /* GAITrackedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAITrackedViewController.h; path = GoogleAnalytics/Library/GAITrackedViewController.h; sourceTree = "<group>"; };
+		1995C5FB90669870C3AB22F1 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		19C21C8434B5DD93840B2C5F /* POPAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimator.h; path = pop/POPAnimator.h; sourceTree = "<group>"; };
+		1A70957F360B3A2602B58A4D /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		1B810A9A25AEB24418FAF7A6 /* THPinViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THPinViewController.h; path = THPinViewController/THPinViewController.h; sourceTree = "<group>"; };
+		1C3DD646EC78BCE7375513B2 /* POPCGUtils.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPCGUtils.mm; path = pop/POPCGUtils.mm; sourceTree = "<group>"; };
+		1F2B5BED31B064962A1A1EA6 /* libPods-FlurrySDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlurrySDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FA273DFC44A6E246EADAEE6 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		21138F56C2844CF2F3C3B1AD /* POPGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPGeometry.h; path = pop/POPGeometry.h; sourceTree = "<group>"; };
+		2192638A1162C8A983917A28 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		223D5D9AAB0FD062B812CB97 /* POPPropertyAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimation.h; path = pop/POPPropertyAnimation.h; sourceTree = "<group>"; };
+		27D87D5E42C71EAE8BED7449 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F76EED903B063AC0F007EB /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProductAction.h; path = GoogleAnalytics/Library/GAIEcommerceProductAction.h; sourceTree = "<group>"; };
+		2895ED149CB4658B21290B78 /* Pods-GoogleAnalytics-iOS-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoogleAnalytics-iOS-SDK-dummy.m"; sourceTree = "<group>"; };
+		29885483EF7BEAEE4FEBE0E1 /* POPCustomAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCustomAnimation.h; path = pop/POPCustomAnimation.h; sourceTree = "<group>"; };
+		2AB58BA7838565EFEC3DEF5F /* POPAnimationExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationExtras.mm; path = pop/POPAnimationExtras.mm; sourceTree = "<group>"; };
+		2EB6E17E8E71BB6B755DBD15 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		318107074B014B4D421E2EEF /* Pods-GoogleAnalytics-iOS-SDK-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleAnalytics-iOS-SDK-Private.xcconfig"; sourceTree = "<group>"; };
+		34177947D1C4566C08FF91CA /* POPSpringAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringAnimationInternal.h; path = pop/POPSpringAnimationInternal.h; sourceTree = "<group>"; };
+		34603F96BC54A67DA1FC7421 /* POPMath.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPMath.mm; path = pop/POPMath.mm; sourceTree = "<group>"; };
+		3469072DCDF9F50A913B2ED9 /* Pods-THPinViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-THPinViewController-Private.xcconfig"; sourceTree = "<group>"; };
+		35AC8C383A18E502EEDA3A81 /* Pods-GoogleAnalytics-iOS-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoogleAnalytics-iOS-SDK-prefix.pch"; sourceTree = "<group>"; };
+		3BE8C98E771687F3175E0DCE /* POPSpringSolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringSolver.h; path = pop/POPSpringSolver.h; sourceTree = "<group>"; };
+		3D6B51C6731D190CDA20917A /* Pods-GoogleAnalytics-iOS-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleAnalytics-iOS-SDK.xcconfig"; sourceTree = "<group>"; };
+		3F6A48B7C0C86910F355BF1B /* POPPropertyAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimationInternal.h; path = pop/POPPropertyAnimationInternal.h; sourceTree = "<group>"; };
+		4393F125502A221DC20BEF93 /* TAGContainerOpener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TAGContainerOpener.h; path = GoogleTagManager/Library/TAGContainerOpener.h; sourceTree = "<group>"; };
+		4582E696C13F5EAB0ECD5F09 /* Pods-pop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pop-dummy.m"; sourceTree = "<group>"; };
+		4A4C30C40307A635771E41A4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		4CCDFDA7D316388A1DEA5338 /* POPCGUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCGUtils.h; path = pop/POPCGUtils.h; sourceTree = "<group>"; };
+		4DB83755095A11DB9DC8FF2B /* POPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDefines.h; path = pop/POPDefines.h; sourceTree = "<group>"; };
+		4F71CB7821887C88E1EF257D /* POPAnimatorPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatorPrivate.h; path = pop/POPAnimatorPrivate.h; sourceTree = "<group>"; };
+		51595E4D84D8CF52E35702FB /* TAGManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TAGManager.h; path = GoogleTagManager/Library/TAGManager.h; sourceTree = "<group>"; };
+		5593C3BB61727E7954154419 /* Pods-FlurrySDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlurrySDK-prefix.pch"; sourceTree = "<group>"; };
+		566AF2E4CAADBB5262C5876F /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		5972B3765EAA604A4009D07D /* POPAnimationRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationRuntime.h; path = pop/POPAnimationRuntime.h; sourceTree = "<group>"; };
+		59CA9D8FBAD007FE14BFDF46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5BEA04341265EA6F27B72055 /* THPinInputCircleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THPinInputCircleView.h; path = THPinViewController/THPinInputCircleView.h; sourceTree = "<group>"; };
+		5C62DE253FF1CDF214F2929A /* POPAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimation.mm; path = pop/POPAnimation.mm; sourceTree = "<group>"; };
+		5DC43AA55810735BFAA7E52B /* THPinNumButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THPinNumButton.h; path = THPinViewController/THPinNumButton.h; sourceTree = "<group>"; };
+		67E1C271B4D41792A0C8787E /* POPAnimatableProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimatableProperty.mm; path = pop/POPAnimatableProperty.mm; sourceTree = "<group>"; };
+		69A0F4D3A1399DDB6C2A5C92 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		6B256C92BBE57F20FDEFDBD5 /* POPBasicAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPBasicAnimation.mm; path = pop/POPBasicAnimation.mm; sourceTree = "<group>"; };
+		6BF4DFB1B223E35F1EE62F4B /* POPLayerExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPLayerExtras.mm; path = pop/POPLayerExtras.mm; sourceTree = "<group>"; };
+		6F3271213FC303E198035EC8 /* Pods-pop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pop.xcconfig"; sourceTree = "<group>"; };
+		70B810F771EF27A1055A51D0 /* TransformationMatrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TransformationMatrix.h; path = pop/WebCore/TransformationMatrix.h; sourceTree = "<group>"; };
+		722E2F056AFE0B97BEE615B3 /* POPAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimation.h; path = pop/POPAnimation.h; sourceTree = "<group>"; };
+		73C175D561CD62D4D882E36E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		765BFBB8F22E059343BEC8F6 /* POPAnimationEventInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEventInternal.h; path = pop/POPAnimationEventInternal.h; sourceTree = "<group>"; };
+		77D6AF04226A90C616B09255 /* Pods-THPinViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-THPinViewController-dummy.m"; sourceTree = "<group>"; };
+		78FF5A6E03F53641E64A0D37 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		7BEA09D0FBA9CA182D10850C /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommercePromotion.h; path = GoogleAnalytics/Library/GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		7F7D6F7A4D31DF42D06C7A5D /* THPinNumPadView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THPinNumPadView.m; path = THPinViewController/THPinNumPadView.m; sourceTree = "<group>"; };
+		7FC325F70A2D92C6B1000B9E /* TAGDataLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TAGDataLayer.h; path = GoogleTagManager/Library/TAGDataLayer.h; sourceTree = "<group>"; };
+		86DC986292EBA15D7145FAA3 /* GAITracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAITracker.h; path = GoogleAnalytics/Library/GAITracker.h; sourceTree = "<group>"; };
+		880C024623E860E531680D2D /* Pods-FlurrySDK-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlurrySDK-Private.xcconfig"; sourceTree = "<group>"; };
+		89245AA34D15C470F1AD7EA7 /* POPDecayAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPDecayAnimation.mm; path = pop/POPDecayAnimation.mm; sourceTree = "<group>"; };
+		8ED37F7FCFFE057DE0E53076 /* LIVBubbleMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LIVBubbleMenu.h; path = LIVBubbleMenu/LIVBubbleMenu.h; sourceTree = "<group>"; };
+		8F7FDAFD100CC68BD4D31D1D /* libPods-GoogleAnalytics-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoogleAnalytics-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA09234D58EF33834E478CC /* POPDecayAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimationInternal.h; path = pop/POPDecayAnimationInternal.h; sourceTree = "<group>"; };
+		91C38088E4CEAF4321178266 /* Pods-THPinViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-THPinViewController.xcconfig"; sourceTree = "<group>"; };
+		9AFAE2CDD633A2F065446733 /* POPAnimator.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimator.mm; path = pop/POPAnimator.mm; sourceTree = "<group>"; };
+		9B19BA56569AE925AA4CCB0C /* POPAnimationTracer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationTracer.mm; path = pop/POPAnimationTracer.mm; sourceTree = "<group>"; };
+		A48135D257D2D7EAFA485E0F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		A6F97F2FACC0863FDC8F948A /* libFlurry_5.4.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libFlurry_5.4.0.a; path = Flurry/libFlurry_5.4.0.a; sourceTree = "<group>"; };
+		A7422924C1BE9241FBE11B87 /* POPAnimatableProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatableProperty.h; path = pop/POPAnimatableProperty.h; sourceTree = "<group>"; };
+		A9B38D6EADE169ED5AFA2A09 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		A9E581CF6F3D1D6E98859C86 /* POPGeometry.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPGeometry.mm; path = pop/POPGeometry.mm; sourceTree = "<group>"; };
+		AB63FBE26FC84C16584EEF77 /* POPAnimationEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEvent.h; path = pop/POPAnimationEvent.h; sourceTree = "<group>"; };
+		ACB3D8898ACC686699E51E3D /* Pods-pop-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pop-Private.xcconfig"; sourceTree = "<group>"; };
+		AD99964E9167E1422C79C151 /* THPinView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THPinView.m; path = THPinViewController/THPinView.m; sourceTree = "<group>"; };
+		AF5D48B16A104F5393CCCA77 /* THPinNumPadView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THPinNumPadView.h; path = THPinViewController/THPinNumPadView.h; sourceTree = "<group>"; };
+		B171BFACA1A9218BB3A15D14 /* POPSpringAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringAnimation.h; path = pop/POPSpringAnimation.h; sourceTree = "<group>"; };
+		B1F1EC84EC7837C7C0602B1C /* POPAnimationTracer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracer.h; path = pop/POPAnimationTracer.h; sourceTree = "<group>"; };
+		B4A3F0FD5C2F9158F34D3AAD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		B734D23A3C45B9C4D7FA7059 /* UIView+draggable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+draggable.m"; path = "UIView+draggable/UIView+draggable.m"; sourceTree = "<group>"; };
+		B99569BEA1A70257F38F95B2 /* POPCustomAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPCustomAnimation.mm; path = pop/POPCustomAnimation.mm; sourceTree = "<group>"; };
+		BD789A221A4D1C1C4B194B90 /* Pods-UIView+draggable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIView+draggable.xcconfig"; sourceTree = "<group>"; };
+		BF4B5666FA93443F04177D98 /* Pods-pop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pop-prefix.pch"; sourceTree = "<group>"; };
+		BFF1751A77E298CE9B14DFF2 /* Pods-FlurrySDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlurrySDK-dummy.m"; sourceTree = "<group>"; };
+		C030FAB2A260C855AB724B3C /* POPSpringAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPSpringAnimation.mm; path = pop/POPSpringAnimation.mm; sourceTree = "<group>"; };
+		C20180B4DE4EE978640A8376 /* POPLayerExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPLayerExtras.h; path = pop/POPLayerExtras.h; sourceTree = "<group>"; };
+		C5DDA22B49D0633B78B7B36E /* POPVector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPVector.h; path = pop/POPVector.h; sourceTree = "<group>"; };
+		C71EC9E7B2C22DEB5C4B1251 /* POPMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPMath.h; path = pop/POPMath.h; sourceTree = "<group>"; };
+		C73A72699A2740630C38DF49 /* POPDecayAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimation.h; path = pop/POPDecayAnimation.h; sourceTree = "<group>"; };
+		C896EC9DECC8847EC9583AE4 /* POPBasicAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPBasicAnimationInternal.h; path = pop/POPBasicAnimationInternal.h; sourceTree = "<group>"; };
+		CC979E45DC501860CA6CE148 /* Pods-LIVBubbleMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LIVBubbleMenu.xcconfig"; sourceTree = "<group>"; };
+		CCF5BB84AA090661AC79DCCF /* GAI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = GoogleAnalytics/Library/GAI.h; sourceTree = "<group>"; };
+		CDA155FCDB92BA2DBB68D8BB /* Pods-UIView+draggable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UIView+draggable-dummy.m"; sourceTree = "<group>"; };
+		CEE010760BB56FA9526AB139 /* POPAnimationExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationExtras.h; path = pop/POPAnimationExtras.h; sourceTree = "<group>"; };
+		D0EC759141DD09A55C724FB7 /* TransformationMatrix.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = TransformationMatrix.cpp; path = pop/WebCore/TransformationMatrix.cpp; sourceTree = "<group>"; };
+		D11D298CC27601DC61BF6786 /* POPVector.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPVector.mm; path = pop/POPVector.mm; sourceTree = "<group>"; };
+		D13F280ED0C17F4EEDFF5FF8 /* Pods-UIView+draggable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UIView+draggable-prefix.pch"; sourceTree = "<group>"; };
+		D20E2355E46F713009841633 /* Flurry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Flurry.h; path = Flurry/Flurry.h; sourceTree = "<group>"; };
+		D21533D4214B01EE9A810D73 /* POPBasicAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPBasicAnimation.h; path = pop/POPBasicAnimation.h; sourceTree = "<group>"; };
+		D396FC9E88AC6F50DED23310 /* THPinInputCircleView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THPinInputCircleView.m; path = THPinViewController/THPinInputCircleView.m; sourceTree = "<group>"; };
+		D5B31C6E742D97BDDE9222A9 /* Pods-LIVBubbleMenu-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LIVBubbleMenu-Private.xcconfig"; sourceTree = "<group>"; };
+		D5C9A02502A3603A2171D513 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		D79436EEDF02EBFAF83B8BF6 /* UIView+draggable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+draggable.h"; path = "UIView+draggable/UIView+draggable.h"; sourceTree = "<group>"; };
+		DE3716D09C5D814BD6C68A4B /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProduct.h; path = GoogleAnalytics/Library/GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		E014AFAD218BA7B48BC8398A /* libPods-THPinViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-THPinViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01AA1C5082B5FC67435A0E2 /* THPinInputCirclesView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THPinInputCirclesView.m; path = THPinViewController/THPinInputCirclesView.m; sourceTree = "<group>"; };
+		E1EE83FB5081F3329E9B0A13 /* libPods-LIVBubbleMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LIVBubbleMenu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2E11C36A48A0A3A3487B08E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		E47F1A0E26034E9E90F33A08 /* UnitBezier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UnitBezier.h; path = pop/WebCore/UnitBezier.h; sourceTree = "<group>"; };
+		E48EBCC6D8AB08B727E616FC /* POPAnimationPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationPrivate.h; path = pop/POPAnimationPrivate.h; sourceTree = "<group>"; };
+		E4C2E97157CCA0DB82545BE6 /* THPinView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THPinView.h; path = THPinViewController/THPinView.h; sourceTree = "<group>"; };
+		E7E0F635BF7A9FDD4BA40EC8 /* Pods-LIVBubbleMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LIVBubbleMenu-dummy.m"; sourceTree = "<group>"; };
+		ECF9781ECD7BE69536DCC061 /* POPAnimationRuntime.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationRuntime.mm; path = pop/POPAnimationRuntime.mm; sourceTree = "<group>"; };
+		F0ECADB0505113961FD6E1EA /* POPAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAction.h; path = pop/POPAction.h; sourceTree = "<group>"; };
+		F3968F16B2F78DF57E3609E9 /* POPAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationInternal.h; path = pop/POPAnimationInternal.h; sourceTree = "<group>"; };
+		F3F7F564E8399285316CB053 /* Pods-UIView+draggable-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIView+draggable-Private.xcconfig"; sourceTree = "<group>"; };
+		F5A6781BEF5608FF405A9A80 /* POP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POP.h; path = pop/POP.h; sourceTree = "<group>"; };
+		F60E52737CF73A5FD679F19C /* THPinNumButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THPinNumButton.m; path = THPinViewController/THPinNumButton.m; sourceTree = "<group>"; };
+		F6DFE531BAF91A493616EC9E /* libPods-UIView+draggable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIView+draggable.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F959F8C39117005CE4913272 /* THPinViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THPinViewController.m; path = THPinViewController/THPinViewController.m; sourceTree = "<group>"; };
+		FA2B0200A7D55830D2E2F4DE /* THPinInputCirclesView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THPinInputCirclesView.h; path = THPinViewController/THPinInputCirclesView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0F1E74BFBFDB429AA8637E26 /* Frameworks */ = {
+		5351A0BB2A19E49549D0BDB1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A1A594FD2C94CEDA6BA1FC8 /* Foundation.framework in Frameworks */,
+				DA2D0B64E908C7BFC74DB3DA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F3897AB048A40AF8C367DDB /* Frameworks */ = {
+		85706619BDB1E114BECA904A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36A10D2EBAF0464C9EB60AF1 /* Foundation.framework in Frameworks */,
-				8A8C9605898843DEAE31C9D4 /* libPods-FlurrySDK.a in Frameworks */,
-				021C6DA5A0894AA2B3D189E2 /* libPods-GoogleAnalytics-iOS-SDK.a in Frameworks */,
-				EED0FB67F5944D75A04B2188 /* libPods-THPinViewController.a in Frameworks */,
-				ABD796BEDBBC4F0E9C5B2BFE /* libPods-UIView+draggable.a in Frameworks */,
+				13B32019A8C0930ABD3745F5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25D4A12C148B416DAEDB970C /* Frameworks */ = {
+		8DDFD8AF7ABF0CE0D707EEFE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09E6E25B50064E529B21042F /* CFNetwork.framework in Frameworks */,
-				C645CBE58B874103BEBEB6CB /* CoreData.framework in Frameworks */,
-				12E92C2B8CC5412F92603BD1 /* Foundation.framework in Frameworks */,
-				ACBCC0EFB67F4C9393834E62 /* SystemConfiguration.framework in Frameworks */,
-				0287A7A55DC64217B750419F /* UIKit.framework in Frameworks */,
+				7364549EB588486A923536D1 /* CFNetwork.framework in Frameworks */,
+				9475AE34630BC8DEACA7F493 /* CoreData.framework in Frameworks */,
+				90520CCBE6D31EA3B17996D1 /* Foundation.framework in Frameworks */,
+				AC59BE3981A1C4AD6A68E624 /* SystemConfiguration.framework in Frameworks */,
+				282F603E979F0EB3DD0A2B2C /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98953468BE05480F926B66A0 /* Frameworks */ = {
+		ABC41BDE5D9B9301DC23AD6D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BC643BDA86948939AFC8598 /* CoreGraphics.framework in Frameworks */,
-				BBFAF90885BF4DDFA6C4704E /* Foundation.framework in Frameworks */,
-				A98C03E5827B4F1AA417B02E /* MediaPlayer.framework in Frameworks */,
-				98006AA3A6E7440FB800FA4E /* Security.framework in Frameworks */,
-				1DE3EE0BD6D04BA99AC31033 /* SystemConfiguration.framework in Frameworks */,
-				BE820CEA8C4340D49201EAC5 /* UIKit.framework in Frameworks */,
+				3B5613A3B2B95D3413950358 /* CoreGraphics.framework in Frameworks */,
+				E14CED6A274B4108FD6D9647 /* Foundation.framework in Frameworks */,
+				8EB4A04A24E66E1320099937 /* MediaPlayer.framework in Frameworks */,
+				4BE7A7100E4790F5FE361EB9 /* Security.framework in Frameworks */,
+				73932577FA6BC34290CC4DD5 /* SystemConfiguration.framework in Frameworks */,
+				E28C527C7F940D3777D46132 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D986497D6CCE448F9AC43DE6 /* Frameworks */ = {
+		BC25B3EA055FE0E2AD6EB409 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E94D3BC8C9CF4FAE9738BCA1 /* Foundation.framework in Frameworks */,
+				90D56854250275C91EFD73D4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C06CF40C0D6C1A9448A99FCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA052D8501035D683290B39 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6494A2D9170631F71695227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DD82DC440B86F0D85061863 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09FDAED7E78348F39DA10AC8 /* Frameworks */ = {
+		0089E7C7EC9A7C6404BF2296 /* LIVBubbleMenu */ = {
 			isa = PBXGroup;
 			children = (
-				D9A8F38C800A456B8F64EC7A /* libFlurry_5.4.0.a */,
+				8ED37F7FCFFE057DE0E53076 /* LIVBubbleMenu.h */,
+				10BBAC9D05CCF84662DE57D0 /* LIVBubbleMenu.m */,
+				8442EB5AD705CB7B3BEE116F /* Support Files */,
+			);
+			path = LIVBubbleMenu;
+			sourceTree = "<group>";
+		};
+		144E2FA9CEE88F4CCF41274A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB44F929E8A8DD392E6E8D82 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		10C4F668A3E84B02BE69D996 /* Support Files */ = {
+		14E41467FADE0A59FED9DAE1 /* THPinViewController */ = {
 			isa = PBXGroup;
 			children = (
-				62ED7A08110645FA9C6E786B /* Pods-FlurrySDK.xcconfig */,
-				C4AE3A845DBF48C395A8A34D /* Pods-FlurrySDK-Private.xcconfig */,
-				F44513BC60B04DEEAB319BD4 /* Pods-FlurrySDK-dummy.m */,
-				A6D44E48D0B74DA9B12C75D7 /* Pods-FlurrySDK-prefix.pch */,
-			);
-			name = "Support Files";
-			sourceTree = SOURCE_ROOT;
-		};
-		2BE01658E01349739F861271 = {
-			isa = PBXGroup;
-			children = (
-				E8C798925B114C8B92431404 /* Podfile */,
-				C0FADA8376E94EDC8BAC0806 /* Frameworks */,
-				3C193FB1412542A0845BEBF1 /* Pods */,
-				EF7424AC4BFA4668BE9372C3 /* Products */,
-				5630FBED2F904C82BFDCE049 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		3C193FB1412542A0845BEBF1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				81EA25506313430180EC5143 /* FlurrySDK */,
-				548C754430DE4A7EB2155D29 /* GoogleAnalytics-iOS-SDK */,
-				8D5C9243CF3A4B4DA3DEEB6E /* THPinViewController */,
-				D14A5ED4EC7040CF8108C89E /* UIView+draggable */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		548C754430DE4A7EB2155D29 /* GoogleAnalytics-iOS-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				F107793CD24B4D6FBE29F7D1 /* GAI.h */,
-				A3C00E8C8AE9490CB79D1323 /* GAIDictionaryBuilder.h */,
-				1294FC17C5464F94AE3CC5D6 /* GAIEcommerceFields.h */,
-				692377CEFF8F4963A948F7EF /* GAIEcommerceProduct.h */,
-				0EC7A98E6E7B4D60B67709EA /* GAIEcommerceProductAction.h */,
-				B04B2CA5001D45539C5B0821 /* GAIEcommercePromotion.h */,
-				DAE869BCE4514AD6BB185993 /* GAIFields.h */,
-				2FA0C96BB2F74962BA804C90 /* GAILogger.h */,
-				E7425BDFE6DE40C9ABCAC0B6 /* GAITrackedViewController.h */,
-				A5F8A27D2CD54C039A02B159 /* GAITracker.h */,
-				BEA799E465544C5C8DD569FD /* TAGContainer.h */,
-				D18FBF7BDC6840A59ACFC78F /* TAGContainerOpener.h */,
-				D3BA3B2CF0784F0ABE2004C0 /* TAGDataLayer.h */,
-				6DC67A1ADBDE4F4881004087 /* TAGLogger.h */,
-				A155556AD11C4A28876DB01D /* TAGManager.h */,
-				925AC0F380504D9EAE345E54 /* Support Files */,
-			);
-			path = "GoogleAnalytics-iOS-SDK";
-			sourceTree = "<group>";
-		};
-		5630FBED2F904C82BFDCE049 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7B6B0300475E49229376C58C /* Pods */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		7B6B0300475E49229376C58C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DD61C616E9304F1785B8E7D8 /* Pods.xcconfig */,
-				653E79C20BCE4A44BBE2E2D1 /* Pods-acknowledgements.markdown */,
-				4B335947BC8340AAAAF2D6DC /* Pods-acknowledgements.plist */,
-				1CB11CED379B4753BA7BBD46 /* Pods-dummy.m */,
-				7D6669D2BF5B4D8A923B132F /* Pods-environment.h */,
-				3CE940E34F984A3FBBB3C16F /* Pods-resources.sh */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		81EA25506313430180EC5143 /* FlurrySDK */ = {
-			isa = PBXGroup;
-			children = (
-				CA07835EA4804A68B5330B27 /* FlurrySDK */,
-				10C4F668A3E84B02BE69D996 /* Support Files */,
-			);
-			path = FlurrySDK;
-			sourceTree = "<group>";
-		};
-		8D5C9243CF3A4B4DA3DEEB6E /* THPinViewController */ = {
-			isa = PBXGroup;
-			children = (
-				AE47E20303D549EA88E5ECBA /* THPinInputCircleView.h */,
-				D1958441259D4E6A97180D23 /* THPinInputCircleView.m */,
-				D3750B52A4DF411393A1F9AF /* THPinInputCirclesView.h */,
-				CC773988202448A081DB7D6B /* THPinInputCirclesView.m */,
-				4B7D302833624BF7B1795D5F /* THPinNumButton.h */,
-				4F606DAF401147449FA46892 /* THPinNumButton.m */,
-				C58C668BC09A4FF88946B5D6 /* THPinNumPadView.h */,
-				EE2002C6F7BB46F7A6534C3A /* THPinNumPadView.m */,
-				20671F6696844F0B80DB08CD /* THPinView.h */,
-				1BA3AD2F887D4820B3F50E8F /* THPinView.m */,
-				220F84278A48447D8934BE80 /* THPinViewController.h */,
-				EEC191F946494ACE937B37B9 /* THPinViewController.m */,
-				FD224C2E858848029C4DCD74 /* Support Files */,
+				5BEA04341265EA6F27B72055 /* THPinInputCircleView.h */,
+				D396FC9E88AC6F50DED23310 /* THPinInputCircleView.m */,
+				FA2B0200A7D55830D2E2F4DE /* THPinInputCirclesView.h */,
+				E01AA1C5082B5FC67435A0E2 /* THPinInputCirclesView.m */,
+				5DC43AA55810735BFAA7E52B /* THPinNumButton.h */,
+				F60E52737CF73A5FD679F19C /* THPinNumButton.m */,
+				AF5D48B16A104F5393CCCA77 /* THPinNumPadView.h */,
+				7F7D6F7A4D31DF42D06C7A5D /* THPinNumPadView.m */,
+				E4C2E97157CCA0DB82545BE6 /* THPinView.h */,
+				AD99964E9167E1422C79C151 /* THPinView.m */,
+				1B810A9A25AEB24418FAF7A6 /* THPinViewController.h */,
+				F959F8C39117005CE4913272 /* THPinViewController.m */,
+				36D08DCA683879A6DDAA94F3 /* Support Files */,
 			);
 			path = THPinViewController;
 			sourceTree = "<group>";
 		};
-		925AC0F380504D9EAE345E54 /* Support Files */ = {
+		267FFE15DC6EA6947BA81DBC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				107BBA3CB8D048B198B91F9F /* Pods-GoogleAnalytics-iOS-SDK.xcconfig */,
-				A40B548C54914EA495AF3C68 /* Pods-GoogleAnalytics-iOS-SDK-Private.xcconfig */,
-				BE6A4F6EF6A149CC9053B2E1 /* Pods-GoogleAnalytics-iOS-SDK-dummy.m */,
-				721FDB4BCD0A411CBD43FA5A /* Pods-GoogleAnalytics-iOS-SDK-prefix.pch */,
+				3D6B51C6731D190CDA20917A /* Pods-GoogleAnalytics-iOS-SDK.xcconfig */,
+				318107074B014B4D421E2EEF /* Pods-GoogleAnalytics-iOS-SDK-Private.xcconfig */,
+				2895ED149CB4658B21290B78 /* Pods-GoogleAnalytics-iOS-SDK-dummy.m */,
+				35AC8C383A18E502EEDA3A81 /* Pods-GoogleAnalytics-iOS-SDK-prefix.pch */,
 			);
 			name = "Support Files";
-			sourceTree = SOURCE_ROOT;
-		};
-		A73EAC9B17DE430EBC884719 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				5F9CECE305854C82ABDF4035 /* CFNetwork.framework */,
-				4250C0A0C89A4C1E9B2B2225 /* CoreData.framework */,
-				7C690CCF1324488B8E65F723 /* CoreGraphics.framework */,
-				8B8FCB9FD672439BAD0B34B3 /* Foundation.framework */,
-				4C170A6ABF2846A9AF44C83F /* MediaPlayer.framework */,
-				8AAA353B31AA4C3FA186E074 /* Security.framework */,
-				6CC031D9179B4E4AAAE87694 /* SystemConfiguration.framework */,
-				8B395BC516ED45C5833DF0C5 /* UIKit.framework */,
-			);
-			name = iOS;
+			path = "../Target Support Files/Pods-GoogleAnalytics-iOS-SDK";
 			sourceTree = "<group>";
 		};
-		C0FADA8376E94EDC8BAC0806 /* Frameworks */ = {
+		2806B54755314DC755D4E037 /* FlurrySDK */ = {
 			isa = PBXGroup;
 			children = (
-				A73EAC9B17DE430EBC884719 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CA07835EA4804A68B5330B27 /* FlurrySDK */ = {
-			isa = PBXGroup;
-			children = (
-				58B78944643E493897C6884F /* Flurry.h */,
-				09FDAED7E78348F39DA10AC8 /* Frameworks */,
+				D20E2355E46F713009841633 /* Flurry.h */,
+				C2CE0CD23EC3273069DC307C /* Frameworks */,
 			);
 			name = FlurrySDK;
 			sourceTree = "<group>";
 		};
-		D14A5ED4EC7040CF8108C89E /* UIView+draggable */ = {
+		36D08DCA683879A6DDAA94F3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				09DEAED14F6949D8A876BCBF /* UIView+draggable.h */,
-				B47073B2023645E2A5F6063A /* UIView+draggable.m */,
-				E1B372087C4749038B10F369 /* Support Files */,
+				91C38088E4CEAF4321178266 /* Pods-THPinViewController.xcconfig */,
+				3469072DCDF9F50A913B2ED9 /* Pods-THPinViewController-Private.xcconfig */,
+				77D6AF04226A90C616B09255 /* Pods-THPinViewController-dummy.m */,
+				062009FB01718758200BA31C /* Pods-THPinViewController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-THPinViewController";
+			sourceTree = "<group>";
+		};
+		3FFE1CD6CF539A2FF1BB47FE = {
+			isa = PBXGroup;
+			children = (
+				1FA273DFC44A6E246EADAEE6 /* Podfile */,
+				144E2FA9CEE88F4CCF41274A /* Frameworks */,
+				B0A30A298314FF8DD60ED499 /* Pods */,
+				B296B180F5FDE90E309AA34B /* Products */,
+				92B60F95A4EC23764BACC4BA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		6442E44926DDC417AEE0FDB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1995C5FB90669870C3AB22F1 /* Pods-acknowledgements.markdown */,
+				1A70957F360B3A2602B58A4D /* Pods-acknowledgements.plist */,
+				78FF5A6E03F53641E64A0D37 /* Pods-dummy.m */,
+				566AF2E4CAADBB5262C5876F /* Pods-environment.h */,
+				2192638A1162C8A983917A28 /* Pods-resources.sh */,
+				D5C9A02502A3603A2171D513 /* Pods.debug.xcconfig */,
+				E2E11C36A48A0A3A3487B08E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		6D50D066C2083618B06B79AE /* UIView+draggable */ = {
+			isa = PBXGroup;
+			children = (
+				D79436EEDF02EBFAF83B8BF6 /* UIView+draggable.h */,
+				B734D23A3C45B9C4D7FA7059 /* UIView+draggable.m */,
+				76151ED2E08227D67F5A2DCA /* Support Files */,
 			);
 			path = "UIView+draggable";
 			sourceTree = "<group>";
 		};
-		E1B372087C4749038B10F369 /* Support Files */ = {
+		76151ED2E08227D67F5A2DCA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				38129367CEAD4DFA90F329DB /* Pods-UIView+draggable.xcconfig */,
-				C792B11D29E642879F4B5985 /* Pods-UIView+draggable-Private.xcconfig */,
-				2486A96588E948DA97CD2CB5 /* Pods-UIView+draggable-dummy.m */,
-				60778FFF6A88499EB04E3E70 /* Pods-UIView+draggable-prefix.pch */,
+				BD789A221A4D1C1C4B194B90 /* Pods-UIView+draggable.xcconfig */,
+				F3F7F564E8399285316CB053 /* Pods-UIView+draggable-Private.xcconfig */,
+				CDA155FCDB92BA2DBB68D8BB /* Pods-UIView+draggable-dummy.m */,
+				D13F280ED0C17F4EEDFF5FF8 /* Pods-UIView+draggable-prefix.pch */,
 			);
 			name = "Support Files";
-			sourceTree = SOURCE_ROOT;
+			path = "../Target Support Files/Pods-UIView+draggable";
+			sourceTree = "<group>";
 		};
-		EF7424AC4BFA4668BE9372C3 /* Products */ = {
+		8442EB5AD705CB7B3BEE116F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CD8BF147B86F42E69E509138 /* libPods.a */,
-				E54EE3E94FFF410592FDB53C /* libPods-FlurrySDK.a */,
-				41CA571751714FA2B6796272 /* libPods-GoogleAnalytics-iOS-SDK.a */,
-				3FA329D07A224351865EEE44 /* libPods-THPinViewController.a */,
-				5BE8211F86174F7392F448EB /* libPods-UIView+draggable.a */,
+				CC979E45DC501860CA6CE148 /* Pods-LIVBubbleMenu.xcconfig */,
+				D5B31C6E742D97BDDE9222A9 /* Pods-LIVBubbleMenu-Private.xcconfig */,
+				E7E0F635BF7A9FDD4BA40EC8 /* Pods-LIVBubbleMenu-dummy.m */,
+				0DB71EB8EF09305A46C1EDAA /* Pods-LIVBubbleMenu-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-LIVBubbleMenu";
+			sourceTree = "<group>";
+		};
+		8F74D7EEDF8BAF9E816B13BA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				14193D70D272B73F4E3716D1 /* Pods-FlurrySDK.xcconfig */,
+				880C024623E860E531680D2D /* Pods-FlurrySDK-Private.xcconfig */,
+				BFF1751A77E298CE9B14DFF2 /* Pods-FlurrySDK-dummy.m */,
+				5593C3BB61727E7954154419 /* Pods-FlurrySDK-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-FlurrySDK";
+			sourceTree = "<group>";
+		};
+		92B60F95A4EC23764BACC4BA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6442E44926DDC417AEE0FDB7 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AC37937FD890FCA1E014DA50 /* pop */ = {
+			isa = PBXGroup;
+			children = (
+				014C27CCA6DC623E13A48DA6 /* FloatConversion.h */,
+				F5A6781BEF5608FF405A9A80 /* POP.h */,
+				F0ECADB0505113961FD6E1EA /* POPAction.h */,
+				A7422924C1BE9241FBE11B87 /* POPAnimatableProperty.h */,
+				67E1C271B4D41792A0C8787E /* POPAnimatableProperty.mm */,
+				722E2F056AFE0B97BEE615B3 /* POPAnimation.h */,
+				5C62DE253FF1CDF214F2929A /* POPAnimation.mm */,
+				AB63FBE26FC84C16584EEF77 /* POPAnimationEvent.h */,
+				0629F9BDACB4BEC77BDE2D20 /* POPAnimationEvent.mm */,
+				765BFBB8F22E059343BEC8F6 /* POPAnimationEventInternal.h */,
+				CEE010760BB56FA9526AB139 /* POPAnimationExtras.h */,
+				2AB58BA7838565EFEC3DEF5F /* POPAnimationExtras.mm */,
+				F3968F16B2F78DF57E3609E9 /* POPAnimationInternal.h */,
+				E48EBCC6D8AB08B727E616FC /* POPAnimationPrivate.h */,
+				5972B3765EAA604A4009D07D /* POPAnimationRuntime.h */,
+				ECF9781ECD7BE69536DCC061 /* POPAnimationRuntime.mm */,
+				B1F1EC84EC7837C7C0602B1C /* POPAnimationTracer.h */,
+				9B19BA56569AE925AA4CCB0C /* POPAnimationTracer.mm */,
+				11285A974ABC4F5D5FA0F8B1 /* POPAnimationTracerInternal.h */,
+				19C21C8434B5DD93840B2C5F /* POPAnimator.h */,
+				9AFAE2CDD633A2F065446733 /* POPAnimator.mm */,
+				4F71CB7821887C88E1EF257D /* POPAnimatorPrivate.h */,
+				D21533D4214B01EE9A810D73 /* POPBasicAnimation.h */,
+				6B256C92BBE57F20FDEFDBD5 /* POPBasicAnimation.mm */,
+				C896EC9DECC8847EC9583AE4 /* POPBasicAnimationInternal.h */,
+				4CCDFDA7D316388A1DEA5338 /* POPCGUtils.h */,
+				1C3DD646EC78BCE7375513B2 /* POPCGUtils.mm */,
+				29885483EF7BEAEE4FEBE0E1 /* POPCustomAnimation.h */,
+				B99569BEA1A70257F38F95B2 /* POPCustomAnimation.mm */,
+				C73A72699A2740630C38DF49 /* POPDecayAnimation.h */,
+				89245AA34D15C470F1AD7EA7 /* POPDecayAnimation.mm */,
+				8FA09234D58EF33834E478CC /* POPDecayAnimationInternal.h */,
+				4DB83755095A11DB9DC8FF2B /* POPDefines.h */,
+				21138F56C2844CF2F3C3B1AD /* POPGeometry.h */,
+				A9E581CF6F3D1D6E98859C86 /* POPGeometry.mm */,
+				C20180B4DE4EE978640A8376 /* POPLayerExtras.h */,
+				6BF4DFB1B223E35F1EE62F4B /* POPLayerExtras.mm */,
+				C71EC9E7B2C22DEB5C4B1251 /* POPMath.h */,
+				34603F96BC54A67DA1FC7421 /* POPMath.mm */,
+				223D5D9AAB0FD062B812CB97 /* POPPropertyAnimation.h */,
+				049A60EB5588619C8659334A /* POPPropertyAnimation.mm */,
+				3F6A48B7C0C86910F355BF1B /* POPPropertyAnimationInternal.h */,
+				B171BFACA1A9218BB3A15D14 /* POPSpringAnimation.h */,
+				C030FAB2A260C855AB724B3C /* POPSpringAnimation.mm */,
+				34177947D1C4566C08FF91CA /* POPSpringAnimationInternal.h */,
+				3BE8C98E771687F3175E0DCE /* POPSpringSolver.h */,
+				C5DDA22B49D0633B78B7B36E /* POPVector.h */,
+				D11D298CC27601DC61BF6786 /* POPVector.mm */,
+				D0EC759141DD09A55C724FB7 /* TransformationMatrix.cpp */,
+				70B810F771EF27A1055A51D0 /* TransformationMatrix.h */,
+				E47F1A0E26034E9E90F33A08 /* UnitBezier.h */,
+				DE58DE56D3A8F92AB18BF287 /* Support Files */,
+			);
+			path = pop;
+			sourceTree = "<group>";
+		};
+		B0A30A298314FF8DD60ED499 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D60E4FB09D335A3CE8968 /* FlurrySDK */,
+				F53DF4DA46E986736F32FF24 /* GoogleAnalytics-iOS-SDK */,
+				0089E7C7EC9A7C6404BF2296 /* LIVBubbleMenu */,
+				14E41467FADE0A59FED9DAE1 /* THPinViewController */,
+				6D50D066C2083618B06B79AE /* UIView+draggable */,
+				AC37937FD890FCA1E014DA50 /* pop */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B296B180F5FDE90E309AA34B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27D87D5E42C71EAE8BED7449 /* libPods.a */,
+				1F2B5BED31B064962A1A1EA6 /* libPods-FlurrySDK.a */,
+				8F7FDAFD100CC68BD4D31D1D /* libPods-GoogleAnalytics-iOS-SDK.a */,
+				E1EE83FB5081F3329E9B0A13 /* libPods-LIVBubbleMenu.a */,
+				E014AFAD218BA7B48BC8398A /* libPods-THPinViewController.a */,
+				F6DFE531BAF91A493616EC9E /* libPods-UIView+draggable.a */,
+				189FED92DEF9B7B5A8691AFC /* libPods-pop.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FD224C2E858848029C4DCD74 /* Support Files */ = {
+		C2CE0CD23EC3273069DC307C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5C183F50384C4B4EBE10343F /* Pods-THPinViewController.xcconfig */,
-				01CDC05645A9440EA52EEFD7 /* Pods-THPinViewController-Private.xcconfig */,
-				0E7EC181464941D59C9B182C /* Pods-THPinViewController-dummy.m */,
-				663D984EBBF8451B82A7FA06 /* Pods-THPinViewController-prefix.pch */,
+				A6F97F2FACC0863FDC8F948A /* libFlurry_5.4.0.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB44F929E8A8DD392E6E8D82 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B4A3F0FD5C2F9158F34D3AAD /* CFNetwork.framework */,
+				A48135D257D2D7EAFA485E0F /* CoreData.framework */,
+				A9B38D6EADE169ED5AFA2A09 /* CoreGraphics.framework */,
+				59CA9D8FBAD007FE14BFDF46 /* Foundation.framework */,
+				73C175D561CD62D4D882E36E /* MediaPlayer.framework */,
+				2EB6E17E8E71BB6B755DBD15 /* Security.framework */,
+				4A4C30C40307A635771E41A4 /* SystemConfiguration.framework */,
+				69A0F4D3A1399DDB6C2A5C92 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DE58DE56D3A8F92AB18BF287 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F3271213FC303E198035EC8 /* Pods-pop.xcconfig */,
+				ACB3D8898ACC686699E51E3D /* Pods-pop-Private.xcconfig */,
+				4582E696C13F5EAB0ECD5F09 /* Pods-pop-dummy.m */,
+				BF4B5666FA93443F04177D98 /* Pods-pop-prefix.pch */,
 			);
 			name = "Support Files";
-			sourceTree = SOURCE_ROOT;
+			path = "../Target Support Files/Pods-pop";
+			sourceTree = "<group>";
+		};
+		EE7D60E4FB09D335A3CE8968 /* FlurrySDK */ = {
+			isa = PBXGroup;
+			children = (
+				2806B54755314DC755D4E037 /* FlurrySDK */,
+				8F74D7EEDF8BAF9E816B13BA /* Support Files */,
+			);
+			path = FlurrySDK;
+			sourceTree = "<group>";
+		};
+		F53DF4DA46E986736F32FF24 /* GoogleAnalytics-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				CCF5BB84AA090661AC79DCCF /* GAI.h */,
+				14C050E44FF57888D670DFEB /* GAIDictionaryBuilder.h */,
+				03CA7E3FE78B51FF5E804A35 /* GAIEcommerceFields.h */,
+				DE3716D09C5D814BD6C68A4B /* GAIEcommerceProduct.h */,
+				27F76EED903B063AC0F007EB /* GAIEcommerceProductAction.h */,
+				7BEA09D0FBA9CA182D10850C /* GAIEcommercePromotion.h */,
+				05C928947A3668CD9636309E /* GAIFields.h */,
+				101C433943E455AF519D31C7 /* GAILogger.h */,
+				197F7FD8083B2E6B6F6CB1B4 /* GAITrackedViewController.h */,
+				86DC986292EBA15D7145FAA3 /* GAITracker.h */,
+				09070CC0F9FCB42EF19E6A3C /* TAGContainer.h */,
+				4393F125502A221DC20BEF93 /* TAGContainerOpener.h */,
+				7FC325F70A2D92C6B1000B9E /* TAGDataLayer.h */,
+				0F97F39B709A491E948A0646 /* TAGLogger.h */,
+				51595E4D84D8CF52E35702FB /* TAGManager.h */,
+				267FFE15DC6EA6947BA81DBC /* Support Files */,
+			);
+			path = "GoogleAnalytics-iOS-SDK";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		486A562B24A147F1B7A8A60E /* Headers */ = {
+		21E71BCC229F4AF9A98B4022 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C4A7A3133364E278200B83D /* THPinInputCircleView.h in Headers */,
-				79CAE319FB0947A58C2F7BFB /* THPinInputCirclesView.h in Headers */,
-				31AA728276404C6090A2A689 /* THPinNumButton.h in Headers */,
-				A7462E2DCC8144E087149B00 /* THPinNumPadView.h in Headers */,
-				F708697A48F74810AAF6F585 /* THPinView.h in Headers */,
-				56B709C890674564B7B269B3 /* THPinViewController.h in Headers */,
+				F4201CB713947AE0CF38B570 /* LIVBubbleMenu.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		58DDAF2DB3AA4607859FAD6A /* Headers */ = {
+		4259C84E9A507544A152D9E1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C578BF4EE2624690B7A42DAD /* Flurry.h in Headers */,
+				6CB71BFBD49D97DF4FC8FF98 /* FloatConversion.h in Headers */,
+				1F1016D40684AADAD674E5F1 /* POP.h in Headers */,
+				28D9850E672CBB27301E9105 /* POPAction.h in Headers */,
+				A427176A47561875715B9DDC /* POPAnimatableProperty.h in Headers */,
+				1853D0170D0167AEE984D41B /* POPAnimation.h in Headers */,
+				13F9B27CC5177ACBA5BD4A1D /* POPAnimationEvent.h in Headers */,
+				25C5142BDC249DCB9CEF70E6 /* POPAnimationEventInternal.h in Headers */,
+				C144CA90B36D45718FB8D089 /* POPAnimationExtras.h in Headers */,
+				601B62FE0373154AE312E8DE /* POPAnimationInternal.h in Headers */,
+				988670CB847D508480BDD0DA /* POPAnimationPrivate.h in Headers */,
+				5F104EAF173210F5D21A6B14 /* POPAnimationRuntime.h in Headers */,
+				F43CE4C25FE86CBA841BB263 /* POPAnimationTracer.h in Headers */,
+				6253F04CB7DB39EC9EBB4C36 /* POPAnimationTracerInternal.h in Headers */,
+				64A05A3238FADC34FD4563CC /* POPAnimator.h in Headers */,
+				2CF01E7BA29022A26917C707 /* POPAnimatorPrivate.h in Headers */,
+				7194AD4778466BCAF951DCC4 /* POPBasicAnimation.h in Headers */,
+				DEC9DBCD133F897B6C9AA932 /* POPBasicAnimationInternal.h in Headers */,
+				2689F6FB092555F9C5B1A63A /* POPCGUtils.h in Headers */,
+				36211C0F83BB0EF682CCA900 /* POPCustomAnimation.h in Headers */,
+				4CD1DE7B04DE5EFFB4B82CF0 /* POPDecayAnimation.h in Headers */,
+				B001C1FD7C522C5A210E99D3 /* POPDecayAnimationInternal.h in Headers */,
+				A4A564EA34C17B0FD075B204 /* POPDefines.h in Headers */,
+				9EEC24BAE42C8C35D5C4A9F9 /* POPGeometry.h in Headers */,
+				B3C5A9481F60F1F28B98B765 /* POPLayerExtras.h in Headers */,
+				9E2264D029203F27D9C4A907 /* POPMath.h in Headers */,
+				4F75C9F429ACF7626E420428 /* POPPropertyAnimation.h in Headers */,
+				F9F5B78CA4D72506C83A6F49 /* POPPropertyAnimationInternal.h in Headers */,
+				0C6694A3564E0A0F0968CCDE /* POPSpringAnimation.h in Headers */,
+				FE1391AE2EEB8038EC10F3DE /* POPSpringAnimationInternal.h in Headers */,
+				0D3E7F547B8C25E5E3CEB17C /* POPSpringSolver.h in Headers */,
+				2CCEED1861E710BC66FDCA10 /* POPVector.h in Headers */,
+				CFE942C352AFD5255291D77D /* TransformationMatrix.h in Headers */,
+				FA58185483C853DE754818CE /* UnitBezier.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D6C97FCD4CA475780AA0B1B /* Headers */ = {
+		4ABD86FF138C032513DAB947 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4AE505C6BBE4F068865D2E7 /* UIView+draggable.h in Headers */,
+				E920D987C2E738D0292314F4 /* GAI.h in Headers */,
+				1A836759F27FBE8BEC4C9E35 /* GAIDictionaryBuilder.h in Headers */,
+				77CD32CD079969049A3FC9ED /* GAIEcommerceFields.h in Headers */,
+				7F89FCE257EBA758E04D62C9 /* GAIEcommerceProduct.h in Headers */,
+				4E0A5312B0432777019E84ED /* GAIEcommerceProductAction.h in Headers */,
+				6D1B24BFC5EA182283761B3C /* GAIEcommercePromotion.h in Headers */,
+				B321355BA697054FD189EBFC /* GAIFields.h in Headers */,
+				3B60A3F8BE115D666935DBE2 /* GAILogger.h in Headers */,
+				6C0B5D728D6191362176FEAE /* GAITrackedViewController.h in Headers */,
+				0386C0EDCC0EB39346D9E630 /* GAITracker.h in Headers */,
+				5E734B1B69DAD922CB540BCB /* TAGContainer.h in Headers */,
+				BF031A1A48E930D769117B75 /* TAGContainerOpener.h in Headers */,
+				C7187B845093FBF50C306F1B /* TAGDataLayer.h in Headers */,
+				04EC9FE5C54AD9BC3886F382 /* TAGLogger.h in Headers */,
+				32312592F81A72FA44FEF320 /* TAGManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A989918716754B6C93A2D47F /* Headers */ = {
+		8957C5A64553EFC75EB61D96 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBBA815A62E842F8A2832D6A /* GAI.h in Headers */,
-				609F41AAE831415DB19A98A8 /* GAIDictionaryBuilder.h in Headers */,
-				FB347BD8E63C4D37835A44F8 /* GAIEcommerceFields.h in Headers */,
-				9D52B12C6E7A4300BA229A93 /* GAIEcommerceProduct.h in Headers */,
-				038FFDA56F854C3880B65600 /* GAIEcommerceProductAction.h in Headers */,
-				60EDD2A8B085416CB6B85261 /* GAIEcommercePromotion.h in Headers */,
-				2F3874F5278E44B983A5C517 /* GAIFields.h in Headers */,
-				6E1FD236CCD84C92AFC8B905 /* GAILogger.h in Headers */,
-				040E8B4284814B2791E44AAD /* GAITrackedViewController.h in Headers */,
-				2D16291344204C9583B8E4D6 /* GAITracker.h in Headers */,
-				DC4298FC8B6D481EB6B3DD06 /* TAGContainer.h in Headers */,
-				ACD22EAF5FE34105A0B81F63 /* TAGContainerOpener.h in Headers */,
-				04CA7BE000FA4D9F92F39361 /* TAGDataLayer.h in Headers */,
-				12EB3A0B1A7E4C199F0DC6B6 /* TAGLogger.h in Headers */,
-				7A44F9ACD8354CD8A5902E72 /* TAGManager.h in Headers */,
+				71C76D38D0CA42F8E687CF74 /* THPinInputCircleView.h in Headers */,
+				3DF415C60024F63E469B48B8 /* THPinInputCirclesView.h in Headers */,
+				F0446D306B26C7E4A34E73D6 /* THPinNumButton.h in Headers */,
+				2D5862DC46306D40AFF0076A /* THPinNumPadView.h in Headers */,
+				2AA80C4D59499DB379752970 /* THPinView.h in Headers */,
+				1F282F3C8F49D2B06EB3C611 /* THPinViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F82EC370BF9CDD39DAFD55 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D5F94F05C4E2D70C82316E0 /* UIView+draggable.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D72BFD0BD4CCB2DEC94873ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2012319C643BFA25335A21A1 /* Flurry.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1ABA42C3B0E2426CBFDCCFED /* Pods-GoogleAnalytics-iOS-SDK */ = {
+		2DE8C56C8D778549B164E4F7 /* Pods-UIView+draggable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 480050516267406F880850A1 /* Build configuration list for PBXNativeTarget "Pods-GoogleAnalytics-iOS-SDK" */;
+			buildConfigurationList = D8C0DA76112ACA14223968E7 /* Build configuration list for PBXNativeTarget "Pods-UIView+draggable" */;
 			buildPhases = (
-				453C0652E81D48A1894B4F5C /* Sources */,
-				25D4A12C148B416DAEDB970C /* Frameworks */,
-				A989918716754B6C93A2D47F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-GoogleAnalytics-iOS-SDK";
-			productName = "Pods-GoogleAnalytics-iOS-SDK";
-			productReference = 41CA571751714FA2B6796272 /* libPods-GoogleAnalytics-iOS-SDK.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		233CE24FD5DD4FF4B9DD1857 /* Pods-UIView+draggable */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 22127BCE7CED498FA61B8D9C /* Build configuration list for PBXNativeTarget "Pods-UIView+draggable" */;
-			buildPhases = (
-				C1C2DA646EC9495D81635EA5 /* Sources */,
-				0F1E74BFBFDB429AA8637E26 /* Frameworks */,
-				9D6C97FCD4CA475780AA0B1B /* Headers */,
+				700C5187D3A264D9D35F40BB /* Sources */,
+				5351A0BB2A19E49549D0BDB1 /* Frameworks */,
+				B3F82EC370BF9CDD39DAFD55 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -509,16 +793,90 @@
 			);
 			name = "Pods-UIView+draggable";
 			productName = "Pods-UIView+draggable";
-			productReference = 5BE8211F86174F7392F448EB /* libPods-UIView+draggable.a */;
+			productReference = F6DFE531BAF91A493616EC9E /* libPods-UIView+draggable.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		2B6E1D3CDD1144F6AAFD7F57 /* Pods-FlurrySDK */ = {
+		7979748EB8C508CE294D82B2 /* Pods-GoogleAnalytics-iOS-SDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7E34264B5D9041F2AE36E892 /* Build configuration list for PBXNativeTarget "Pods-FlurrySDK" */;
+			buildConfigurationList = AD834F8DE9CC1E9A62239CE6 /* Build configuration list for PBXNativeTarget "Pods-GoogleAnalytics-iOS-SDK" */;
 			buildPhases = (
-				508918C22BB2459C83E5A04A /* Sources */,
-				98953468BE05480F926B66A0 /* Frameworks */,
-				58DDAF2DB3AA4607859FAD6A /* Headers */,
+				13917B0CC9A2D0AA0EC31ADE /* Sources */,
+				8DDFD8AF7ABF0CE0D707EEFE /* Frameworks */,
+				4ABD86FF138C032513DAB947 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GoogleAnalytics-iOS-SDK";
+			productName = "Pods-GoogleAnalytics-iOS-SDK";
+			productReference = 8F7FDAFD100CC68BD4D31D1D /* libPods-GoogleAnalytics-iOS-SDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9EDAAFC01AB1F64F1C81EEC2 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6E18350C97F53155954CD82 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				C11EA63056AC1BB8D4EF6371 /* Sources */,
+				85706619BDB1E114BECA904A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2C05CDA8DF7E63C9B2C855A /* PBXTargetDependency */,
+				ED5E1A81ACFBE494B915B874 /* PBXTargetDependency */,
+				B0DCA8F07EFCA4B90F1E838F /* PBXTargetDependency */,
+				E5A69BCF15003B7D70A95C8A /* PBXTargetDependency */,
+				BF14FE25E3579B3E73FCE471 /* PBXTargetDependency */,
+				65F6DC8BD6BCA51BE84E6026 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 27D87D5E42C71EAE8BED7449 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C02C620A41FE4E05A8708495 /* Pods-LIVBubbleMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EE3D770122BF8409285487A /* Build configuration list for PBXNativeTarget "Pods-LIVBubbleMenu" */;
+			buildPhases = (
+				8E1A3B701734B5F2ABEDE5A7 /* Sources */,
+				D6494A2D9170631F71695227 /* Frameworks */,
+				21E71BCC229F4AF9A98B4022 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A07249602A757A5B7F9629B5 /* PBXTargetDependency */,
+			);
+			name = "Pods-LIVBubbleMenu";
+			productName = "Pods-LIVBubbleMenu";
+			productReference = E1EE83FB5081F3329E9B0A13 /* libPods-LIVBubbleMenu.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F0B94672E3EC7DE20C399194 /* Pods-pop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67C639459ACA782DF725766C /* Build configuration list for PBXNativeTarget "Pods-pop" */;
+			buildPhases = (
+				CEDF4DA33E0A8DAD5C8588A9 /* Sources */,
+				C06CF40C0D6C1A9448A99FCB /* Frameworks */,
+				4259C84E9A507544A152D9E1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-pop";
+			productName = "Pods-pop";
+			productReference = 189FED92DEF9B7B5A8691AFC /* libPods-pop.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F55D148B9D636B47BCCEB882 /* Pods-FlurrySDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A2EAA9171001C3BD6B93A5A /* Build configuration list for PBXNativeTarget "Pods-FlurrySDK" */;
+			buildPhases = (
+				47FF0779A49900CD5665E8F1 /* Sources */,
+				ABC41BDE5D9B9301DC23AD6D /* Frameworks */,
+				D72BFD0BD4CCB2DEC94873ED /* Headers */,
 			);
 			buildRules = (
 			);
@@ -526,16 +884,16 @@
 			);
 			name = "Pods-FlurrySDK";
 			productName = "Pods-FlurrySDK";
-			productReference = E54EE3E94FFF410592FDB53C /* libPods-FlurrySDK.a */;
+			productReference = 1F2B5BED31B064962A1A1EA6 /* libPods-FlurrySDK.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		8B9EB3F7571B4EF3A9AD910E /* Pods-THPinViewController */ = {
+		FDF4B4F8B64FD2B021FE4C4C /* Pods-THPinViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 25655228130A4D358D6147AB /* Build configuration list for PBXNativeTarget "Pods-THPinViewController" */;
+			buildConfigurationList = F438CFAA8CDF54575714E7A0 /* Build configuration list for PBXNativeTarget "Pods-THPinViewController" */;
 			buildPhases = (
-				CA3EFA80C214436997DBF7B6 /* Sources */,
-				D986497D6CCE448F9AC43DE6 /* Frameworks */,
-				486A562B24A147F1B7A8A60E /* Headers */,
+				A12F447315308B4449FD798A /* Sources */,
+				BC25B3EA055FE0E2AD6EB409 /* Frameworks */,
+				8957C5A64553EFC75EB61D96 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -543,152 +901,266 @@
 			);
 			name = "Pods-THPinViewController";
 			productName = "Pods-THPinViewController";
-			productReference = 3FA329D07A224351865EEE44 /* libPods-THPinViewController.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		B39E7635A7C44E0BA1B37945 /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 14B32512F81F405A80113B61 /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				302AD9261E7A44B59FF37B10 /* Sources */,
-				1F3897AB048A40AF8C367DDB /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E0A348308B1548D58A158DCE /* PBXTargetDependency */,
-				59F508D396EA4A40897942C8 /* PBXTargetDependency */,
-				6F0001CEFBE44267B3C5F768 /* PBXTargetDependency */,
-				97FDECAE874640B39470E90B /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = CD8BF147B86F42E69E509138 /* libPods.a */;
+			productReference = E014AFAD218BA7B48BC8398A /* libPods-THPinViewController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		877A0744C24A4A9692D5AD8F /* Project object */ = {
+		0A481C29F63748D15418D889 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 5A89A8698750460097EF7242 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = CFC718490EAE48447D04C02F /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 2BE01658E01349739F861271;
-			productRefGroup = EF7424AC4BFA4668BE9372C3 /* Products */;
+			mainGroup = 3FFE1CD6CF539A2FF1BB47FE;
+			productRefGroup = B296B180F5FDE90E309AA34B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B39E7635A7C44E0BA1B37945 /* Pods */,
-				2B6E1D3CDD1144F6AAFD7F57 /* Pods-FlurrySDK */,
-				1ABA42C3B0E2426CBFDCCFED /* Pods-GoogleAnalytics-iOS-SDK */,
-				8B9EB3F7571B4EF3A9AD910E /* Pods-THPinViewController */,
-				233CE24FD5DD4FF4B9DD1857 /* Pods-UIView+draggable */,
+				9EDAAFC01AB1F64F1C81EEC2 /* Pods */,
+				F55D148B9D636B47BCCEB882 /* Pods-FlurrySDK */,
+				7979748EB8C508CE294D82B2 /* Pods-GoogleAnalytics-iOS-SDK */,
+				C02C620A41FE4E05A8708495 /* Pods-LIVBubbleMenu */,
+				FDF4B4F8B64FD2B021FE4C4C /* Pods-THPinViewController */,
+				2DE8C56C8D778549B164E4F7 /* Pods-UIView+draggable */,
+				F0B94672E3EC7DE20C399194 /* Pods-pop */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		302AD9261E7A44B59FF37B10 /* Sources */ = {
+		13917B0CC9A2D0AA0EC31ADE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DED5EB8E3AA4A64A38B6972 /* Pods-dummy.m in Sources */,
+				E146A10BCF8FB88AF48A8F38 /* Pods-GoogleAnalytics-iOS-SDK-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		453C0652E81D48A1894B4F5C /* Sources */ = {
+		47FF0779A49900CD5665E8F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CCEF04FD38D4900ADBA5BFB /* Pods-GoogleAnalytics-iOS-SDK-dummy.m in Sources */,
+				C03909D7491118539ED301BF /* Pods-FlurrySDK-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		508918C22BB2459C83E5A04A /* Sources */ = {
+		700C5187D3A264D9D35F40BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				881498BC18E549AD9BF7E0F8 /* Pods-FlurrySDK-dummy.m in Sources */,
+				5AF2E809E86EC4F1B5CC28B8 /* Pods-UIView+draggable-dummy.m in Sources */,
+				B340D2F7A6319D2FFE6532D6 /* UIView+draggable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1C2DA646EC9495D81635EA5 /* Sources */ = {
+		8E1A3B701734B5F2ABEDE5A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				749C8F2C765B47DAB0C760D4 /* Pods-UIView+draggable-dummy.m in Sources */,
-				949732799EC045BDB0148827 /* UIView+draggable.m in Sources */,
+				E0DA4EA5F1360551CDEBC390 /* LIVBubbleMenu.m in Sources */,
+				D4839902E26D2D7ECE4A0114 /* Pods-LIVBubbleMenu-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA3EFA80C214436997DBF7B6 /* Sources */ = {
+		A12F447315308B4449FD798A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEF78872F9A8469D8C5DEE04 /* Pods-THPinViewController-dummy.m in Sources */,
-				C989DA9C52F145AC918C2C1E /* THPinInputCircleView.m in Sources */,
-				6DFC9FAEA694463680B3AAC8 /* THPinInputCirclesView.m in Sources */,
-				F80A6C998EFE48D795AAAE7C /* THPinNumButton.m in Sources */,
-				9E833A3174954AEBB21411B7 /* THPinNumPadView.m in Sources */,
-				41A773AF15E7419B812CF153 /* THPinView.m in Sources */,
-				E47B186787444512BA39D3ED /* THPinViewController.m in Sources */,
+				F9F78F00DBA50FC16756EED8 /* Pods-THPinViewController-dummy.m in Sources */,
+				FE7EBD13DCB0428DFB8D0CF6 /* THPinInputCircleView.m in Sources */,
+				6B9F2404BAD6ACBBE4EFBA52 /* THPinInputCirclesView.m in Sources */,
+				4FD014387A24986B2A01E505 /* THPinNumButton.m in Sources */,
+				7112701C370998A285B85D50 /* THPinNumPadView.m in Sources */,
+				BD881D4E74E49BA7FC4605CD /* THPinView.m in Sources */,
+				97048F3683A9EDCC57B83EF7 /* THPinViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C11EA63056AC1BB8D4EF6371 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B4C1DFA81E28BA2D147D4D5 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDF4DA33E0A8DAD5C8588A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C16A2EEFABE0136C3A01649C /* POPAnimatableProperty.mm in Sources */,
+				5F2606099DC1DB8808F885E5 /* POPAnimation.mm in Sources */,
+				6A0CFAA134E46960A81F8051 /* POPAnimationEvent.mm in Sources */,
+				E7BFF3D353B788FA17F6A8EC /* POPAnimationExtras.mm in Sources */,
+				BAA978058015157274C7CED4 /* POPAnimationRuntime.mm in Sources */,
+				1B0216C975B4E9030EA99790 /* POPAnimationTracer.mm in Sources */,
+				3EC0B9B5A02B03984BA1069C /* POPAnimator.mm in Sources */,
+				980636549EF6108219C82D1F /* POPBasicAnimation.mm in Sources */,
+				2458EB613A50192F6AE74050 /* POPCGUtils.mm in Sources */,
+				999C7CE073FDC030C9CEFE36 /* POPCustomAnimation.mm in Sources */,
+				998324B579CD18A0B9029152 /* POPDecayAnimation.mm in Sources */,
+				0240081659E803B67DC3EEE9 /* POPGeometry.mm in Sources */,
+				6060F780EE7527FDE8469AFB /* POPLayerExtras.mm in Sources */,
+				C869DB6DDB9F46CE80284AD1 /* POPMath.mm in Sources */,
+				C12478616A390A54CFF0CEEA /* POPPropertyAnimation.mm in Sources */,
+				16DB584F80F59CDB5D669E32 /* POPSpringAnimation.mm in Sources */,
+				D2B26B62E1830A348D0A4A10 /* POPVector.mm in Sources */,
+				E2CD1C064A0441F2E9A22C27 /* Pods-pop-dummy.m in Sources */,
+				C76500D959B8BF9B9DB7C204 /* TransformationMatrix.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		59F508D396EA4A40897942C8 /* PBXTargetDependency */ = {
+		65F6DC8BD6BCA51BE84E6026 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1ABA42C3B0E2426CBFDCCFED /* Pods-GoogleAnalytics-iOS-SDK */;
-			targetProxy = 072BD142006E478F822C2D6E /* PBXContainerItemProxy */;
+			target = F0B94672E3EC7DE20C399194 /* Pods-pop */;
+			targetProxy = 7784BC922FE823D0BA30B7EA /* PBXContainerItemProxy */;
 		};
-		6F0001CEFBE44267B3C5F768 /* PBXTargetDependency */ = {
+		A07249602A757A5B7F9629B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8B9EB3F7571B4EF3A9AD910E /* Pods-THPinViewController */;
-			targetProxy = CE70C1EEFB894CAC906CA3E3 /* PBXContainerItemProxy */;
+			target = F0B94672E3EC7DE20C399194 /* Pods-pop */;
+			targetProxy = F05D6862AB15329F02B77017 /* PBXContainerItemProxy */;
 		};
-		97FDECAE874640B39470E90B /* PBXTargetDependency */ = {
+		B0DCA8F07EFCA4B90F1E838F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 233CE24FD5DD4FF4B9DD1857 /* Pods-UIView+draggable */;
-			targetProxy = 57892D4093514D669AC23246 /* PBXContainerItemProxy */;
+			target = C02C620A41FE4E05A8708495 /* Pods-LIVBubbleMenu */;
+			targetProxy = A16628E56BECBA6419F99CA6 /* PBXContainerItemProxy */;
 		};
-		E0A348308B1548D58A158DCE /* PBXTargetDependency */ = {
+		BF14FE25E3579B3E73FCE471 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2B6E1D3CDD1144F6AAFD7F57 /* Pods-FlurrySDK */;
-			targetProxy = C39B40C95EC348199C46C082 /* PBXContainerItemProxy */;
+			target = 2DE8C56C8D778549B164E4F7 /* Pods-UIView+draggable */;
+			targetProxy = 841B42453DCBD579D9771BE2 /* PBXContainerItemProxy */;
+		};
+		C2C05CDA8DF7E63C9B2C855A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F55D148B9D636B47BCCEB882 /* Pods-FlurrySDK */;
+			targetProxy = 6927757D202527C0AA3B9E50 /* PBXContainerItemProxy */;
+		};
+		E5A69BCF15003B7D70A95C8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDF4B4F8B64FD2B021FE4C4C /* Pods-THPinViewController */;
+			targetProxy = 4ADF97AA7424E23536A11508 /* PBXContainerItemProxy */;
+		};
+		ED5E1A81ACFBE494B915B874 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7979748EB8C508CE294D82B2 /* Pods-GoogleAnalytics-iOS-SDK */;
+			targetProxy = CAEF4D7A216C99E796051E9C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		115C9B7E0E514C5DB37EC934 /* Debug */ = {
+		0D039D4867D2A85D034BD4FC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4AE3A845DBF48C395A8A34D /* Pods-FlurrySDK-Private.xcconfig */;
+			baseConfigurationReference = 880C024623E860E531680D2D /* Pods-FlurrySDK-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-FlurrySDK/Pods-FlurrySDK-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A0FF51A07647D7F2E9E3A2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5B31C6E742D97BDDE9222A9 /* Pods-LIVBubbleMenu-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-LIVBubbleMenu/Pods-LIVBubbleMenu-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3565FF4CEFD2DE5ED58535C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3469072DCDF9F50A913B2ED9 /* Pods-THPinViewController-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-THPinViewController/Pods-THPinViewController-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		397683441E275686C283F8BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 318107074B014B4D421E2EEF /* Pods-GoogleAnalytics-iOS-SDK-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-FlurrySDK-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-GoogleAnalytics-iOS-SDK/Pods-GoogleAnalytics-iOS-SDK-prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
@@ -697,18 +1169,43 @@
 			};
 			name = Debug;
 		};
-		1268EB45244A43BBA3AB03AD /* Release */ = {
+		5087E42DA7A1AE7B5041FA45 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD61C616E9304F1785B8E7D8 /* Pods.xcconfig */;
+			baseConfigurationReference = D5B31C6E742D97BDDE9222A9 /* Pods-LIVBubbleMenu-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-LIVBubbleMenu/Pods-LIVBubbleMenu-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5672B4EB08A4F4F193329055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 318107074B014B4D421E2EEF /* Pods-GoogleAnalytics-iOS-SDK-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-GoogleAnalytics-iOS-SDK/Pods-GoogleAnalytics-iOS-SDK-prefix.pch";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_CFLAGS = (
 					"-DNS_BLOCK_ASSERTIONS=1",
 					"$(inherited)",
@@ -726,19 +1223,17 @@
 			};
 			name = Release;
 		};
-		226A450B3C43412DB021AF8D /* Release */ = {
+		5ACD3AA57DA6A4E606938C35 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4AE3A845DBF48C395A8A34D /* Pods-FlurrySDK-Private.xcconfig */;
+			baseConfigurationReference = ACB3D8898ACC686699E51E3D /* Pods-pop-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-FlurrySDK-prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-pop/Pods-pop-prefix.pch";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_CFLAGS = (
 					"-DNS_BLOCK_ASSERTIONS=1",
 					"$(inherited)",
@@ -756,19 +1251,17 @@
 			};
 			name = Release;
 		};
-		412713733D9446D1A082CC7A /* Release */ = {
+		62B25B0D0D5EE6DB6AA9F465 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C792B11D29E642879F4B5985 /* Pods-UIView+draggable-Private.xcconfig */;
+			baseConfigurationReference = F3F7F564E8399285316CB053 /* Pods-UIView+draggable-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-UIView+draggable-prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-UIView+draggable/Pods-UIView+draggable-prefix.pch";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_CFLAGS = (
 					"-DNS_BLOCK_ASSERTIONS=1",
 					"$(inherited)",
@@ -786,7 +1279,33 @@
 			};
 			name = Release;
 		};
-		415E05A45CCD474EAE7B53F2 /* Debug */ = {
+		6C2F00B6479FF9FA2F45CE83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 880C024623E860E531680D2D /* Pods-FlurrySDK-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-FlurrySDK/Pods-FlurrySDK-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		90B0FC30B08C54FD27F5C9E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -816,50 +1335,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
 				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
 		};
-		43E303AF46954752BA9C0EE7 /* Release */ = {
+		BB44D66C3C3DD60353E56114 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A40B548C54914EA495AF3C68 /* Pods-GoogleAnalytics-iOS-SDK-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-GoogleAnalytics-iOS-SDK-prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		6F2BAF4129E34B5D98C2433F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD61C616E9304F1785B8E7D8 /* Pods.xcconfig */;
+			baseConfigurationReference = D5C9A02502A3603A2171D513 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -868,10 +1356,8 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
@@ -880,64 +1366,7 @@
 			};
 			name = Debug;
 		};
-		A005D6F5CEA04E2285D9E1FA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01CDC05645A9440EA52EEFD7 /* Pods-THPinViewController-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-THPinViewController-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		AC3DF58550C84B0C95145DB6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A40B548C54914EA495AF3C68 /* Pods-GoogleAnalytics-iOS-SDK-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-GoogleAnalytics-iOS-SDK-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		B204009224FD4BC5B0197D6B /* Release */ = {
+		C21A862C9724DABF8F0BB82F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -955,59 +1384,30 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
 				STRIP_INSTALLED_PRODUCT = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		E1EB33733CB540DA89D517BB /* Debug */ = {
+		C5123882F18EAABD28D4E54D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C792B11D29E642879F4B5985 /* Pods-UIView+draggable-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-UIView+draggable-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		F4A1436205EC46778B5A13F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01CDC05645A9440EA52EEFD7 /* Pods-THPinViewController-Private.xcconfig */;
+			baseConfigurationReference = E2E11C36A48A0A3A3487B08E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-THPinViewController-prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_CFLAGS = (
 					"-DNS_BLOCK_ASSERTIONS=1",
 					"$(inherited)",
@@ -1025,64 +1425,160 @@
 			};
 			name = Release;
 		};
+		D75610958963BF3259CDC18B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3F7F564E8399285316CB053 /* Pods-UIView+draggable-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-UIView+draggable/Pods-UIView+draggable-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F8786773CEE7075399291EFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACB3D8898ACC686699E51E3D /* Pods-pop-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-pop/Pods-pop-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FE23085385D46D44E719205A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3469072DCDF9F50A913B2ED9 /* Pods-THPinViewController-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-THPinViewController/Pods-THPinViewController-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		14B32512F81F405A80113B61 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		2EE3D770122BF8409285487A /* Build configuration list for PBXNativeTarget "Pods-LIVBubbleMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6F2BAF4129E34B5D98C2433F /* Debug */,
-				1268EB45244A43BBA3AB03AD /* Release */,
+				5087E42DA7A1AE7B5041FA45 /* Debug */,
+				1A0FF51A07647D7F2E9E3A2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22127BCE7CED498FA61B8D9C /* Build configuration list for PBXNativeTarget "Pods-UIView+draggable" */ = {
+		3A2EAA9171001C3BD6B93A5A /* Build configuration list for PBXNativeTarget "Pods-FlurrySDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E1EB33733CB540DA89D517BB /* Debug */,
-				412713733D9446D1A082CC7A /* Release */,
+				6C2F00B6479FF9FA2F45CE83 /* Debug */,
+				0D039D4867D2A85D034BD4FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		25655228130A4D358D6147AB /* Build configuration list for PBXNativeTarget "Pods-THPinViewController" */ = {
+		67C639459ACA782DF725766C /* Build configuration list for PBXNativeTarget "Pods-pop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A005D6F5CEA04E2285D9E1FA /* Debug */,
-				F4A1436205EC46778B5A13F6 /* Release */,
+				F8786773CEE7075399291EFC /* Debug */,
+				5ACD3AA57DA6A4E606938C35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		480050516267406F880850A1 /* Build configuration list for PBXNativeTarget "Pods-GoogleAnalytics-iOS-SDK" */ = {
+		AD834F8DE9CC1E9A62239CE6 /* Build configuration list for PBXNativeTarget "Pods-GoogleAnalytics-iOS-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AC3DF58550C84B0C95145DB6 /* Debug */,
-				43E303AF46954752BA9C0EE7 /* Release */,
+				397683441E275686C283F8BB /* Debug */,
+				5672B4EB08A4F4F193329055 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A89A8698750460097EF7242 /* Build configuration list for PBXProject "Pods" */ = {
+		CFC718490EAE48447D04C02F /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				415E05A45CCD474EAE7B53F2 /* Debug */,
-				B204009224FD4BC5B0197D6B /* Release */,
+				90B0FC30B08C54FD27F5C9E0 /* Debug */,
+				C21A862C9724DABF8F0BB82F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E34264B5D9041F2AE36E892 /* Build configuration list for PBXNativeTarget "Pods-FlurrySDK" */ = {
+		D6E18350C97F53155954CD82 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				115C9B7E0E514C5DB37EC934 /* Debug */,
-				226A450B3C43412DB021AF8D /* Release */,
+				BB44D66C3C3DD60353E56114 /* Debug */,
+				C5123882F18EAABD28D4E54D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8C0DA76112ACA14223968E7 /* Build configuration list for PBXNativeTarget "Pods-UIView+draggable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D75610958963BF3259CDC18B /* Debug */,
+				62B25B0D0D5EE6DB6AA9F465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F438CFAA8CDF54575714E7A0 /* Build configuration list for PBXNativeTarget "Pods-THPinViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE23085385D46D44E719205A /* Debug */,
+				3565FF4CEFD2DE5ED58535C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 877A0744C24A4A9692D5AD8F /* Project object */;
+	rootObject = 0A481C29F63748D15418D889 /* Project object */;
 }

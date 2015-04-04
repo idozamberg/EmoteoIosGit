@@ -26,11 +26,18 @@
 #import "CreditsViewController.h"
 #import "TutorialViewController.h"
 #import "SpecificInformationViewController.h"
+#import "NoteViewController.h"
+#import "NoteBehaviorViewController.h"
+#import "EstimateFeelingViewController.h"
+#import "CotationViewController.h"
+#import "FeelingsViewController.h"
 
 
 @interface FlowManager : NSObject <THPinViewControllerDelegate>
 
 + (FlowManager*) sharedInstance;
+
+typedef void(^BubblesCompletionBlock)();
 
 - (void) showExerciseListWithList : (NSArray*) list forLevel : (NSNumber*) level andType :(exerciseListType) type;
 - (void) showExerciseListWithList : (NSArray*) list forLevel : (NSNumber*) level andType :(exerciseListType) type WithColorTherapy : (BOOL) shouldShowColorTherapy;
@@ -51,6 +58,11 @@
 - (void) showEnterPinVC : (BOOL) animated;
 - (void) showCreditsVC;
 - (void) ShowTutorialVC;
+- (void) showNoteVC;
+- (void) showNoteBehaviorVC;
+- (void) showEstimateViewController;
+- (void) showCotationViewController;
+- (void) showFeelingsViewController;
 
 @property (strong,nonatomic) UIStoryboard* storyBoard;
 @property (strong,nonatomic) UINavigationController* navigationController;
