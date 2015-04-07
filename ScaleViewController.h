@@ -16,8 +16,10 @@
 #import "TutorialManager.h"
 #import "TutorialView.h"
 #import "LIVBubbleMenu.h"
+#import "MFSideMenuContainerViewController.h"
+#import "SuperViewController.h"
 
-@interface ScaleViewController : UIViewController <UIScrollViewDelegate,UINavigationControllerDelegate,UIViewControllerTransitioningDelegate,LIVBubbleButtonDelegate>
+@interface ScaleViewController : SuperViewController <UIScrollViewDelegate,UINavigationControllerDelegate,UIViewControllerTransitioningDelegate,LIVBubbleButtonDelegate>
 {
     BOOL buttonOn;
     BOOL isButtonFlashing;

@@ -50,6 +50,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) viewWillDisappear:(BOOL)animated
+{
+    self.bubbleMenu.delegate = Nil;
+    self.bubbleMenu = Nil;
+}
+
 /*
  #pragma mark - Navigation
  
@@ -66,8 +72,7 @@
     // Handeling Click
     [super HandleBubbleClickedForBubble:button andIBubbleIndex:index completion:^(BOOL finished){
         
-        [[FlowManager sharedInstance] showCotationViewController];
-        
+        [[FlowManager sharedInstance] showCotationViewControllerWithCenterImage:[self.bubbles objectAtIndex:index] andText:@"Notez l’intensité de l’émotion" andBubbleIndex:0];
     }];
 
     

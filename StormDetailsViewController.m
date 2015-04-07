@@ -103,9 +103,6 @@
     [[FlowManager sharedInstance] showEmergencyVC];
 }
 
-- (IBAction)backClicked:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
-}
 
 - (BOOL) shouldAutorotate
 {

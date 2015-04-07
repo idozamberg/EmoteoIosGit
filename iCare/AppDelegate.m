@@ -11,13 +11,29 @@
 #import "AppData.h"
 #import <MediaPlayer/MediaPlayer.h>
 #import "AnalyticsManager.h"
+#import "MFSideMenuContainerViewController.h"
+
+
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // Override point for customization after application launc
+
+
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    MFSideMenuContainerViewController *container = (MFSideMenuContainerViewController *)self.window.rootViewController;
+    UINavigationController *navigationController = [storyboard instantiateViewControllerWithIdentifier:@"NavigationControllerVC"];
+    UIViewController *leftSideMenuViewController = [storyboard instantiateViewControllerWithIdentifier:@"leftSideMenuViewController"];
+
+    [container setLeftMenuViewController:leftSideMenuViewController];
+    [container setRightMenuViewController:Nil];
+    [container setCenterViewController:navigationController];
+    [container setMenuAnimationDefaultDuration:1];
     
+    [FlowManager sharedInstance].navigationController = navigationController;
+
     // Show Splash
     [self showSplashWithDuration:2];
     
@@ -26,8 +42,6 @@
     
     // Loading videos
     [[AppManager sharedInstance] performStartupProcedures];
-    
-
     
     return YES;
 }

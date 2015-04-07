@@ -299,9 +299,6 @@
     [self.tblMenu reloadData];
 }
 
-- (IBAction)menuClicked:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
-}
 
 - (void) showPinConfiguration
 {

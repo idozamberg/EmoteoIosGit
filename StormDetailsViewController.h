@@ -11,14 +11,14 @@
 #import "Exercise.h"
 #import "AppData.h"
 #import "Storm.h"
+#import "SuperViewController.h"
 
-@interface StormDetailsViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+@interface StormDetailsViewController : SuperViewController <UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *lblDate;
 @property (weak, nonatomic) IBOutlet UIImageView *imgLevel;
 @property (nonatomic,strong) Storm* currentStorm;
 @property (weak, nonatomic) IBOutlet UITableView *tblDetailes;
 - (IBAction)graphClicked:(id)sender;
 - (IBAction)emergencyClicked:(id)sender;
-- (IBAction)backClicked:(id)sender;
 
 @end

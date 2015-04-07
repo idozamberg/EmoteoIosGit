@@ -10,6 +10,8 @@
 #import "UIView+Framing.h"
 #import "ScaleAnimation.h"
 #import "ATCAnimatedTransitioningFade.h"
+#import "MFSideMenu.h"
+
 
 #define DEFAULT_X   
 
@@ -34,61 +36,12 @@
     }
     return self;
 }
-
-- (void) showSplash
-{
- 
-    NSString* splashVideoName = @"splash4";
-    
-    // If it is iphone 5 change splash name
-    CGSize screenSize = [[UIScreen mainScreen] bounds].size;
-    if (screenSize.height == 568)
-    {
-        splashVideoName = @"splashVideo";
-    }
-    
-    // Setting video
-    NSBundle *bundle = [NSBundle mainBundle];
-    NSString *moviePath = [bundle pathForResource:splashVideoName ofType:@"mp4"];
-    NSURL *movieURL = [NSURL fileURLWithPath:moviePath];
-    theMovie = [[MPMoviePlayerViewController alloc] initWithContentURL:movieURL];
-    theMovie.view.frame = [[UIScreen mainScreen] applicationFrame];
-    theMovie.moviePlayer.scalingMode = MPMovieScalingModeAspectFill;
-    theMovie.moviePlayer.controlStyle =  MPMovieControlStyleNone;
-    
-    [theMovie.moviePlayer play];
-    
-   // [self.navigationController presentViewController:theMovie animated:NO completion:Nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(playbackStateChanged)
-                                                 name:MPMoviePlayerPlaybackDidFinishNotification object:nil];
-    
-    [self.navigationController pushViewController:theMovie animated:NO];
-}
-
-
-- (void) playbackStateChanged {
-
-            [self.navigationController popToRootViewControllerAnimated:YES];
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:Nil];
-    
-}
-
 - (void)viewDidLoad
 {
-    levelLabelsArray = [NSMutableArray new];
-    self.vwTutorial.alpha = 0;
     [super viewDidLoad];
     
-    // Showing splash video
-    //[self showSplash];
-    
-    // Do any additional setup after loading the view from its nib.
-   /* [self.svScales setHeight:self.view.bounds.size.height];
-    [self.svScales setWidth:self.view.bounds.size.width];
-    [self.svScales setXPosition:0];
-    [self.svScales setYPosition:0];*/
+    levelLabelsArray = [NSMutableArray new];
+    self.vwTutorial.alpha = 0;
     
     // Setting initial settings
     firstLoad = YES;
@@ -103,7 +56,6 @@
     
     // Listening to orientation changes
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
     
     // Activiting scrolling properties
     [self.navigationController.interactivePopGestureRecognizer setEnabled:YES];
@@ -585,7 +537,7 @@
         }
         else
         {
-            text = [NSString stringWithFormat:@"Vous évaluez votre tension à %li, si vous confirmez, nous allons vous proposer un exercice de pleine conscience !",(long)currentButtonClicked];
+            text = [NSString stringWithFormat:@"Vous évaluez votre tension à %li, Vous pouvez choisir de pratiquer les exercices de pleine conscience, ou de noter vos émotioons et vos comportements !",(long)currentButtonClicked];
         }
     }
     else
@@ -652,11 +604,6 @@
     currentPressedButton = sender;
 }
 
-- (IBAction)menuClicked:(id)sender {
-    
-    // Showing menu
-    [[FlowManager sharedInstance] showMenuVCWithType:menuTablePrincipal];
-}
 
 
 -(id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
@@ -722,6 +669,10 @@
 -(void)livBubbleMenuDidHide:(LIVBubbleMenu *)bubbleMenu
 {
     
+}
+
+-(BOOL)prefersStatusBarHidden{
+    return YES;
 }
 
 @end

@@ -34,7 +34,7 @@
 {
     
     [super viewWillAppear:animated];
-    
+            
     // Delete menu
     self.bubbleMenu = Nil;
     
@@ -52,6 +52,32 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)livBubbleMenu:(LIVBubbleMenu *)bubbleMenu tappedBubbleWithIndex:(NSUInteger)index annButton:(UIButton *)button
+{
+    // Handeling Click
+    [super HandleBubbleClickedForBubble:button andIBubbleIndex:index completion:^(BOOL finished){
+        
+        // Getting current chain
+        EmotionalChain* currChain = [[AppData sharedInstance] currentChain];
+        
+        // Adding Selection
+        [currChain addNewSelection:[self.bubbles objectAtIndex:index] ToKey:[NSNumber numberWithInteger:1]];
+        
+        // Posting selection
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"BubbleChoosedInChild" object:Nil];
+        
+        // Going back
+        [self.navigationController popViewControllerAnimated:YES];
+    }];
+    
+}
+
+- (void) viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    self.bubbleMenu.delegate = Nil;
+}
 /*
 #pragma mark - Navigation
 

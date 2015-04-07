@@ -12,7 +12,7 @@
 
 static AppData* shareData;
 
-@synthesize shouldEvaluateTension,videos,audioFiles;
+@synthesize shouldEvaluateTension,videos,audioFiles,chainsHistory;
 @synthesize emergencyNumber = _emergencyNumber;
 @synthesize shakeLevel = _shakeLevel;
 @synthesize pinCode = _pinCode;
@@ -29,6 +29,7 @@ static AppData* shareData;
        shareData.videos = [NSMutableDictionary new];
        shareData.audioFiles = [NSMutableDictionary new];
        shareData.stormsHistory = [NSMutableArray new];
+       shareData.chainsHistory = [NSMutableArray new];
        shareData.isInStorm = NO;
        shareData.currentLevel = 0;
    }
@@ -100,6 +101,31 @@ static AppData* shareData;
     return newStorm;
 }
 
+// This function will create a new storm and return it
+- (EmotionalChain*) addNewEmotionalChain
+{
+    //  Adding new storm to array
+    EmotionalChain* newChain = [EmotionalChain new];
+    
+    // Set storm's date
+    newChain.date = [NSDate date];
+    
+    // Add to history
+    [self.chainsHistory addObject:newChain];
+    
+    // Saving Storms TODO
+   // [self saveStorms];
+    
+    return newChain;
+}
+
+- (void) addNewChain : (EmotionalChain*) chain;
+{
+    [self.chainsHistory addObject:chain];
+    
+    // TODO - SAVE
+}
+
 - (NSMutableArray*) getExerciseListForLevel : (NSNumber*) level
 {
     // Getting all videos
@@ -150,6 +176,16 @@ static AppData* shareData;
     return Nil;
 }
 
+- (EmotionalChain*) currentChain
+{
+    if (self.chainsHistory.count > 0)
+    {
+        return ([self.chainsHistory objectAtIndex:self.chainsHistory.count - 1]);
+    }
+    
+    return Nil;
+}
+
 - (void) saveStorms
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
@@ -179,5 +215,37 @@ static AppData* shareData;
     {
         self.stormsHistory = [NSMutableArray new];
     }
+}
+
+- (void) saveChains
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    NSString *cacheDirectory = [paths objectAtIndex:0];
+    cacheDirectory = [cacheDirectory stringByAppendingPathComponent:@"MyAppCache"];
+    NSString *fullPath = [cacheDirectory stringByAppendingPathComponent:@"chains.data"];
+    
+    if(![[NSFileManager defaultManager] fileExistsAtPath:fullPath]){
+        [[NSFileManager defaultManager] createDirectoryAtPath:cacheDirectory withIntermediateDirectories:YES attributes:nil error:nil];
+    }
+    
+    // Saving
+    [NSKeyedArchiver archiveRootObject:self.chainsHistory toFile:fullPath];
+}
+
+- (void) loadChains
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    NSString *cacheDirectory = [paths objectAtIndex:0];
+    cacheDirectory = [cacheDirectory stringByAppendingPathComponent:@"MyAppCache"];
+    NSString *fullPath = [cacheDirectory stringByAppendingPathComponent:@"chains.data"];
+    
+    self.chainsHistory = [NSKeyedUnarchiver unarchiveObjectWithFile:fullPath];
+    
+    // Checking if exists
+    if (!self.chainsHistory)
+    {
+        self.chainsHistory = [NSMutableArray new];
+    }
+
 }
 @end

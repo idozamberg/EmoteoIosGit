@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "AppData.h"
 #import "FlowManager.h"
+#import "SuperViewController.h"
 
-@interface ShakeSettingsViewController : UIViewController <UIPickerViewDataSource,UIPickerViewDelegate>
+@interface ShakeSettingsViewController : SuperViewController <UIPickerViewDataSource,UIPickerViewDelegate>
 {
     NSInteger currentLevel;
 }

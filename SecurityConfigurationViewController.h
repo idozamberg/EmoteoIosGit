@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SuperViewController.h"
 
-@interface SecurityConfigurationViewController : UIViewController <UITextFieldDelegate>
+@interface SecurityConfigurationViewController : SuperViewController <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *btnActive;
 @property (weak, nonatomic) IBOutlet UIButton *btnSave;
 @property (weak, nonatomic) IBOutlet UITextField *txtPin;

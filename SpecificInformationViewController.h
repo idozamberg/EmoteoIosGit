@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "SuperViewController.h"
 
-@interface SpecificInformationViewController : ViewController
+@interface SpecificInformationViewController : SuperViewController
 
 
 - (void) setTextAndTitle : (NSString*) text andTitle : (NSString*) title;

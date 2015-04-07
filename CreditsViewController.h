@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "FlowManager.h"
+#import "SuperViewController.h"
 
-@interface CreditsViewController : UIViewController
+@interface CreditsViewController : SuperViewController
 
 @end

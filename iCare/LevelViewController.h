@@ -13,8 +13,9 @@
 #import "Exercise.h"
 #import "EMGTableView.h"
 #import "AudioFile.h"
+#import "SuperViewController.h"
 
-@interface LevelViewController : UIViewController <EMGTableViewDelegate>
+@interface LevelViewController : SuperViewController <EMGTableViewDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *btnPlay;
 @property (weak, nonatomic) IBOutlet UIImageView *imgPlay;
 @property (weak, nonatomic) IBOutlet UIImageView *imgThumb;

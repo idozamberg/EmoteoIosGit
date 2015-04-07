@@ -12,8 +12,9 @@
 #import "FlowManager.h"
 #import "Exercise.h"
 #import "EMGTableView.h"
+#import "SuperViewController.h"
 
-@interface AudioVideoControllerViewController : UIViewController <EMGTableViewDelegate, UIScrollViewDelegate>
+@interface AudioVideoControllerViewController : SuperViewController <EMGTableViewDelegate, UIScrollViewDelegate>
 {
 	AVAudioPlayer *audioPlayer;
 }

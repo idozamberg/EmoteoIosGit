@@ -7,6 +7,7 @@
 //
 
 #import "FeelingsViewController.h"
+#import "FlowManager.h"
 
 @interface FeelingsViewController ()
 
@@ -60,11 +61,16 @@
  */
 
 // On buttons pressed
--(void)livBubbleMenu:(LIVBubbleMenu *)bubbleMenu tappedBubbleWithIndex:(NSUInteger)index
+-(void)livBubbleMenu:(LIVBubbleMenu *)bubbleMenu tappedBubbleWithIndex:(NSUInteger)index annButton:(UIButton *)button
 {
     
     //[[FlowManager sharedInstance] showNoteBehaviorVC];
-    
+    // Handeling Click
+    [super HandleBubbleClickedForBubble:button andIBubbleIndex:index completion:^(BOOL finished){
+        
+        [[FlowManager sharedInstance] showCotationViewControllerWithCenterImage:[self.bubbles objectAtIndex:index] andText:@"Notez l’intensité du sentiment"  andBubbleIndex:2];
+        
+    }];
 }
 
 // On bubbles hide
@@ -73,6 +79,12 @@
     
 }
 
+
+- (void) viewWillDisappear:(BOOL)animated
+{
+    self.bubbleMenu.delegate = Nil;
+    self.bubbleMenu = Nil;
+}
 /*
 #pragma mark - Navigation
 

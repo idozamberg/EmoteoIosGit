@@ -22,21 +22,26 @@ static FlowManager* manager;
     {
         manager = [FlowManager new];
         manager.storyBoard = [UIStoryboard storyboardWithName:@"NavigationBoard" bundle:nil];
-        manager.navigationController = (UINavigationController*)[UIApplication sharedApplication].keyWindow.rootViewController;
+        //manager.navigationController = (UINavigationController*)[UIApplication sharedApplication].keyWindow.rootViewController;
     }
     
     return manager;
+}
+
+- (void) showScaleVC
+{
+    [navigationController popToRootViewControllerAnimated:NO];
 }
 
 - (void) showEmergencyVC
 {
     UrgenceViewController* uVC = [storyBoard instantiateViewControllerWithIdentifier:@"emergencyVC"];
     
-    // Showing view controls
-    [navigationController pushViewController:uVC animated:YES];
-   // navigationController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     
-    //[navigationController presentViewController:uVC animated:YES completion:Nil];
+    // Showing view controls
+    [navigationController popToRootViewControllerAnimated:NO];
+    [navigationController pushViewController:uVC animated:NO];
+
 }
 
 - (void) showExerciseListWithList : (NSArray*) list forLevel : (NSNumber*) level andType :(exerciseListType) type
@@ -73,7 +78,16 @@ static FlowManager* manager;
     vcExercise.listType = type;
     [vcExercise setLevel:level];
     
-    [navigationController pushViewController:vcExercise animated:YES];
+    if (shouldShowColorTherapy)
+    {
+        [navigationController popToRootViewControllerAnimated:NO];
+        [navigationController pushViewController:vcExercise animated:NO];
+
+    }
+    else
+    {
+        [navigationController pushViewController:vcExercise animated:YES];
+    }
 }
 
 - (void) showVideoViewControllerWithVideo : (VideoFile*) video
@@ -123,8 +137,6 @@ static FlowManager* manager;
     
     [vcLevel setAudioFile:file];
     
-  //  [navigationController popToRootViewControllerAnimated:NO];
-    
     [navigationController pushViewController:vcLevel animated:YES];
 }
 
@@ -138,12 +150,10 @@ static FlowManager* manager;
     vcLevel.frameColor = color;
     
     vcLevel.shouldPerformColorTherapy = YES;
-    
     vcLevel.imgBg.hidden = YES;
     
+    // Setting audio file
     [vcLevel setAudioFile:file];
-    
-  //  [navigationController popToRootViewControllerAnimated:NO];
     
     [navigationController pushViewController:vcLevel animated:YES];
 }
@@ -156,7 +166,8 @@ static FlowManager* manager;
     
     menuVC.tableType = type;
     
-    [navigationController pushViewController:menuVC animated:YES];
+    [navigationController popToRootViewControllerAnimated:NO];
+    [navigationController pushViewController:menuVC animated:NO];
 
 }
 
@@ -176,7 +187,9 @@ static FlowManager* manager;
 {
     EmergencyCallSettingsViewController* ecVC = [storyBoard instantiateViewControllerWithIdentifier:@"emergencySettingsVC"];
     
-    [navigationController pushViewController:ecVC animated:YES];
+    // Poping and showing
+    [navigationController popToRootViewControllerAnimated:NO];
+    [navigationController pushViewController:ecVC animated:NO];
 
 }
 
@@ -184,7 +197,8 @@ static FlowManager* manager;
 {
     ShakeSettingsViewController* shakeVC = [storyBoard instantiateViewControllerWithIdentifier:@"shakeVC"];
     
-    [navigationController pushViewController:shakeVC animated:YES];
+    [navigationController popToRootViewControllerAnimated:NO];
+    [navigationController pushViewController:shakeVC animated:NO];
 
 }
 
@@ -196,7 +210,8 @@ static FlowManager* manager;
     RecentStormesViewController* stormsVC = [autoBoard instantiateViewControllerWithIdentifier:@"stormsVC"];
     [stormsVC.tblRecents reloadData];
     
-    [navigationController pushViewController:stormsVC animated:animated];
+    [navigationController popToRootViewControllerAnimated:NO];
+    [navigationController pushViewController:stormsVC animated:NO];
     
 }
 
@@ -227,8 +242,10 @@ static FlowManager* manager;
 - (void) showPinConfigurationVCanimated : (BOOL) animated
 {
     SecurityConfigurationViewController* vcPIN = [storyBoard instantiateViewControllerWithIdentifier:@"pinVC"];
-    
-    [navigationController pushViewController:vcPIN animated:animated];
+   
+    // Poping and showing
+    [navigationController popToRootViewControllerAnimated:NO];
+    [navigationController pushViewController:vcPIN animated:NO];
 }
 
 - (void) showEnterPinVC : (BOOL) animated
@@ -254,7 +271,8 @@ static FlowManager* manager;
     
     CreditsViewController* credits = [autoBoard instantiateViewControllerWithIdentifier:@"creditsVC"];
     
-    [navigationController pushViewController:credits animated:YES];
+    [navigationController popToRootViewControllerAnimated:NO];
+    [navigationController pushViewController:credits animated:NO];
 }
 
 - (void) ShowTutorialVC
@@ -264,12 +282,6 @@ static FlowManager* manager;
     TutorialViewController* tutorial = [autoBoard instantiateViewControllerWithIdentifier:@"tutorialVC"];
     
     [tutorial setModalPresentationStyle:UIModalPresentationOverCurrentContext];
-    
-    // Create segue
-    //UIStoryboardSegue* segue = [[UIStoryboardSegue alloc] initWithIdentifier:@"tutorialVC" source:tutorial destination:navigationController];
-    
-    
-    //[UIStoryboardSegue segueWithIdentifier:@"tutorialVC" source:[[navigationController viewControllers] objectAtIndex:0] destination:tutorial performHandler:Nil];
 
     //[segue perform];
     [navigationController presentViewController:tutorial animated:NO completion:Nil];
@@ -307,11 +319,14 @@ static FlowManager* manager;
     [navigationController pushViewController:noteVC animated:YES];
 }
 
-- (void) showCotationViewController
+- (void) showCotationViewControllerWithCenterImage : (UIImage*) image andText : (NSString*) text andBubbleIndex : (NSInteger) mainIndex
 {
     UIStoryboard* autoBoard = [UIStoryboard storyboardWithName:@"NavigationBoard" bundle:nil];
     
     CotationViewController* noteVC = [autoBoard instantiateViewControllerWithIdentifier:@"CotationViewController"];
+    noteVC.centerImage = image;
+    noteVC.text = text;
+    noteVC.mainButtonIndex = mainIndex;
     
     [navigationController pushViewController:noteVC animated:YES];
 }
@@ -327,6 +342,7 @@ static FlowManager* manager;
     [navigationController pushViewController:noteVC animated:YES];
  
 }
+
 
 //NoteBehaviorViewController
 #pragma mark - THPinViewControllerDelegate
@@ -347,6 +363,9 @@ static FlowManager* manager;
     }
 }
 
+
+
+#pragma mark PIN DELEGATE
 
 - (BOOL)userCanRetryInPinViewController:(THPinViewController *)pinViewController
 {

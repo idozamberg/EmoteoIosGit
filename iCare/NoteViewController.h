@@ -9,5 +9,4 @@
 #import "CirclesViewController.h"
 
 @interface NoteViewController : CirclesViewController
-
 @end

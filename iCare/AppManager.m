@@ -28,6 +28,7 @@ static AppManager* sharedManager;
     [self loadAllAudioFiles];
     [self loadUserDefaults];
     [self LoadStorms];
+    [self LoadChains];
 }
 
 - (void) performShutDownProcedures
@@ -275,6 +276,17 @@ static AppManager* sharedManager;
 {
     [[AppData sharedInstance] loadStorm];
 }
+
+- (void) saveChains
+{
+    [[AppData sharedInstance] saveChains];
+}
+
+- (void) LoadChains
+{
+    [[AppData sharedInstance] loadChains];
+}
+
 
 #pragma mark data manipulation
 

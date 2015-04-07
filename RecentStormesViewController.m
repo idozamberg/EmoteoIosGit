@@ -164,10 +164,6 @@
     [[FlowManager sharedInstance] showStormDetailesForStorm:selectedStorm];
 }
 
-- (IBAction)backClicked:(id)sender {
-    
-    [self.navigationController popViewControllerAnimated:YES];
-}
 
 - (IBAction)emergencyClicked:(id)sender {
     [[FlowManager sharedInstance] showEmergencyVC];

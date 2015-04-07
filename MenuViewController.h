@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "Globals.h"
 #import "FlowManager.h"
+#import "SuperViewController.h"
 
-@interface MenuViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+@interface MenuViewController : SuperViewController <UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tblMenu;
 - (IBAction)menuClicked:(id)sender;
 

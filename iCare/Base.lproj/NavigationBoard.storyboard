@@ -53,6 +53,30 @@
             <string>ITCAvantGardeMM</string>
             <string>ITCAvantGardeMM</string>
         </mutableArray>
+        <mutableArray key="ITCAvantGardeGothic.ttf">
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+            <string>ITCAvantGardeGothic-82wt750wd</string>
+        </mutableArray>
         <mutableArray key="ITCBook.ttf">
             <string>AvantGardeLT-Book</string>
         </mutableArray>
@@ -77,20 +101,8 @@
                                     <action selector="emergencyClicked:" destination="w6y-kZ-Bzt" eventType="touchUpInside" id="qrk-EF-ZrX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Q50-Z2-qMZ">
-                                <rect key="frame" x="97" y="423" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="emergency_on.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="emergency_off.png"/>
-                                <connections>
-                                    <action selector="backClicked:" destination="w6y-kZ-Bzt" eventType="touchUpInside" id="LMs-ss-ABe"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BDU-A9-VES">
-                                <rect key="frame" x="184" y="423" width="40" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gWq-mG-Wk4">
+                                <rect key="frame" x="139" y="413" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" backgroundImage="settings_off.png">
@@ -98,9 +110,16 @@
                                 </state>
                                 <state key="highlighted" backgroundImage="settings_on.png"/>
                                 <connections>
-                                    <action selector="backClicked:" destination="w6y-kZ-Bzt" eventType="touchUpInside" id="Osy-vB-w3N"/>
+                                    <action selector="menuClicked:" destination="w6y-kZ-Bzt" eventType="touchUpInside" id="clb-zu-zKt"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dH4-r7-ebc">
+                                <rect key="frame" x="139" y="459" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.15760332099999999" blue="0.084156535879999994" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -120,9 +139,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="day.png" id="4fO-cS-N6Z">
-                                <rect key="frame" x="0.0" y="-1136" width="320" height="5768"/>
+                                <rect key="frame" x="0.0" y="-2600" width="320" height="5768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Fop-mx-IoS">
+                                <rect key="frame" x="184" y="498" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" backgroundImage="settings_off.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="settings_on.png"/>
+                                <connections>
+                                    <action selector="menuClicked:" destination="TBs-Dh-gWe" eventType="touchUpInside" id="yK1-sR-etF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ESp-Ut-U5f">
+                                <rect key="frame" x="87" y="498" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" backgroundImage="emergency_off.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="emergency_on.png"/>
+                                <connections>
+                                    <action selector="backClicked:" destination="TBs-Dh-gWe" eventType="touchUpInside" id="M1t-B4-7lg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UkV-w9-KOM">
+                                <rect key="frame" x="184" y="544" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame_alpha0.png" id="8yO-FW-x7d">
                                 <rect key="frame" x="27" y="33" width="267" height="424"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -322,30 +372,13 @@
                                     </view>
                                 </subviews>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rKL-ej-wgy">
-                                <rect key="frame" x="97" y="508" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="emergency_off.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="emergency_on.png"/>
-                                <connections>
-                                    <segue destination="w6y-kZ-Bzt" kind="modal" modalTransitionStyle="coverVertical" id="M2c-gp-EoY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Nhy-P6-hDA">
-                                <rect key="frame" x="184" y="508" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="settings_off.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="settings_on.png"/>
-                                <connections>
-                                    <action selector="backClicked:" destination="TBs-Dh-gWe" eventType="touchUpInside" id="8zu-ku-OXj"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ihb-Nd-h5Y">
+                                <rect key="frame" x="82" y="544" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -371,7 +404,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rRa-7p-Jn7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="244" y="737"/>
+            <point key="canvasLocation" x="213" y="567"/>
         </scene>
         <!--Level View Controller-->
         <scene sceneID="wrL-zJ-RTe">
@@ -461,27 +494,44 @@
                                     </view>
                                 </subviews>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0xv-bX-Rgm">
-                                <rect key="frame" x="97" y="508" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="emergency_off.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="emergency_on.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="q3a-LR-N6X">
-                                <rect key="frame" x="184" y="508" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="R4O-za-Ar7">
+                                <rect key="frame" x="184" y="498" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" backgroundImage="settings_off.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" backgroundImage="settings_on.png"/>
                                 <connections>
-                                    <action selector="backClicked:" destination="UQW-g5-uUA" eventType="touchUpInside" id="ENU-EF-vXX"/>
+                                    <action selector="menuClicked:" destination="UQW-g5-uUA" eventType="touchUpInside" id="8wW-9y-HGh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0jq-CO-2av">
+                                <rect key="frame" x="97" y="498" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" backgroundImage="emergency_off.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="emergency_on.png"/>
+                                <connections>
+                                    <action selector="backClicked:" destination="UQW-g5-uUA" eventType="touchUpInside" id="K1E-mH-W4T"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eeG-T7-GAq">
+                                <rect key="frame" x="185" y="544" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nz8-NS-NhP">
+                                <rect key="frame" x="93" y="544" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -515,35 +565,42 @@
                                 <rect key="frame" x="0.0" y="-2611" width="320" height="5768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame_alpha0.png" id="Ry0-zF-yal">
-                                <rect key="frame" x="27" y="33" width="267" height="424"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h3Z-Rw-2ag">
-                                <rect key="frame" x="97" y="508" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="emergency_off.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="emergency_on.png"/>
-                                <connections>
-                                    <segue destination="w6y-kZ-Bzt" kind="push" id="8OD-pR-ic4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="b6o-Wx-VWD">
-                                <rect key="frame" x="184" y="508" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ABL-H7-LkD">
+                                <rect key="frame" x="184" y="498" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" backgroundImage="settings_off.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" backgroundImage="settings_on.png"/>
                                 <connections>
-                                    <action selector="backClicked:" destination="g47-hk-s1X" eventType="touchUpInside" id="aMi-Q6-4hI"/>
+                                    <action selector="menuClicked:" destination="g47-hk-s1X" eventType="touchUpInside" id="Uvg-qb-Exy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pRn-rW-Ar2">
+                                <rect key="frame" x="97" y="498" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" backgroundImage="emergency_off.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="emergency_on.png"/>
+                                <connections>
+                                    <action selector="backClicked:" destination="g47-hk-s1X" eventType="touchUpInside" id="cAr-IM-CQw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PWy-B3-aby">
+                                <rect key="frame" x="183" y="544" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame_alpha0.png" id="Ry0-zF-yal">
+                                <rect key="frame" x="27" y="33" width="267" height="424"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="G8r-v0-iNY">
                                 <rect key="frame" x="27" y="33" width="267" height="424"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -651,6 +708,13 @@
                                     </view>
                                 </subviews>
                             </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Pd-60-1bD">
+                                <rect key="frame" x="92" y="544" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -682,27 +746,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ap1-kh-Hd2">
-                                <rect key="frame" x="97" y="508" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="emergency_off.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="emergency_on.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="N9l-H2-qel">
-                                <rect key="frame" x="184" y="508" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="settings_off.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="settings_on.png"/>
-                                <connections>
-                                    <action selector="backClicked:" destination="dh2-3U-qqk" eventType="touchUpInside" id="wu6-A3-K1d"/>
-                                </connections>
-                            </button>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="day.png" id="Qwt-L4-oge">
                                 <rect key="frame" x="0.0" y="-2600" width="320" height="5768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -801,6 +844,44 @@
                                     </view>
                                 </subviews>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hE7-HZ-0Pd">
+                                <rect key="frame" x="184" y="498" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" backgroundImage="settings_off.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="settings_on.png"/>
+                                <connections>
+                                    <action selector="menuClicked:" destination="dh2-3U-qqk" eventType="touchUpInside" id="kK6-p1-JaS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Hl-4C-BaN">
+                                <rect key="frame" x="184" y="544" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CCb-Eg-JDB">
+                                <rect key="frame" x="92" y="544" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tMQ-GY-Ocy">
+                                <rect key="frame" x="97" y="498" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" backgroundImage="emergency_off.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="emergency_on.png"/>
+                                <connections>
+                                    <action selector="backClicked:" destination="dh2-3U-qqk" eventType="touchUpInside" id="zvB-xQ-okC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -835,31 +916,6 @@
                                         <rect key="frame" x="0.0" y="-1704" width="320" height="5680"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ejx-ng-fjW">
-                                        <rect key="frame" x="97" y="508" width="40" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal" backgroundImage="emergency_off.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted" backgroundImage="emergency_on.png"/>
-                                        <connections>
-                                            <action selector="emergencyClicked:" destination="qxm-ej-IA0" eventType="touchUpInside" id="Am3-e3-3qf"/>
-                                            <segue destination="w6y-kZ-Bzt" kind="push" id="HH9-Ip-aU8"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4EC-t5-4rd">
-                                        <rect key="frame" x="184" y="508" width="40" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal" backgroundImage="settings_off.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted" backgroundImage="settings_on.png"/>
-                                        <connections>
-                                            <action selector="backClicked:" destination="qxm-ej-IA0" eventType="touchUpInside" id="igJ-3D-4hC"/>
-                                        </connections>
-                                    </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sep_bar.png" id="D51-lo-6bp">
                                         <rect key="frame" x="27" y="54" width="267" height="1"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -903,6 +959,25 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XpX-HA-vHi">
+                                        <rect key="frame" x="140" y="498" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" backgroundImage="settings_off.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="settings_on.png"/>
+                                        <connections>
+                                            <action selector="menuClicked:" destination="qxm-ej-IA0" eventType="touchUpInside" id="hNm-8k-eUF"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2JC-a1-527">
+                                        <rect key="frame" x="139" y="544" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -932,30 +1007,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hsC-xt-VMO">
-                                <rect key="frame" x="97" y="508" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="emergency_off.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="emergency_on.png"/>
-                                <connections>
-                                    <segue destination="w6y-kZ-Bzt" kind="push" id="9so-wq-hIf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gTP-Ii-wMt">
-                                <rect key="frame" x="184" y="508" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="settings_on.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="settings_off.png"/>
-                                <connections>
-                                    <action selector="menuClicked:" destination="Bwg-uO-P1B" eventType="touchUpInside" id="6rR-aE-mh7"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunshine.png" id="Na8-6w-uiH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sep_bar.png" id="t8P-xJ-phN">
                                 <rect key="frame" x="27" y="54" width="267" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1009,6 +1064,25 @@
                                     <action selector="creditsClicked:" destination="Bwg-uO-P1B" eventType="touchUpInside" id="drc-Zn-Yke"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7bV-Kr-d7q">
+                                <rect key="frame" x="139" y="498" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" backgroundImage="settings_off.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="settings_on.png"/>
+                                <connections>
+                                    <action selector="menuClicked:" destination="Bwg-uO-P1B" eventType="touchUpInside" id="5Yn-0p-eat"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RUF-hF-j4O">
+                                <rect key="frame" x="139" y="544" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.26274509800000001" green="0.82745098039999998" blue="0.99215686270000003" alpha="1" colorSpace="deviceRGB"/>
                     </view>
@@ -1022,7 +1096,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5d-3m-pB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1169" y="790"/>
+            <point key="canvasLocation" x="1103" y="727"/>
         </scene>
         <!--Security Configuration View Controller-->
         <scene sceneID="Z30-Yr-Jy1">
@@ -1036,30 +1110,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="shS-5u-GKQ">
-                                        <rect key="frame" x="97" y="508" width="40" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal" backgroundImage="emergency_off.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted" backgroundImage="emergency_on.png"/>
-                                        <connections>
-                                            <segue destination="w6y-kZ-Bzt" kind="push" id="jSA-Gj-jAt"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3wL-8H-vsS">
-                                        <rect key="frame" x="184" y="508" width="40" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal" backgroundImage="settings_on.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted" backgroundImage="settings_off.png"/>
-                                        <connections>
-                                            <action selector="backClicked:" destination="XAR-uW-BlU" eventType="touchUpInside" id="TiF-bo-xSO"/>
-                                        </connections>
-                                    </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sep_bar.png" id="JLB-QF-MEz">
                                         <rect key="frame" x="27" y="54" width="267" height="1"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1151,6 +1201,25 @@
                                             <action selector="creditsClicked:" destination="XAR-uW-BlU" eventType="touchUpInside" id="0Vc-Hu-A4r"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tN1-sn-9gT">
+                                        <rect key="frame" x="139" y="498" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" backgroundImage="settings_off.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="settings_on.png"/>
+                                        <connections>
+                                            <action selector="menuClicked:" destination="XAR-uW-BlU" eventType="touchUpInside" id="Q6d-qn-Nq0"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fgT-3X-cUY">
+                                        <rect key="frame" x="138" y="544" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.26274509800000001" green="0.82745098039999998" blue="0.99215686270000003" alpha="1" colorSpace="deviceRGB"/>
                             </view>
@@ -1249,33 +1318,28 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wS1-pi-VLZ">
+                                        <rect key="frame" x="137" y="498" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" backgroundImage="settings_off.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="settings_on.png"/>
+                                        <connections>
+                                            <action selector="menuClicked:" destination="WgV-4p-Rgk" eventType="touchUpInside" id="tCp-6e-6gc"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5zf-Kv-Xli">
+                                        <rect key="frame" x="137" y="544" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.99215686274509807" green="0.20414760781765337" blue="0.03662013957940586" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Yef-F9-cgO">
-                                <rect key="frame" x="97" y="508" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="emergency_off.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="emergency_on.png"/>
-                                <connections>
-                                    <segue destination="w6y-kZ-Bzt" kind="push" id="xh6-Qq-ofE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fPW-pq-EUr">
-                                <rect key="frame" x="184" y="508" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="settings_on.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="settings_off.png"/>
-                                <connections>
-                                    <action selector="backClicked:" destination="WgV-4p-Rgk" eventType="touchUpInside" id="IuH-gr-zPl"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1288,7 +1352,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRo-8l-ycg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1229" y="91"/>
+            <point key="canvasLocation" x="1223" y="104"/>
         </scene>
         <!--Shake Settings View Controller-->
         <scene sceneID="jk1-EB-zBF">
@@ -1298,30 +1362,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jx0-eB-UHJ">
-                                <rect key="frame" x="97" y="508" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="emergency_off.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="emergency_on.png"/>
-                                <connections>
-                                    <segue destination="w6y-kZ-Bzt" kind="push" id="4D9-uu-DF3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3cT-Ac-Y9z">
-                                <rect key="frame" x="184" y="508" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="settings_on.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="settings_off.png"/>
-                                <connections>
-                                    <action selector="backClicked:" destination="lp0-8P-OCh" eventType="touchUpInside" id="L0f-NK-eMI"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sep_bar.png" id="jnx-sp-CSD">
                                 <rect key="frame" x="27" y="75" width="267" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1403,6 +1443,25 @@
                                     <action selector="creditsClicked:" destination="lp0-8P-OCh" eventType="touchUpInside" id="Evx-00-1PH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bih-CN-Qv0">
+                                <rect key="frame" x="139" y="498" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" backgroundImage="settings_off.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="settings_on.png"/>
+                                <connections>
+                                    <action selector="menuClicked:" destination="lp0-8P-OCh" eventType="touchUpInside" id="oQ4-ND-REb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hhz-qz-2eI">
+                                <rect key="frame" x="139" y="544" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.2627450980392157" green="0.82745098039215681" blue="0.99215686274509807" alpha="1" colorSpace="deviceRGB"/>
                     </view>
@@ -1426,6 +1485,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunshine.png" id="nFn-Rf-MtK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame_alpha0.png" id="jxc-Iy-dNj">
                                 <rect key="frame" x="26" y="31" width="270" height="428"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -1478,32 +1541,27 @@ Fondation Artères
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.26274509800000001" green="0.82745098039999998" blue="0.99215686270000003" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Xf3-eK-xUq">
-                                <rect key="frame" x="184" y="508" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="xLn-4C-rdW">
+                                <rect key="frame" x="139" y="501" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="settings_on.png">
+                                <state key="normal" backgroundImage="settings_off.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted" backgroundImage="settings_off.png"/>
+                                <state key="highlighted" backgroundImage="settings_on.png"/>
                                 <connections>
-                                    <action selector="backClicked:" destination="7gG-uf-bXT" eventType="touchUpInside" id="wH9-Wd-dWw"/>
+                                    <action selector="menuClicked:" destination="7gG-uf-bXT" eventType="touchUpInside" id="gvq-fH-fZM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5mx-lK-RCe">
-                                <rect key="frame" x="97" y="508" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="emergency_off.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="emergency_on.png"/>
-                                <connections>
-                                    <action selector="Emergencyclicked:" destination="7gG-uf-bXT" eventType="touchUpInside" id="GaZ-bZ-WMa"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jfA-XZ-cyr">
+                                <rect key="frame" x="139" y="547" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.26666668059999998" green="0.82745105029999999" blue="0.98431378599999997" alpha="1" colorSpace="deviceRGB"/>
                         <color key="tintColor" red="0.26666668059999998" green="0.82745105029999999" blue="0.98431378599999997" alpha="1" colorSpace="deviceRGB"/>
@@ -1583,28 +1641,23 @@ Fondation Artères
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AtH-Rt-QCI">
-                                <rect key="frame" x="97" y="508" width="40" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rCI-wP-LZX">
+                                <rect key="frame" x="138" y="544" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="htr-Ml-Xze">
+                                <rect key="frame" x="139" y="498" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="emergency_off.png">
+                                <state key="normal" backgroundImage="settings_off.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted" backgroundImage="emergency_on.png"/>
+                                <state key="highlighted" backgroundImage="settings_on.png"/>
                                 <connections>
-                                    <action selector="emergencyClicked:" destination="MXh-Qg-vjg" eventType="touchUpInside" id="VdZ-XJ-SLA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="U1m-ze-NPk">
-                                <rect key="frame" x="184" y="508" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="settings_on.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="settings_off.png"/>
-                                <connections>
-                                    <action selector="backClicked:" destination="MXh-Qg-vjg" eventType="touchUpInside" id="Ga9-E2-wTB"/>
+                                    <action selector="menuClicked:" destination="MXh-Qg-vjg" eventType="touchUpInside" id="Nv6-UJ-62L"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1626,30 +1679,6 @@ Fondation Artères
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oCN-kd-VDW">
-                                <rect key="frame" x="97" y="508" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="emergency_off.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="emergency_on.png"/>
-                                <connections>
-                                    <action selector="emergencyClicked:" destination="Xka-jv-aLf" eventType="touchUpInside" id="jlz-oo-uEn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GM2-4e-q6e">
-                                <rect key="frame" x="184" y="508" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="settings_on.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="settings_off.png"/>
-                                <connections>
-                                    <action selector="backClicked:" destination="Xka-jv-aLf" eventType="touchUpInside" id="vLo-3J-vhS"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame_alpha0.png" id="U64-JY-6JT">
                                 <rect key="frame" x="27" y="33" width="267" height="424"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -1748,6 +1777,44 @@ Fondation Artères
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="b1D-rU-aS3">
+                                <rect key="frame" x="184" y="498" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" backgroundImage="settings_off.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="settings_on.png"/>
+                                <connections>
+                                    <action selector="menuClicked:" destination="Xka-jv-aLf" eventType="touchUpInside" id="jO7-oQ-56N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vpg-al-tBq">
+                                <rect key="frame" x="97" y="498" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" backgroundImage="emergency_off.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="emergency_on.png"/>
+                                <connections>
+                                    <action selector="backClicked:" destination="Xka-jv-aLf" eventType="touchUpInside" id="Enx-KS-gZn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5YP-d4-4Gh">
+                                <rect key="frame" x="184" y="544" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c3g-do-QEE">
+                                <rect key="frame" x="92" y="544" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.26274509800000001" green="0.82745098039999998" blue="0.99215686270000003" alpha="1" colorSpace="deviceRGB"/>
                     </view>
@@ -1768,30 +1835,6 @@ Fondation Artères
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bOg-iE-4Kg">
-                                <rect key="frame" x="97" y="508" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="emergency_off.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="emergency_on.png"/>
-                                <connections>
-                                    <action selector="emergencyClicked:" destination="7Gr-pd-gHj" eventType="touchUpInside" id="B1B-8X-2eY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MRX-rb-atn">
-                                <rect key="frame" x="184" y="508" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="settings_on.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="settings_off.png"/>
-                                <connections>
-                                    <action selector="backClicked:" destination="7Gr-pd-gHj" eventType="touchUpInside" id="2bJ-6x-nlv"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screen4png.png" id="JrY-mC-yrN">
                                 <rect key="frame" x="27" y="33" width="267" height="424"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1852,6 +1895,44 @@ Fondation Artères
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oDi-XL-j2D">
+                                <rect key="frame" x="184" y="498" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" backgroundImage="settings_off.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="settings_on.png"/>
+                                <connections>
+                                    <action selector="menuClicked:" destination="7Gr-pd-gHj" eventType="touchUpInside" id="AJ9-9A-r1K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ckQ-gE-d9t">
+                                <rect key="frame" x="97" y="498" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" backgroundImage="emergency_off.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="emergency_on.png"/>
+                                <connections>
+                                    <action selector="backClicked:" destination="7Gr-pd-gHj" eventType="touchUpInside" id="9GW-gi-ToU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kTj-iS-9WB">
+                                <rect key="frame" x="184" y="544" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mqc-zI-Gmn">
+                                <rect key="frame" x="92" y="544" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.26274509800000001" green="0.82745098039999998" blue="0.99215686270000003" alpha="1" colorSpace="deviceRGB"/>
                     </view>
@@ -1877,6 +1958,10 @@ Fondation Artères
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunshine.png" id="zKy-pu-wer">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame_alpha0.png" id="JGL-1t-fA9">
                                 <rect key="frame" x="27" y="33" width="267" height="424"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1913,22 +1998,22 @@ Les personnes qui en souffrent sont en proie à de fréquentes crises au cours d
                                         <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                     </textView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.26274509800000001" green="0.82745098039999998" blue="0.99215686270000003" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eaN-45-WEH">
-                                <rect key="frame" x="184" y="508" width="40" height="40"/>
+                                <rect key="frame" x="184" y="498" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" backgroundImage="settings_on.png">
+                                <state key="normal" backgroundImage="settings_off.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted" backgroundImage="settings_off.png"/>
+                                <state key="highlighted" backgroundImage="settings_on.png"/>
                                 <connections>
-                                    <action selector="backClicked:" destination="g8r-Da-LJZ" eventType="touchUpInside" id="uwI-45-w1u"/>
+                                    <action selector="menuClicked:" destination="g8r-Da-LJZ" eventType="touchUpInside" id="q1f-fZ-Y6b"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bVA-rL-Iji">
-                                <rect key="frame" x="97" y="508" width="40" height="40"/>
+                                <rect key="frame" x="97" y="498" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" backgroundImage="emergency_off.png">
@@ -1936,9 +2021,23 @@ Les personnes qui en souffrent sont en proie à de fréquentes crises au cours d
                                 </state>
                                 <state key="highlighted" backgroundImage="emergency_on.png"/>
                                 <connections>
-                                    <action selector="emergencyClicked:" destination="g8r-Da-LJZ" eventType="touchUpInside" id="1xh-rk-snK"/>
+                                    <action selector="backClicked:" destination="g8r-Da-LJZ" eventType="touchUpInside" id="gbH-kw-Alq"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HAg-rS-Kl8">
+                                <rect key="frame" x="184" y="544" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hgr-Yp-QTH">
+                                <rect key="frame" x="92" y="544" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ITCAvantGardeGothic-82wt750wd" family="ITC Avant Garde Gothic" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.26666668059999998" green="0.82745105029999999" blue="0.98431378599999997" alpha="1" colorSpace="deviceRGB"/>
                         <color key="tintColor" red="0.26666668059999998" green="0.82745105029999999" blue="0.98431378599999997" alpha="1" colorSpace="deviceRGB"/>
@@ -1952,7 +2051,7 @@ Les personnes qui en souffrent sont en proie à de fréquentes crises au cours d
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iPN-eB-vC9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="99" y="2261"/>
+            <point key="canvasLocation" x="109" y="2133"/>
         </scene>
         <!--Note View Controller-->
         <scene sceneID="pZS-8T-8AF">
@@ -1997,9 +2096,17 @@ Les personnes qui en souffrent sont en proie à de fréquentes crises au cours d
                                     <action selector="centerClicked:" destination="Xuj-UX-WBE" eventType="touchUpInside" id="Q23-kM-prn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Noter et Comprendre mes émotions et mes comportements" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GYw-l9-gfC">
-                                <rect key="frame" x="94" y="219" width="131" height="131"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Noter mes  émotions et mes comportements" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GYw-l9-gfC">
+                                <rect key="frame" x="95" y="220" width="131" height="131"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rnw-Vf-krc">
+                                <rect key="frame" x="8" y="17" width="304" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <string key="text">Noter régulièrement les émotions, les sentiments et les comportements permet d’en prendre plus efficacement conscience et d’en tenir compte au long de la journée</string>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -2015,6 +2122,7 @@ Les personnes qui en souffrent sont en proie à de fréquentes crises au cours d
                         <outlet property="btnCenter" destination="XaC-MZ-dS5" id="vHB-7Z-bx4"/>
                         <outlet property="imgBg" destination="16q-Ww-zez" id="Syk-mG-7T3"/>
                         <outlet property="lblCenter" destination="GYw-l9-gfC" id="vXg-HT-miN"/>
+                        <outlet property="lblText" destination="rnw-Vf-krc" id="3mO-9C-A95"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QU7-Hf-5tI" sceneMemberID="firstResponder"/>
@@ -2033,6 +2141,13 @@ Les personnes qui en souffrent sont en proie à de fréquentes crises au cours d
                                 <rect key="frame" x="0.0" y="-2556" width="320" height="5680"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notez le comportement que vous êtes tenté d’avoir ou qui a été le votre à l’instant" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qmb-cf-3jB">
+                                <rect key="frame" x="8" y="20" width="304" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Zx7-71-a3k">
                                 <rect key="frame" x="97" y="508" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -2100,6 +2215,13 @@ Les personnes qui en souffrent sont en proie à de fréquentes crises au cours d
                                 <rect key="frame" x="0.0" y="-2556" width="320" height="5680"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choisissez l’émotion qui domine en ce moment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tXh-ZP-R0J">
+                                <rect key="frame" x="8" y="20" width="304" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uZA-JG-sko">
                                 <rect key="frame" x="97" y="508" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -2131,7 +2253,7 @@ Les personnes qui en souffrent sont en proie à de fréquentes crises au cours d
                                     <action selector="centerClicked:" destination="Wl1-eZ-aZE" eventType="touchUpInside" id="Pth-hw-NTh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Noter et coter l’intensité de mes émotions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BAA-mz-rfk">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Noter mes émotions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BAA-mz-rfk">
                                 <rect key="frame" x="95" y="219" width="131" height="131"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
@@ -2167,6 +2289,13 @@ Les personnes qui en souffrent sont en proie à de fréquentes crises au cours d
                                 <rect key="frame" x="0.0" y="-2556" width="320" height="5680"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choisissez le sentiment qui domine en ce moment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="81h-PQ-zBk">
+                                <rect key="frame" x="8" y="20" width="304" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bbr-rG-ApK">
                                 <rect key="frame" x="97" y="508" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -2216,6 +2345,7 @@ Les personnes qui en souffrent sont en proie à de fréquentes crises au cours d
                         <outlet property="btnCenter" destination="XAI-Bv-bxk" id="AVJ-z9-tEZ"/>
                         <outlet property="imgBg" destination="WS1-zk-O9Y" id="voC-iJ-RRr"/>
                         <outlet property="lblCenter" destination="t68-E8-dCH" id="Ngg-on-SaQ"/>
+                        <outlet property="lblText" destination="81h-PQ-zBk" id="Qc3-QO-mFe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lmt-rh-Vze" sceneMemberID="firstResponder"/>
@@ -2265,6 +2395,13 @@ Les personnes qui en souffrent sont en proie à de fréquentes crises au cours d
                                     <action selector="centerClicked:" destination="ScK-Qf-jut" eventType="touchUpInside" id="Uz5-vJ-DGC"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choisissez le sentiment qui domine en ce moment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SVS-Oi-BNM">
+                                <rect key="frame" x="8" y="20" width="304" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Noter Mes Sentiments" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fd9-1A-r7d">
                                 <rect key="frame" x="95" y="219" width="131" height="131"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -2283,6 +2420,7 @@ Les personnes qui en souffrent sont en proie à de fréquentes crises au cours d
                         <outlet property="btnCenter" destination="7Q4-Zc-KcI" id="CIW-Dg-jje"/>
                         <outlet property="imgBg" destination="wQJ-Mh-381" id="hKS-TZ-BUg"/>
                         <outlet property="lblCenter" destination="Fd9-1A-r7d" id="IrL-sG-WKG"/>
+                        <outlet property="lblText" destination="SVS-Oi-BNM" id="7xm-g4-rvD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NvD-ax-T9K" sceneMemberID="firstResponder"/>
@@ -2308,6 +2446,7 @@ Les personnes qui en souffrent sont en proie à de fréquentes crises au cours d
         <image name="settings_on.png" width="81" height="81"/>
         <image name="stop_off-2.png" width="81" height="81"/>
         <image name="stop_on-2.png" width="81" height="81"/>
+        <image name="sunshine.png" width="637" height="1105"/>
         <image name="urgence_off.png" width="262" height="262"/>
         <image name="video_size.png" width="530" height="280"/>
     </resources>
@@ -2317,7 +2456,6 @@ Les personnes qui en souffrent sont en proie à de fréquentes crises au cours d
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="M2c-gp-EoY"/>
         <segue reference="jkJ-Kb-Ber"/>
     </inferredMetricsTieBreakers>
 </document>

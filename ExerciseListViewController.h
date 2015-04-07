@@ -10,10 +10,9 @@
 #import "ExerciseCell.h"
 #import "FlowManager.h"
 #import "Globals.h"
+#import "SuperViewController.h"
 
-
-
-@interface ExerciseListViewController : ViewController <UITableViewDataSource,UITableViewDelegate>
+@interface ExerciseListViewController : SuperViewController <UITableViewDataSource,UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tblExercises;
 @property (weak, nonatomic) IBOutlet UILabel *lblLevel;

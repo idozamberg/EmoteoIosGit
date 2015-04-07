@@ -7,6 +7,7 @@
 //
 
 #import "IntegratedNavigationController.h"
+#import "MFSideMenu.h"
 
 @interface IntegratedNavigationController ()
 

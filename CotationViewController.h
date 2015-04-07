@@ -10,4 +10,9 @@
 
 @interface CotationViewController : CirclesViewController
 
+@property (nonatomic,strong) UIImage*  centerImage;
+@property (nonatomic,strong) NSString* text;
+@property (nonatomic)        NSInteger mainButtonIndex;
 @end
+
+

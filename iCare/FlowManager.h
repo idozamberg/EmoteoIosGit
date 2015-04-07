@@ -61,8 +61,9 @@ typedef void(^BubblesCompletionBlock)();
 - (void) showNoteVC;
 - (void) showNoteBehaviorVC;
 - (void) showEstimateViewController;
-- (void) showCotationViewController;
+- (void) showCotationViewControllerWithCenterImage : (UIImage*) image andText : (NSString*) text andBubbleIndex : (NSInteger) mainIndex;
 - (void) showFeelingsViewController;
+- (void) showScaleVC;
 
 @property (strong,nonatomic) UIStoryboard* storyBoard;
 @property (strong,nonatomic) UINavigationController* navigationController;

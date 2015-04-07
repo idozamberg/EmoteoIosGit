@@ -57,6 +57,12 @@
 
 - (IBAction)centerClicked:(id)sender {
     
+    // Saving chain
+    [[AppData sharedInstance] saveChains];
+    
+    [UIHelper showMessage:@"L'Exercice a été enregistré avec success"];
+    
+    // Goinf back to main page
     [self.navigationController popViewControllerAnimated:YES];
 }
 

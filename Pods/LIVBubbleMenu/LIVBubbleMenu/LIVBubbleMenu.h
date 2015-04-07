@@ -43,7 +43,7 @@
 @property (nonatomic, assign) UIColor *backgroundColor; // The color of the background (Black by default)
 @property (nonatomic, assign) float backgroundAlpha; // The alpha of the background (0.2 by default)
 @property int backgroundFadeDuration; // The amount of seconds it takes for the background to fade in/out (1.2 by default
-
+@property (nonatomic,strong) NSMutableArray* bubbleButtons;
 
 -(id)initWithPoint:(CGPoint)point radius:(int)radiusValue menuItems:(NSArray*)menuItems inView:(UIView *)view; //Initialize the component at a certain point with a certain radius
 
@@ -62,11 +62,13 @@
 // On buttons pressed
 -(void)livBubbleMenu:(LIVBubbleMenu *)bubbleMenu tappedBubbleWithIndex:(NSUInteger)index;
 
--(void)livBubbleMenu:(LIVBubbleMenu *)bubbleMenu tappedBubbleWithIndex:(NSUInteger)index annButton : (UIButton*) button;
-
+-(void)livBubbleMenu:(LIVBubbleMenu *)bubbleMenu tappedBubbleWithIndex:(NSUInteger)index annButton:(UIButton *)button;
 
 // On bubbles hide
 -(void)livBubbleMenuDidHide:(LIVBubbleMenu *)bubbleMenu;
+
+-(void)livBubbleMenuDidShow:(LIVBubbleMenu *)bubbleMenu;
+
 @end
 
 

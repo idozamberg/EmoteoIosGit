@@ -10,8 +10,10 @@
 #import <pop/POP.h>
 
 @implementation LIVBubbleMenu {
-    NSMutableArray* bubbleButtons;
+    
 }
+
+@synthesize bubbleButtons;
 
 - (id)initCenteredInWindowWithRadius:(int)radiusValue menuItems:(NSArray *)menuItems
 {
@@ -198,7 +200,13 @@
     positionInAnimation.completionBlock = ^(POPAnimation *anim, BOOL finished) {
         //Check if its the last button to animate
         if(bubble.tag == bubbleButtons.count - 1)
+        {
            _isAnimating = NO;
+            
+            if([self.delegate respondsToSelector:@selector(livBubbleMenuDidShow:)]) {
+                [self.delegate livBubbleMenuDidShow:self];
+            }
+        }
 
     };
 
@@ -301,13 +309,13 @@
 
 -(void)backgroundTapped:(UITapGestureRecognizer *)tapGesture
 {
-    [self hide];
+   // [self hide];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     // hides self if user touches anywhere but the buttons within the self UIView
-    [self hide];
+    //[self hide];
 }
 
 -(UIButton*)createButtonWithImage:(UIImage *)image
@@ -351,6 +359,7 @@
 
     return image;
 }
+
 
 
 @end

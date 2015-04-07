@@ -15,6 +15,8 @@
 
 @implementation CotationViewController
 
+@synthesize centerImage,mainButtonIndex;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -27,11 +29,22 @@
                     [UIImage imageNamed:@"round4"],
                     [UIImage imageNamed:@"round5"],
                     nil];
+    
+    self.lblCenter.hidden = YES;
 }
 
 - (void) viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+
+    
+    // Setting center image
+    [self.btnCenter setBackgroundImage:self.centerImage forState:UIControlStateNormal];
+    [self.btnCenter setBackgroundImage:self.centerImage forState:UIControlStateHighlighted];
+    [self.btnCenter setBackgroundImage:self.centerImage forState:UIControlStateSelected];
+    
+    // Setting text
+    self.lblText.text = self.text;
 
     
     // Delete menu
@@ -62,11 +75,34 @@
  */
 
 // On buttons pressed
--(void)livBubbleMenu:(LIVBubbleMenu *)bubbleMenu tappedBubbleWithIndex:(NSUInteger)index
+-(void)livBubbleMenu:(LIVBubbleMenu *)bubbleMenu tappedBubbleWithIndex:(NSUInteger)index annButton:(UIButton *)button
 {
+    // Handeling Click
+    [super HandleBubbleClickedForBubble:button andIBubbleIndex:index completion:^(BOOL finished){
+        
+        // Getting current chain
+        EmotionalChain* currChain = [[AppData sharedInstance] currentChain];
+        
+        // Adding Selection
+        [currChain addNewSelectionWithKeyImage:self.centerImage numberImage:[self.bubbles objectAtIndex:index] andKey:[NSNumber numberWithInteger:self.mainButtonIndex]];
+        
+        // Posting
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"BubbleChoosedInChildWithNumber" object:Nil];
+        
+        // Getting view controlles
+        UIViewController* notationController = [self.navigationController.viewControllers objectAtIndex:1];
+        
+        // Going back
+        [self.navigationController popToViewController:notationController animated:YES];
+
+    }];
     
-    //[[FlowManager sharedInstance] showNoteBehaviorVC];
-    
+}
+
+- (void) viewWillDisappear:(BOOL)animated
+{
+    self.bubbleMenu.delegate = Nil;
+    self.bubbleMenu = Nil;
 }
 
 // On bubbles hide

@@ -210,11 +210,6 @@ typedef enum ScrollDirection {
 
 }
 
-- (IBAction)backClicked:(id)sender {
-    
-    // Going back to root view controller
-    [self.navigationController popToRootViewControllerAnimated:YES];
-}
 
 - (void)didReceiveMemoryWarning
 {

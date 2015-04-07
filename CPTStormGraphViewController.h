@@ -8,8 +8,9 @@
 #import "CorePlot-CocoaTouch.h"
 #import <UIKit/UIKit.h>
 #import "Storm.h"
+#import "SuperViewController.h"
 
-@interface CPTStormGraphViewController : UIViewController<CPTPlotDataSource, CPTAxisDelegate>
+@interface CPTStormGraphViewController : SuperViewController<CPTPlotDataSource, CPTAxisDelegate>
 {
     CPTXYGraph *graph;
 

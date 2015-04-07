@@ -147,6 +147,30 @@
 		756C72781876ED0000B788AF /* ExerciseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 756C72771876ED0000B788AF /* ExerciseCell.m */; };
 		756C727A1876ED1200B788AF /* ExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 756C72791876ED1200B788AF /* ExerciseCell.xib */; };
 		756C727D1877078100B788AF /* FlowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 756C727C1877078100B788AF /* FlowManager.m */; };
+		757ED6F51AD09EE40070A9F9 /* sunshine.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED6F41AD09EE40070A9F9 /* sunshine.png */; };
+		757ED6F81AD0A0EC0070A9F9 /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757ED6F71AD0A0EC0070A9F9 /* SideMenuViewController.m */; };
+		757ED6FD1AD1324A0070A9F9 /* About Filled-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED6F91AD1324A0070A9F9 /* About Filled-100.png */; };
+		757ED6FE1AD1324A0070A9F9 /* Line Chart-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED6FA1AD1324A0070A9F9 /* Line Chart-100.png */; };
+		757ED6FF1AD1324A0070A9F9 /* Meditation Guru-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED6FB1AD1324A0070A9F9 /* Meditation Guru-100.png */; };
+		757ED7001AD1324A0070A9F9 /* Settings-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED6FC1AD1324A0070A9F9 /* Settings-100.png */; };
+		757ED7041AD13B240070A9F9 /* SideMenuHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 757ED7031AD13B240070A9F9 /* SideMenuHeader.m */; };
+		757ED7071AD13CFA0070A9F9 /* SideMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 757ED7061AD13CFA0070A9F9 /* SideMenuTableViewCell.m */; };
+		757ED7101AD14B8D0070A9F9 /* About-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED7081AD14B8D0070A9F9 /* About-100.png */; };
+		757ED7111AD14B8D0070A9F9 /* Meditation Guru-100-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED7091AD14B8D0070A9F9 /* Meditation Guru-100-2.png */; };
+		757ED7121AD14B8D0070A9F9 /* Settings-100-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED70A1AD14B8D0070A9F9 /* Settings-100-2.png */; };
+		757ED7131AD14B8D0070A9F9 /* Video Camera-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED70B1AD14B8D0070A9F9 /* Video Camera-100.png */; };
+		757ED7141AD14B8D0070A9F9 /* Treble Clef-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED70C1AD14B8D0070A9F9 /* Treble Clef-100.png */; };
+		757ED7151AD14B8D0070A9F9 /* Meeting-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED70D1AD14B8D0070A9F9 /* Meeting-100.png */; };
+		757ED7161AD14B8D0070A9F9 /* Ambulance-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED70E1AD14B8D0070A9F9 /* Ambulance-100.png */; };
+		757ED7171AD14B8D0070A9F9 /* Key-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED70F1AD14B8D0070A9F9 /* Key-100.png */; };
+		757ED7191AD1A4D30070A9F9 /* Ladder-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED7181AD1A4D30070A9F9 /* Ladder-100.png */; };
+		757ED71B1AD1A5820070A9F9 /* Phone-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED71A1AD1A5820070A9F9 /* Phone-100.png */; };
+		757ED71D1AD1A60F0070A9F9 /* Good Quality-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED71C1AD1A60F0070A9F9 /* Good Quality-100.png */; };
+		757ED71F1AD1A65B0070A9F9 /* Faq-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED71E1AD1A65B0070A9F9 /* Faq-100.png */; };
+		757ED7211AD1AA8E0070A9F9 /* Home-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED7201AD1AA8E0070A9F9 /* Home-100.png */; };
+		757ED7231AD1CA950070A9F9 /* leftround.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED7221AD1CA950070A9F9 /* leftround.png */; };
+		757ED7271AD1CBC00070A9F9 /* SuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757ED7261AD1CBC00070A9F9 /* SuperViewController.m */; };
+		757ED72A1AD27F850070A9F9 /* EmotionalChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 757ED7291AD27F850070A9F9 /* EmotionalChain.m */; };
 		758113D11950B1EC00C58E4F /* button_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 758113CF1950B1EC00C58E4F /* button_off.png */; };
 		758113D21950B1EC00C58E4F /* button_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 758113D01950B1EC00C58E4F /* button_on.png */; };
 		758113D51950B27C00C58E4F /* SecurityConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 758113D41950B27C00C58E4F /* SecurityConfigurationViewController.m */; };
@@ -451,6 +475,35 @@
 		756C727B1877078100B788AF /* FlowManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowManager.h; sourceTree = "<group>"; };
 		756C727C1877078100B788AF /* FlowManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowManager.m; sourceTree = "<group>"; };
 		7579BD88196467E800850C45 /* Splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Splash.png; sourceTree = "<group>"; };
+		757ED6F41AD09EE40070A9F9 /* sunshine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunshine.png; sourceTree = "<group>"; };
+		757ED6F61AD0A0EC0070A9F9 /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuViewController.h; sourceTree = "<group>"; };
+		757ED6F71AD0A0EC0070A9F9 /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
+		757ED6F91AD1324A0070A9F9 /* About Filled-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About Filled-100.png"; sourceTree = "<group>"; };
+		757ED6FA1AD1324A0070A9F9 /* Line Chart-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Line Chart-100.png"; sourceTree = "<group>"; };
+		757ED6FB1AD1324A0070A9F9 /* Meditation Guru-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Meditation Guru-100.png"; sourceTree = "<group>"; };
+		757ED6FC1AD1324A0070A9F9 /* Settings-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings-100.png"; sourceTree = "<group>"; };
+		757ED7021AD13B240070A9F9 /* SideMenuHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SideMenuHeader.h; path = SideMenu/SideMenuHeader.h; sourceTree = "<group>"; };
+		757ED7031AD13B240070A9F9 /* SideMenuHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SideMenuHeader.m; path = SideMenu/SideMenuHeader.m; sourceTree = "<group>"; };
+		757ED7051AD13CFA0070A9F9 /* SideMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SideMenuTableViewCell.h; path = SideMenu/SideMenuTableViewCell.h; sourceTree = "<group>"; };
+		757ED7061AD13CFA0070A9F9 /* SideMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SideMenuTableViewCell.m; path = SideMenu/SideMenuTableViewCell.m; sourceTree = "<group>"; };
+		757ED7081AD14B8D0070A9F9 /* About-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About-100.png"; sourceTree = "<group>"; };
+		757ED7091AD14B8D0070A9F9 /* Meditation Guru-100-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Meditation Guru-100-2.png"; sourceTree = "<group>"; };
+		757ED70A1AD14B8D0070A9F9 /* Settings-100-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings-100-2.png"; sourceTree = "<group>"; };
+		757ED70B1AD14B8D0070A9F9 /* Video Camera-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Video Camera-100.png"; sourceTree = "<group>"; };
+		757ED70C1AD14B8D0070A9F9 /* Treble Clef-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Treble Clef-100.png"; sourceTree = "<group>"; };
+		757ED70D1AD14B8D0070A9F9 /* Meeting-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Meeting-100.png"; sourceTree = "<group>"; };
+		757ED70E1AD14B8D0070A9F9 /* Ambulance-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ambulance-100.png"; sourceTree = "<group>"; };
+		757ED70F1AD14B8D0070A9F9 /* Key-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Key-100.png"; sourceTree = "<group>"; };
+		757ED7181AD1A4D30070A9F9 /* Ladder-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ladder-100.png"; sourceTree = "<group>"; };
+		757ED71A1AD1A5820070A9F9 /* Phone-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phone-100.png"; sourceTree = "<group>"; };
+		757ED71C1AD1A60F0070A9F9 /* Good Quality-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Good Quality-100.png"; sourceTree = "<group>"; };
+		757ED71E1AD1A65B0070A9F9 /* Faq-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Faq-100.png"; sourceTree = "<group>"; };
+		757ED7201AD1AA8E0070A9F9 /* Home-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home-100.png"; sourceTree = "<group>"; };
+		757ED7221AD1CA950070A9F9 /* leftround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftround.png; sourceTree = "<group>"; };
+		757ED7251AD1CBC00070A9F9 /* SuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SuperViewController.h; path = iCare/SuperViewController.h; sourceTree = "<group>"; };
+		757ED7261AD1CBC00070A9F9 /* SuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuperViewController.m; path = iCare/SuperViewController.m; sourceTree = "<group>"; };
+		757ED7281AD27F850070A9F9 /* EmotionalChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmotionalChain.h; sourceTree = "<group>"; };
+		757ED7291AD27F850070A9F9 /* EmotionalChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmotionalChain.m; sourceTree = "<group>"; };
 		758113CF1950B1EC00C58E4F /* button_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_off.png; sourceTree = "<group>"; };
 		758113D01950B1EC00C58E4F /* button_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_on.png; sourceTree = "<group>"; };
 		758113D31950B27C00C58E4F /* SecurityConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityConfigurationViewController.h; sourceTree = "<group>"; };
@@ -757,6 +810,7 @@
 				750EACBE19646A5D005A8D60 /* Analytics */,
 				7516A3911854F2CD0047AD1A /* Graphics */,
 				7516A3871854DF6E0047AD1A /* day.jpg */,
+				757ED6F41AD09EE40070A9F9 /* sunshine.png */,
 				7516A3531854DEF80047AD1A /* Emoteo */,
 				7524A44419E7C76F006607C1 /* ITCAvantGardeGothic.ttf */,
 				75616B8E19DB3EB000A8CAC6 /* ITCAvaGarMM.ttf */,
@@ -803,6 +857,11 @@
 		7516A3531854DEF80047AD1A /* Emoteo */ = {
 			isa = PBXGroup;
 			children = (
+				757ED7241AD1CB780070A9F9 /* SideMenu - Graphics */,
+				757ED6F61AD0A0EC0070A9F9 /* SideMenuViewController.h */,
+				757ED6F71AD0A0EC0070A9F9 /* SideMenuViewController.m */,
+				757ED7281AD27F850070A9F9 /* EmotionalChain.h */,
+				757ED7291AD27F850070A9F9 /* EmotionalChain.m */,
 				75ECB93619D6BDF00091FC77 /* Story boards */,
 				753F7B2A19572E0F0041C37D /* Media */,
 				753F7B121951B05F0041C37D /* Source */,
@@ -1050,6 +1109,7 @@
 		756C72741876ECAD00B788AF /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				757ED7011AD13B040070A9F9 /* SideMenu */,
 				751811D11889852F00E277FB /* Storm */,
 				756C72751876ECB600B788AF /* Exercise */,
 			);
@@ -1064,6 +1124,61 @@
 				756C72791876ED1200B788AF /* ExerciseCell.xib */,
 			);
 			name = Exercise;
+			sourceTree = "<group>";
+		};
+		757ED7011AD13B040070A9F9 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				757ED7051AD13CFA0070A9F9 /* SideMenuTableViewCell.h */,
+				757ED7061AD13CFA0070A9F9 /* SideMenuTableViewCell.m */,
+				757ED7021AD13B240070A9F9 /* SideMenuHeader.h */,
+				757ED7031AD13B240070A9F9 /* SideMenuHeader.m */,
+			);
+			name = SideMenu;
+			sourceTree = "<group>";
+		};
+		757ED7241AD1CB780070A9F9 /* SideMenu - Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				757ED7221AD1CA950070A9F9 /* leftround.png */,
+				757ED7201AD1AA8E0070A9F9 /* Home-100.png */,
+				757ED71E1AD1A65B0070A9F9 /* Faq-100.png */,
+				757ED71C1AD1A60F0070A9F9 /* Good Quality-100.png */,
+				757ED71A1AD1A5820070A9F9 /* Phone-100.png */,
+				757ED7181AD1A4D30070A9F9 /* Ladder-100.png */,
+				757ED7081AD14B8D0070A9F9 /* About-100.png */,
+				757ED7091AD14B8D0070A9F9 /* Meditation Guru-100-2.png */,
+				757ED70A1AD14B8D0070A9F9 /* Settings-100-2.png */,
+				757ED70B1AD14B8D0070A9F9 /* Video Camera-100.png */,
+				757ED70C1AD14B8D0070A9F9 /* Treble Clef-100.png */,
+				757ED70D1AD14B8D0070A9F9 /* Meeting-100.png */,
+				757ED70E1AD14B8D0070A9F9 /* Ambulance-100.png */,
+				757ED70F1AD14B8D0070A9F9 /* Key-100.png */,
+				757ED6F91AD1324A0070A9F9 /* About Filled-100.png */,
+				757ED6FA1AD1324A0070A9F9 /* Line Chart-100.png */,
+				757ED6FB1AD1324A0070A9F9 /* Meditation Guru-100.png */,
+				757ED6FC1AD1324A0070A9F9 /* Settings-100.png */,
+			);
+			name = "SideMenu - Graphics";
+			sourceTree = "<group>";
+		};
+		757ED72B1AD32D2A0070A9F9 /* Circles */ = {
+			isa = PBXGroup;
+			children = (
+				75C129EB1AC5DD00007EC123 /* CirclesViewController.h */,
+				75C129EC1AC5DD00007EC123 /* CirclesViewController.m */,
+				75C12A111AC5F418007EC123 /* NoteBehaviorViewController.h */,
+				75C12A121AC5F418007EC123 /* NoteBehaviorViewController.m */,
+				75F58FF91ACE83EC00398BE8 /* EstimateFeelingViewController.h */,
+				75F58FFA1ACE83EC00398BE8 /* EstimateFeelingViewController.m */,
+				75F590B31ACEC74000398BE8 /* CotationViewController.h */,
+				75F590B41ACEC74000398BE8 /* CotationViewController.m */,
+				75F590B61ACFEBE200398BE8 /* FeelingsViewController.h */,
+				75F590B71ACFEBE200398BE8 /* FeelingsViewController.m */,
+				75C129EE1AC5DE28007EC123 /* NoteViewController.h */,
+				75C129EF1AC5DE28007EC123 /* NoteViewController.m */,
+			);
+			name = Circles;
 			sourceTree = "<group>";
 		};
 		758113CE1950B1D200C58E4F /* Menu */ = {
@@ -1268,8 +1383,8 @@
 		75E7CCC418649F0200F74E7C /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				75C129EE1AC5DE28007EC123 /* NoteViewController.h */,
-				75C129EF1AC5DE28007EC123 /* NoteViewController.m */,
+				757ED7251AD1CBC00070A9F9 /* SuperViewController.h */,
+				757ED7261AD1CBC00070A9F9 /* SuperViewController.m */,
 				75D3A3271A11FBDD00E36E8D /* TutorialView.h */,
 				75D3A3281A11FBDD00E36E8D /* TutorialView.m */,
 				758C10F018801E9F005029EF /* Menu */,
@@ -1302,16 +1417,7 @@
 				75F7E1321977CC36009EA814 /* TutorialViewController.m */,
 				75E8C6BA1A641EB4000D237B /* SpecificInformationViewController.h */,
 				75E8C6BB1A641EB4000D237B /* SpecificInformationViewController.m */,
-				75C129EB1AC5DD00007EC123 /* CirclesViewController.h */,
-				75C129EC1AC5DD00007EC123 /* CirclesViewController.m */,
-				75C12A111AC5F418007EC123 /* NoteBehaviorViewController.h */,
-				75C12A121AC5F418007EC123 /* NoteBehaviorViewController.m */,
-				75F58FF91ACE83EC00398BE8 /* EstimateFeelingViewController.h */,
-				75F58FFA1ACE83EC00398BE8 /* EstimateFeelingViewController.m */,
-				75F590B31ACEC74000398BE8 /* CotationViewController.h */,
-				75F590B41ACEC74000398BE8 /* CotationViewController.m */,
-				75F590B61ACFEBE200398BE8 /* FeelingsViewController.h */,
-				75F590B71ACFEBE200398BE8 /* FeelingsViewController.m */,
+				757ED72B1AD32D2A0070A9F9 /* Circles */,
 			);
 			name = UI;
 			path = ..;
@@ -1488,6 +1594,7 @@
 				7524A43B19E72F0A006607C1 /* s10.png in Resources */,
 				7524A43A19E72F0A006607C1 /* s1.png in Resources */,
 				7507922018886AAD00411A22 /* dayold.png in Resources */,
+				757ED7131AD14B8D0070A9F9 /* Video Camera-100.png in Resources */,
 				7524A44519E7C76F006607C1 /* ITCAvantGardeGothic.ttf in Resources */,
 				751811CD18897A0500E277FB /* AutoLayoutBoard.storyboard in Resources */,
 				75E8C6BE1A642BBE000D237B /* InformationsList.plist in Resources */,
@@ -1505,8 +1612,11 @@
 				753F7B6B195742630041C37D /* respiration.m4v in Resources */,
 				75F590BD1ACFEC4700398BE8 /* SenAmour.png in Resources */,
 				75F58FF01ACE82B000398BE8 /* round6.png in Resources */,
+				757ED7001AD1324A0070A9F9 /* Settings-100.png in Resources */,
+				757ED71F1AD1A65B0070A9F9 /* Faq-100.png in Resources */,
 				753F7B71195742630041C37D /* morceaumix.m4v in Resources */,
 				7516A3C21854F54D0047AD1A /* 6_on.png in Resources */,
+				757ED7191AD1A4D30070A9F9 /* Ladder-100.png in Resources */,
 				75C12A1D1AC70EF5007EC123 /* round_sent_detress.png in Resources */,
 				75F590BE1ACFEC4700398BE8 /* SenAbandon.png in Resources */,
 				753F7B6E195742630041C37D /* consience.m4v in Resources */,
@@ -1538,17 +1648,21 @@
 				75616B8D19DA140A00A8CAC6 /* ITCBook.ttf in Resources */,
 				75C12A0F1AC5F302007EC123 /* round_sentiments.png in Resources */,
 				75E8C6C41A6BC854000D237B /* settings.png in Resources */,
+				757ED6FE1AD1324A0070A9F9 /* Line Chart-100.png in Resources */,
 				7516A3C61854F54D0047AD1A /* 8_blink.png in Resources */,
 				756C727A1876ED1200B788AF /* ExerciseCell.xib in Resources */,
 				75F7E1271971B996009EA814 /* animation.m4v in Resources */,
 				7524A43F19E72F0A006607C1 /* s5.png in Resources */,
+				757ED7161AD14B8D0070A9F9 /* Ambulance-100.png in Resources */,
 				7516A3661854DEF80047AD1A /* Images.xcassets in Resources */,
 				75641F731AC2E3A1007E17FA /* insectes.m4v in Resources */,
+				757ED71B1AD1A5820070A9F9 /* Phone-100.png in Resources */,
 				7524A43E19E72F0A006607C1 /* s4.png in Resources */,
 				7599B15C1859053500B507F5 /* urgence_blink.png in Resources */,
 				7516A3881854DF6E0047AD1A /* day.jpg in Resources */,
 				7524A43D19E72F0A006607C1 /* s3.png in Resources */,
 				75C12A191AC70EF5007EC123 /* round_autre_sentiment.png in Resources */,
+				757ED7141AD14B8D0070A9F9 /* Treble Clef-100.png in Resources */,
 				75318EE91855E1A40090AF40 /* day22.png in Resources */,
 				75C12A0E1AC5F302007EC123 /* round_prisedetox.png in Resources */,
 				75F58FF11ACE82B000398BE8 /* round5.png in Resources */,
@@ -1570,9 +1684,11 @@
 				7516A3CC1854F54D0047AD1A /* 10_blink.png in Resources */,
 				751DE1CB196EF1AC0060477E /* fleur.m4v in Resources */,
 				753F7B70195742630041C37D /* musique JZ GB 6'04 4.m4v in Resources */,
+				757ED7101AD14B8D0070A9F9 /* About-100.png in Resources */,
 				753F7B75195756E90041C37D /* Ciel.m4v in Resources */,
 				75890972186820330076F415 /* round_on.png in Resources */,
 				758113D11950B1EC00C58E4F /* button_off.png in Resources */,
+				757ED6FD1AD1324A0070A9F9 /* About Filled-100.png in Resources */,
 				75E7CCC318649CA200F74E7C /* play_on.png in Resources */,
 				75F58FF41ACE82B000398BE8 /* round2.png in Resources */,
 				7524A44319E72F0A006607C1 /* s9.png in Resources */,
@@ -1584,6 +1700,7 @@
 				751811E4188985FC00E277FB /* dot1.png in Resources */,
 				7516A3C81854F54D0047AD1A /* 8_on.png in Resources */,
 				7516A3BF1854F54D0047AD1A /* 5_on.png in Resources */,
+				757ED7151AD14B8D0070A9F9 /* Meeting-100.png in Resources */,
 				7516A3C41854F54D0047AD1A /* 7_off.png in Resources */,
 				7516A38E1854E4020047AD1A /* emergency_on.png in Resources */,
 				751811F718899D9F00E277FB /* StormDetailCell.xib in Resources */,
@@ -1608,6 +1725,7 @@
 				75F67D061863559900A9E70E /* sep_bar.png in Resources */,
 				75C12A1B1AC70EF5007EC123 /* round_amour.png in Resources */,
 				75E8C6C81A6BCB92000D237B /* splashBig.png in Resources */,
+				757ED7171AD14B8D0070A9F9 /* Key-100.png in Resources */,
 				758170DC19E1C72300646554 /* EMGTableHeader.xib in Resources */,
 				751811ED188985FC00E277FB /* dot9.png in Resources */,
 				7599B15F1859053500B507F5 /* urgence_on.png in Resources */,
@@ -1620,10 +1738,12 @@
 				75F58FF21ACE82B000398BE8 /* round4.png in Resources */,
 				7516A3961854F2E70047AD1A /* 1_blink.png in Resources */,
 				75F58FF51ACE82B000398BE8 /* round1.png in Resources */,
+				757ED7231AD1CA950070A9F9 /* leftround.png in Resources */,
 				75C12A0D1AC5F302007EC123 /* round_pc.png in Resources */,
 				7524A44119E72F0A006607C1 /* s7.png in Resources */,
 				75F58FF71ACE82B000398BE8 /* Tristesse.png in Resources */,
 				75F67D12186376BE00A9E70E /* pause_on.png in Resources */,
+				757ED7211AD1AA8E0070A9F9 /* Home-100.png in Resources */,
 				751811EE188985FC00E277FB /* graph_icon.png in Resources */,
 				751811EB188985FC00E277FB /* dot7.png in Resources */,
 				758113DA1950ED5700C58E4F /* THPinViewController.strings in Resources */,
@@ -1633,6 +1753,8 @@
 				751811E5188985FC00E277FB /* dot10.png in Resources */,
 				751811E7188985FC00E277FB /* dot3.png in Resources */,
 				75F67D10186376BE00A9E70E /* cursor.png in Resources */,
+				757ED6FF1AD1324A0070A9F9 /* Meditation Guru-100.png in Resources */,
+				757ED7121AD14B8D0070A9F9 /* Settings-100-2.png in Resources */,
 				7516A3CD1854F54D0047AD1A /* 10_off.png in Resources */,
 				7524A44019E72F0A006607C1 /* s6.png in Resources */,
 				753F7B6D195742630041C37D /* main.m4v in Resources */,
@@ -1645,10 +1767,13 @@
 				75F590C21ACFED9300398BE8 /* AutreSentiment.png in Resources */,
 				75E8C6C51A6BC854000D237B /* emergency.png in Resources */,
 				753F7B67195742630041C37D /* body.m4v in Resources */,
+				757ED6F51AD09EE40070A9F9 /* sunshine.png in Resources */,
 				7516A3B51854F54D0047AD1A /* 2_off.png in Resources */,
 				75F58FF61ACE82B000398BE8 /* Colère.png in Resources */,
 				75E7CCD41865993C00F74E7C /* round_off.png in Resources */,
+				757ED71D1AD1A60F0070A9F9 /* Good Quality-100.png in Resources */,
 				7599B1641859056F00B507F5 /* UrgenceViewController.xib in Resources */,
+				757ED7111AD14B8D0070A9F9 /* Meditation Guru-100-2.png in Resources */,
 				753F7B68195742630041C37D /* Audio Eau froide CW 5'50.m4v in Resources */,
 				751811E6188985FC00E277FB /* dot2.png in Resources */,
 				7516A3CE1854F54D0047AD1A /* 10_on.png in Resources */,
@@ -1719,6 +1844,7 @@
 				7516A3641854DEF80047AD1A /* ViewController.m in Sources */,
 				753F7B201951B05F0041C37D /* ATCAnimatedTransitioningBounce.m in Sources */,
 				753F7B211951B05F0041C37D /* ATCAnimatedTransitioningFade.m in Sources */,
+				757ED7041AD13B240070A9F9 /* SideMenuHeader.m in Sources */,
 				75F7E119196FF42C009EA814 /* CreditsViewController.m in Sources */,
 				758C10F618801ECE005029EF /* ExerciseSettingsViewController.m in Sources */,
 				75F67D1A186390A600A9E70E /* LevelViewController.m in Sources */,
@@ -1731,6 +1857,7 @@
 				7516A35E1854DEF80047AD1A /* AppDelegate.m in Sources */,
 				75C855DE1866368B003D4FA2 /* AudioVideoControllerViewController.m in Sources */,
 				753F7B221951B05F0041C37D /* ATCAnimatedTransitioningFloat.m in Sources */,
+				757ED72A1AD27F850070A9F9 /* EmotionalChain.m in Sources */,
 				758C10F318801EB7005029EF /* SettingsViewController.m in Sources */,
 				750F6DF31877FCB400FE6FBE /* AudioFile.m in Sources */,
 				758113D81950D0C200C58E4F /* THViewController.m in Sources */,
@@ -1748,6 +1875,7 @@
 				7516A3D118550C440047AD1A /* UIView+Framing.m in Sources */,
 				75DF53D61946364D004F4C71 /* ShuffleAnimation.m in Sources */,
 				753F7B1F1951B05F0041C37D /* ATCAnimatedTransitioning.m in Sources */,
+				757ED7271AD1CBC00070A9F9 /* SuperViewController.m in Sources */,
 				7599B1631859056F00B507F5 /* UrgenceViewController.m in Sources */,
 				751811F51889880000E277FB /* ISO8601DateFormatterHelper.m in Sources */,
 				756C727D1877078100B788AF /* FlowManager.m in Sources */,
@@ -1759,7 +1887,9 @@
 				75DF53D71946364D004F4C71 /* ScaleAnimation.m in Sources */,
 				75F58FFB1ACE83EC00398BE8 /* EstimateFeelingViewController.m in Sources */,
 				75F590B81ACFEBE200398BE8 /* FeelingsViewController.m in Sources */,
+				757ED6F81AD0A0EC0070A9F9 /* SideMenuViewController.m in Sources */,
 				758C10FF188048E7005029EF /* ShakeSettingsViewController.m in Sources */,
+				757ED7071AD13CFA0070A9F9 /* SideMenuTableViewCell.m in Sources */,
 				758170D619E1BB0200646554 /* EMGTableView.m in Sources */,
 				75F7E1361977CD8F009EA814 /* TutorialManager.m in Sources */,
 				75C12A131AC5F418007EC123 /* NoteBehaviorViewController.m in Sources */,

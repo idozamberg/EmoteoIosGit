@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "AppData.h"
+#import "SuperViewController.h"
 
-@interface UrgenceViewController : UIViewController
+@interface UrgenceViewController : SuperViewController
 @property (weak, nonatomic) IBOutlet UIButton *btnUrgence;
 @property (weak, nonatomic) IBOutlet UIButton *btnBackToMainPage;
 @property (weak, nonatomic) IBOutlet UIButton *btnMenu;

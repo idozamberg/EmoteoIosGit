@@ -23,7 +23,7 @@
 
 @interface THPinView : UIView
 
-@property (nonatomic, assign) id<THPinViewDelegate> delegate;
+@property (nonatomic, weak) id<THPinViewDelegate> delegate;
 @property (nonatomic, copy) NSString *promptTitle;
 @property (nonatomic, strong) UIColor *promptColor;
 @property (nonatomic, assign) BOOL hideLetters;
