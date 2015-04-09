@@ -26,6 +26,8 @@
     CGPoint   currentButtonCenter;
     NSMutableArray* numbersImagesViews;
     NSInteger numberOfExercisesDone;
+    NSMutableArray* exercisesDone;
+    NSMutableArray* numbersImages;
 }
 
 - (void)viewDidLoad {
@@ -34,7 +36,7 @@
     
     // Creating array with note bubbles
     self.bubbles = [NSMutableArray arrayWithObjects:
-                    [UIImage imageNamed:@"round_coter"],
+                    [UIImage imageNamed:@"notemesemo"],
                     [UIImage imageNamed:@"round_notercomp"],
                     [UIImage imageNamed:@"round_sentiments"],
                     nil];
@@ -53,7 +55,10 @@
     // Adding and emotional chain object
     [[AppData sharedInstance] addNewEmotionalChain];
     
+    // Init arrays
     numbersImagesViews = [NSMutableArray new];
+    exercisesDone      = [NSMutableArray new];
+    numbersImages      = [NSMutableArray new];
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -69,22 +74,26 @@
     self.bubbleMenu.delegate = self;
     self.bubbleMenu.easyButtons = YES;
     [self.bubbleMenu show];
+    //[self bringButtonsToFront];
 
     if (didReturnFromChild)
     {
         numberOfExercisesDone = numberOfExercisesDone + 1;
         
-        // Getting bubble button
-        UIButton* currBubble = [self.bubbleMenu.bubbleButtons objectAtIndex:currentButtonIndex];
-        
-        // Disabling it
-        currBubble.enabled = NO;
-        
-        // Changing bg image
-        [currBubble setBackgroundImage:[self.bubbles objectAtIndex:currentButtonIndex] forState:UIControlStateDisabled];
+        // Disabling exercises which were already performed
+        for (NSNumber* currButtonIndex in exercisesDone)
+        {
+            // Getting bubble button
+            UIButton* currBubble = [self.bubbleMenu.bubbleButtons objectAtIndex:[currButtonIndex integerValue]];
+            
+            // Disabling bubble
+            currBubble.enabled = NO;
+            
+            // Changing bg image
+            [currBubble setBackgroundImage:[self.bubbles objectAtIndex:[currButtonIndex integerValue]] forState:UIControlStateDisabled];
+        }
         
         self.lblText.text = @"Poursuivez l’exercice";
-        
     }
     
     // When all 3 exercises are done
@@ -118,6 +127,17 @@
 // On buttons pressed
 -(void)livBubbleMenu:(LIVBubbleMenu *)bubbleMenu tappedBubbleWithIndex:(NSUInteger)index annButton:(UIButton *)button
 {
+    // Removing number images
+    for (UIImageView* imageView in numbersImages)
+    {
+        [UIView animateWithDuration:1 animations:^{
+            imageView.alpha = 0;
+            
+        }
+        completion:^(BOOL finished){
+                         }];
+    }
+    
     // Setting current button index
     currentButtonIndex = index;
     currentButtonCenter = button.center;
@@ -148,35 +168,29 @@
     
 }
 
-- (void) BubbleWasChoosedInChild
-{
-    
-    // Getting current chain
-    EmotionalChain* currChain = [[AppData sharedInstance] currentChain];
-    
-    // Getting Image by index
-    NSMutableArray* elements = [currChain.chainElements objectForKey:[NSNumber numberWithInteger:currentButtonIndex]];
-    
-    UIImage* image = [elements objectAtIndex:0];
-    
-    [self.bubbles replaceObjectAtIndex:currentButtonIndex withObject:image];
-    
-    didReturnFromChild = YES;
-    
-    // Setting image
- //   [currBubble setImage:image forState:UIControlStateDisabled];
-    
-}
+
 
 - (void) handleNumberedEnteties
 {
+    // Removing number images
+    for (UIImageView* imageView in numbersImages)
+    {
+        [UIView animateWithDuration:1 animations:^{
+            imageView.alpha = 1;
+            [self.view bringSubviewToFront:imageView];
+            
+        }
+                         completion:^(BOOL finished){
+                         }];
+    }
+
+    
     if (currentButtonIndex !=1)
     {
-        // Getting bubble button
-        UIButton* currBubble = [self.bubbleMenu.bubbleButtons objectAtIndex:currentButtonIndex];
         
         // Creating number image
         UIImageView* newNumberImageView = [[UIImageView alloc] initWithImage:currentNumberImage];
+        [numbersImages addObject:newNumberImageView];
         newNumberImageView.frame = self.btnCenter.frame;
         newNumberImageView.alpha = 0;
         
@@ -199,18 +213,44 @@
             
         }
 
+        // Adding to view
         [self.view addSubview:newNumberImageView];
 
-        
+        // Animating
         [UIView animateWithDuration:0.5 animations:^{
             newNumberImageView.alpha = 1;
         }];
-        // Adding to view
     }
+}
+
+- (void) BubbleWasChoosedInChild
+{
+    
+    // Getting current chain
+    EmotionalChain* currChain = [[AppData sharedInstance] currentChain];
+    
+    // Saving index
+    [exercisesDone addObject:[NSNumber numberWithInteger:currentButtonIndex]];
+    
+    // Getting Image by index
+    NSMutableArray* elements = [currChain.chainElements objectForKey:[NSNumber numberWithInteger:currentButtonIndex]];
+    
+    UIImage* image = [elements objectAtIndex:0];
+    
+    [self.bubbles replaceObjectAtIndex:currentButtonIndex withObject:image];
+    
+    didReturnFromChild = YES;
+    
+    // Setting image
+    //   [currBubble setImage:image forState:UIControlStateDisabled];
+    
 }
 
 - (void) BubbleWasChoosedInChildWithNumber
 {
+    // Saving index
+    [exercisesDone addObject:[NSNumber numberWithInteger:currentButtonIndex]];
+    
     // Getting current chain
     EmotionalChain* currChain = [[AppData sharedInstance] currentChain];
     

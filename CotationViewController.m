@@ -22,7 +22,7 @@
     // Do any additional setup after loading the view.
     
     // Creating array with note bubbles
-    self.bubbles = [NSArray arrayWithObjects:
+    self.bubbles = [NSMutableArray arrayWithObjects:
                     [UIImage imageNamed:@"round1"],
                     [UIImage imageNamed:@"round2"],
                     [UIImage imageNamed:@"round3"],

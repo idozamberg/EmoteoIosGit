@@ -640,7 +640,7 @@ Fondation Artères
                                     <constraint firstAttribute="height" constant="428" id="3TW-07-u2h"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6sb-Nx-s0k">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6sb-Nx-s0k">
                                 <rect key="frame" x="27" y="33" width="267" height="424"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sep_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="6mt-UA-OS3">

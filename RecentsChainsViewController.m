@@ -1,80 +1,61 @@
 //
-//  RecentStormesViewController.m
+//  RecentsChainsViewController.m
 //  iCare
 //
-//  Created by ido zamberg on 1/17/14.
-//  Copyright (c) 2014 ido zamberg. All rights reserved.
+//  Created by ido zamberg on 4/7/15.
+//  Copyright (c) 2015 ido zamberg. All rights reserved.
 //
 
-#import "RecentStormesViewController.h"
+#import "RecentsChainsViewController.h"
 #import "StormCell.h"
 #import "FlowManager.h"
 #import "MFSideMenu.h"
 
 
-@interface RecentStormesViewController ()
+@interface RecentsChainsViewController ()
 
 @end
 
-@implementation RecentStormesViewController
+@implementation RecentsChainsViewController
 {
-    NSMutableArray* stormsWithExercises;
+    NSMutableArray* allChains;
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-
-}
-
-- (void) filterStorms
-{
-    stormsWithExercises = [NSMutableArray new];
+    // Do any additional setup after loading the view.
     
-    for (Storm* currStrom in [AppData sharedInstance].stormsHistory)
-    {
-        if (currStrom.exercises.count > 0)
-        {
-            [stormsWithExercises addObject:currStrom];
-        }
-    }
-
+    allChains = [AppData sharedInstance].chainsHistory;
 }
 
 - (void) viewWillAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
-    
     self.menuContainerViewController.panMode = MFSideMenuPanModeSideMenu;
-
-    // Removing empty storms
-    [self filterStorms];
 }
 
 - (void) viewWillDisappear:(BOOL)animated
 {
-    self.menuContainerViewController.panMode = MFSideMenuPanModeDefault;
+     self.menuContainerViewController.panMode = MFSideMenuPanModeDefault;
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return stormsWithExercises.count;
+    return allChains.count;
 }
 
 // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
@@ -85,10 +66,8 @@
     
     static NSString* STORM_CELL = @"StormCell";
     
-    // Getting current storm
-    Storm* currentStorm = [stormsWithExercises objectAtIndex:indexPath.row];
-    
-  
+    // Getting current chain
+    EmotionalChain* currentChain = [allChains objectAtIndex:indexPath.row];
     
     StormCell* cell = [tableView dequeueReusableCellWithIdentifier:STORM_CELL];
     
@@ -98,16 +77,11 @@
         cell = [[[NSBundle mainBundle] loadNibNamed:@"StormCell" owner:self options:nil] objectAtIndex:0];
     }
     
-    if (currentStorm.exercises.count > 0)
-    {
-        Exercise* firstExercise = [currentStorm.exercises objectAtIndex:0];
         
-        // Setting date
-        cell.imgLevel.image = [UIImage imageNamed:[NSString stringWithFormat:@"dot%i.png",[firstExercise.level integerValue]]];
-    }
-
-    cell.lblDate.text = [NSString stringWithFormat:@"ÉVÈNEMENT DU %@", [DateTimeHelper getDate:currentStorm.date withDateFormat:@"dd.MM.yyyy"]];
-
+    // Setting date and tension image
+    cell.imgLevel.image = [UIImage imageNamed:[NSString stringWithFormat:@"dot%i.png",[currentChain.tension integerValue]]];
+    cell.lblDate.text = [NSString stringWithFormat:@"ÉVÈNEMENT DU %@", [DateTimeHelper getDate:currentChain.date withDateFormat:@"dd.MM.yyyy"]];
+    
     
     return cell;
     
@@ -124,20 +98,13 @@
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
-        
-        // Getting object to delete
-        NSInteger objectIndex = [[AppData sharedInstance].stormsHistory indexOfObject:
-                                 [stormsWithExercises objectAtIndex:indexPath.row]];
-        
-        [[AppData sharedInstance].stormsHistory removeObjectAtIndex:objectIndex];
-        
-        // Removing row from local array
-        [stormsWithExercises removeObjectAtIndex:indexPath.row];
+      
+        [[AppData sharedInstance].chainsHistory removeObjectAtIndex:indexPath.row];
         
         // Remove rows from table
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
         
-        [[AppData sharedInstance] saveStorms];
+        [[AppData sharedInstance] saveChains];
     }
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -167,19 +134,17 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Getting selected storm
-    Storm* selectedStorm = [stormsWithExercises objectAtIndex:indexPath.row];
-    
-    [[FlowManager sharedInstance] showStormDetailesForStorm:selectedStorm];
-}
 
+    // Getting current chain and show it's resume
+    EmotionalChain* currentChain = [allChains objectAtIndex:indexPath.row];
+    [[FlowManager sharedInstance] showNotesResumeWithChain:currentChain];
 
-- (IBAction)emergencyClicked:(id)sender {
-    [[FlowManager sharedInstance] showEmergencyVC];
 }
 
 - (BOOL) shouldAutorotate
 {
     return NO;
 }
+
+
 @end

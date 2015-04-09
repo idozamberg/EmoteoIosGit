@@ -11,7 +11,8 @@
 @interface EmotionalChain : NSObject <NSCoding>
 
 @property (nonatomic,strong) NSMutableDictionary* chainElements;
-@property (nonatomic,strong) NSDate        * date;
+@property (nonatomic,strong) NSDate             * date;
+@property (nonatomic       ) NSNumber*            tension;
 
 - (void) addNewSelection : (UIImage*) image ToKey :(NSNumber*) key;
 - (void) addNewSelectionWithKeyImage : (UIImage*) keyImage numberImage : (UIImage*) image andKey :(NSNumber*) key;

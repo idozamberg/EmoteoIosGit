@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppData.h"
 
 @interface SuperViewController : UIViewController
 - (IBAction)menuClicked:(id)sender;
 - (IBAction)backClicked:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *btnMenu;
+@property (weak, nonatomic) IBOutlet UIButton *btnBack;
 
 @end

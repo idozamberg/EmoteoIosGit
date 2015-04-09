@@ -31,7 +31,8 @@
 #import "EstimateFeelingViewController.h"
 #import "CotationViewController.h"
 #import "FeelingsViewController.h"
-
+#import "RecentsChainsViewController.h"
+#import "NotesResumeViewController.h"
 
 @interface FlowManager : NSObject <THPinViewControllerDelegate>
 
@@ -64,6 +65,8 @@ typedef void(^BubblesCompletionBlock)();
 - (void) showCotationViewControllerWithCenterImage : (UIImage*) image andText : (NSString*) text andBubbleIndex : (NSInteger) mainIndex;
 - (void) showFeelingsViewController;
 - (void) showScaleVC;
+- (void) showRecentChains;
+- (void) showNotesResumeWithChain : (EmotionalChain*) chainSelected;
 
 @property (strong,nonatomic) UIStoryboard* storyBoard;
 @property (strong,nonatomic) UINavigationController* navigationController;

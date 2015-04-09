@@ -51,6 +51,8 @@
 
 -(void)show
 {
+    [self disactivateAllButtons];
+    
     if(!_isAnimating)
     {
         _isAnimating = YES;
@@ -206,6 +208,9 @@
             if([self.delegate respondsToSelector:@selector(livBubbleMenuDidShow:)]) {
                 [self.delegate livBubbleMenuDidShow:self];
             }
+            
+            // activate button
+            [self activateAllButtons];
         }
 
     };
@@ -316,6 +321,11 @@
 {
     // hides self if user touches anywhere but the buttons within the self UIView
     //[self hide];
+    
+    if ([self.delegate respondsToSelector:@selector(livBubbleMenuDidBackgroundWasTouched:)])
+    {
+        [self.delegate livBubbleMenuDidBackgroundWasTouched:self];
+    }
 }
 
 -(UIButton*)createButtonWithImage:(UIImage *)image
@@ -359,6 +369,19 @@
 
     return image;
 }
+
+#pragma mark Added by me
+
+- (void) activateAllButtons
+{
+    self.userInteractionEnabled = YES;
+}
+
+- (void) disactivateAllButtons
+{
+    self.userInteractionEnabled = NO;
+}
+
 
 
 

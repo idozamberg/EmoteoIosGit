@@ -20,12 +20,12 @@
     // Do any additional setup after loading the view.
     
     // Creating array with note bubbles
-    self.bubbles = [NSArray arrayWithObjects:
+    self.bubbles = [NSMutableArray arrayWithObjects:
                     [UIImage imageNamed:@"SenAmour"],
                     [UIImage imageNamed:@"SenAbandon"],
                     [UIImage imageNamed:@"SenVide"],
                     [UIImage imageNamed:@"SenDetresse"],
-                    [UIImage imageNamed:@"AutreSentiment"],
+              //      [UIImage imageNamed:@"AutreSentiment"],
                     nil];
 }
 

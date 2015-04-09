@@ -62,6 +62,12 @@
     return 5;
 }
 
+- (void) viewWillAppear:(BOOL)animated
+{
+    //[self.tableView setHeight:(44*10) + (40*5)];
+   
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
    
     switch (section) {
@@ -74,7 +80,7 @@
             return 2;
             break;
         case STORMS_RECENT:
-            return 1;
+            return 2;
             break;
         case INFORMATIONS:
             return 2;
@@ -130,7 +136,7 @@
             else if (indexPath.row == SHAKE)
             {
                 cell.lblTitle.text = @"SHAKE";
-                [cell.imgIcon setImage:[UIImage imageNamed:@"Meeting-100"]];
+                [cell.imgIcon setImage:[UIImage imageNamed:@"shake"]];
 
             }
             break;
@@ -148,8 +154,17 @@
             break;
         case STORMS_RECENT:
             
-            cell.lblTitle.text = @"ÉVENEMENTS RÉCENETS";
-            [cell.imgIcon setImage:[UIImage imageNamed:@"Line Chart-100"]];
+            if (indexPath.row == 0)
+            {
+                cell.lblTitle.text = @"RÉSUMÉ TENSION";
+                [cell.imgIcon setImage:[UIImage imageNamed:@"Line Chart-100"]];
+            }
+            else
+            {
+                cell.lblTitle.text = @"RÉSUMÉ OBSERVATION";
+                [cell.imgIcon setImage:[UIImage imageNamed:@"Link-100-2"]];
+            }
+            
             break;
         case INFORMATIONS:
             if (indexPath.row == 0)
@@ -200,8 +215,8 @@
 
             break;
         case STORMS_RECENT:
-            headerView.lblTitle.text =  @"DONNÉES";
-            [headerView.imgMenu setImage:[UIImage imageNamed:@"Line Chart-100"]];
+            headerView.lblTitle.text =  @"JOURNAL";
+            [headerView.imgMenu setImage:[UIImage imageNamed:@"Literature-100"]];
 
             break;
         case INFORMATIONS:
@@ -227,6 +242,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
   
+    if (indexPath.section != STORMS_RECENT)
+    {
+         self.menuContainerViewController.panMode = MFSideMenuPanModeDefault;
+    }
     
     switch (indexPath.section) {
         case HOME_ROW:
@@ -284,15 +303,29 @@
             
             if ([AppData sharedInstance].pinCode == Nil || [[AppData sharedInstance].pinCode isEqualToString:@""])
             {
-                [[FlowManager sharedInstance] showRecentStormsAnimated:YES];
+                if (indexPath.row == 0)
+                {
+                    [[FlowManager sharedInstance] showRecentStormsAnimated:YES];
+                }
+                else
+                {
+                    [[FlowManager sharedInstance] showRecentChains];
+                }
             }
             else
             {
-                [[FlowManager sharedInstance] showRecentStormsAnimated:NO];
+                if (indexPath.row == 0)
+                {
+                    [[FlowManager sharedInstance] showRecentStormsAnimated:NO];
+                }
+                else
+                {
+                    [[FlowManager sharedInstance] showRecentChains];
+                }
+                
                 [[FlowManager sharedInstance] showEnterPinVC:YES];
             }
 
-          //  [MFSideMenuContainerViewController ]
             break;
         case INFORMATIONS:
             if (indexPath.row == 0)

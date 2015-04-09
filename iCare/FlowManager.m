@@ -215,6 +215,29 @@ static FlowManager* manager;
     
 }
 
+- (void) showNotesResumeWithChain : (EmotionalChain*) chainSelected
+{
+    UIStoryboard* autoBoard = [UIStoryboard storyboardWithName:@"NavigationBoard" bundle:nil];
+    //stormsVC
+    
+    NotesResumeViewController* resumeVC = [autoBoard instantiateViewControllerWithIdentifier:@"NotesResumeViewController"];
+    resumeVC.selectedChain = chainSelected;
+    
+    [navigationController pushViewController:resumeVC animated:YES];
+}
+
+- (void) showRecentChains
+{
+    UIStoryboard* autoBoard = [UIStoryboard storyboardWithName:@"NavigationBoard" bundle:nil];
+    //stormsVC
+    
+    RecentsChainsViewController* stormsVC = [autoBoard instantiateViewControllerWithIdentifier:@"chainsHistoryVC"];
+    [stormsVC.tblChains reloadData];
+    
+    [navigationController popToRootViewControllerAnimated:NO];
+    [navigationController pushViewController:stormsVC animated:NO];
+}
+
 - (void) showStormDetailesForStorm : (Storm*) storm
 {
     UIStoryboard* autoBoard = [UIStoryboard storyboardWithName:@"NavigationBoard" bundle:nil];

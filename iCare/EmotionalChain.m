@@ -7,8 +7,11 @@
 //
 
 #import "EmotionalChain.h"
+#import "UIImage-NSCoding.h"
 
 @implementation EmotionalChain
+
+@synthesize tension;
 
 - (id) init
 {
@@ -27,8 +30,9 @@
 {
     self = [super init];
     
-    self.date = [aDecoder decodeObjectForKey:@"Date"];
+    self.date          = [aDecoder decodeObjectForKey:@"Date"];
     self.chainElements = [aDecoder decodeObjectForKey:@"chainElements"];
+    self.tension       = [aDecoder decodeObjectForKey:@"tension"];
     
     return self;
 }
@@ -37,6 +41,8 @@
 {
     [aCoder encodeObject:self.date forKey:@"Date"];
     [aCoder encodeObject:self.chainElements forKey:@"chainElements"];
+    [aCoder encodeObject:self.tension forKey:@"tension"];
+
 }
 
 - (void) addNewSelection : (UIImage*) image ToKey :(NSNumber*) key
@@ -88,5 +94,7 @@
     }
 
 }
+
+
 
 @end

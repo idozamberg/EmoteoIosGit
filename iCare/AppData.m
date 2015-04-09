@@ -107,8 +107,9 @@ static AppData* shareData;
     //  Adding new storm to array
     EmotionalChain* newChain = [EmotionalChain new];
     
-    // Set storm's date
+    // Set storm's date and tension level
     newChain.date = [NSDate date];
+    newChain.tension = [NSNumber numberWithInteger:self.currentLevel];
     
     // Add to history
     [self.chainsHistory addObject:newChain];

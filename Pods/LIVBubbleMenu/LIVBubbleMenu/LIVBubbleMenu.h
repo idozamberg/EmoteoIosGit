@@ -69,6 +69,8 @@
 
 -(void)livBubbleMenuDidShow:(LIVBubbleMenu *)bubbleMenu;
 
+-(void)livBubbleMenuDidBackgroundWasTouched:(LIVBubbleMenu *)theBubbleMenu;
+
 @end
 
 

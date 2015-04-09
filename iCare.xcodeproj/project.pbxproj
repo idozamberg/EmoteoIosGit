@@ -171,6 +171,19 @@
 		757ED7231AD1CA950070A9F9 /* leftround.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED7221AD1CA950070A9F9 /* leftround.png */; };
 		757ED7271AD1CBC00070A9F9 /* SuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757ED7261AD1CBC00070A9F9 /* SuperViewController.m */; };
 		757ED72A1AD27F850070A9F9 /* EmotionalChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 757ED7291AD27F850070A9F9 /* EmotionalChain.m */; };
+		757ED72D1AD3FCE70070A9F9 /* shake.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED72C1AD3FCE70070A9F9 /* shake.png */; };
+		757ED7301AD44B9C0070A9F9 /* RecentsChainsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757ED72F1AD44B9C0070A9F9 /* RecentsChainsViewController.m */; };
+		757ED7321AD44E1B0070A9F9 /* Link.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED7311AD44E1B0070A9F9 /* Link.png */; };
+		757ED7341AD450F30070A9F9 /* Link-100-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED7331AD450F30070A9F9 /* Link-100-2.png */; };
+		757ED7371AD51FE50070A9F9 /* NotesResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757ED7361AD51FE50070A9F9 /* NotesResumeViewController.m */; };
+		757ED7391AD5219A0070A9F9 /* 1 Circle-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED7381AD5219A0070A9F9 /* 1 Circle-100.png */; };
+		757ED7421AD531910070A9F9 /* UIImage-NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 757ED7411AD531910070A9F9 /* UIImage-NSCoding.m */; };
+		757ED7451AD5398F0070A9F9 /* round_bualcool.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED7431AD5398F0070A9F9 /* round_bualcool.png */; };
+		757ED7461AD5398F0070A9F9 /* round_pasdsentiments.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED7441AD5398F0070A9F9 /* round_pasdsentiments.png */; };
+		757ED7491AD539B20070A9F9 /* round_pasdcomp.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED7471AD539B20070A9F9 /* round_pasdcomp.png */; };
+		757ED74C1AD53BAE0070A9F9 /* notemesemo.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED74B1AD53BAE0070A9F9 /* notemesemo.png */; };
+		757ED7501AD53C1B0070A9F9 /* round_emotcomp.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED74F1AD53C1B0070A9F9 /* round_emotcomp.png */; };
+		757ED7521AD599490070A9F9 /* Literature-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 757ED7511AD599490070A9F9 /* Literature-100.png */; };
 		758113D11950B1EC00C58E4F /* button_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 758113CF1950B1EC00C58E4F /* button_off.png */; };
 		758113D21950B1EC00C58E4F /* button_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 758113D01950B1EC00C58E4F /* button_on.png */; };
 		758113D51950B27C00C58E4F /* SecurityConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 758113D41950B27C00C58E4F /* SecurityConfigurationViewController.m */; };
@@ -504,6 +517,22 @@
 		757ED7261AD1CBC00070A9F9 /* SuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuperViewController.m; path = iCare/SuperViewController.m; sourceTree = "<group>"; };
 		757ED7281AD27F850070A9F9 /* EmotionalChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmotionalChain.h; sourceTree = "<group>"; };
 		757ED7291AD27F850070A9F9 /* EmotionalChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmotionalChain.m; sourceTree = "<group>"; };
+		757ED72C1AD3FCE70070A9F9 /* shake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shake.png; sourceTree = "<group>"; };
+		757ED72E1AD44B9C0070A9F9 /* RecentsChainsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentsChainsViewController.h; sourceTree = "<group>"; };
+		757ED72F1AD44B9C0070A9F9 /* RecentsChainsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentsChainsViewController.m; sourceTree = "<group>"; };
+		757ED7311AD44E1B0070A9F9 /* Link.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Link.png; path = ../Link.png; sourceTree = "<group>"; };
+		757ED7331AD450F30070A9F9 /* Link-100-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Link-100-2.png"; sourceTree = "<group>"; };
+		757ED7351AD51FE50070A9F9 /* NotesResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesResumeViewController.h; sourceTree = "<group>"; };
+		757ED7361AD51FE50070A9F9 /* NotesResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesResumeViewController.m; sourceTree = "<group>"; };
+		757ED7381AD5219A0070A9F9 /* 1 Circle-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1 Circle-100.png"; sourceTree = "<group>"; };
+		757ED7401AD531900070A9F9 /* UIImage-NSCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-NSCoding.h"; sourceTree = "<group>"; };
+		757ED7411AD531910070A9F9 /* UIImage-NSCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage-NSCoding.m"; sourceTree = "<group>"; };
+		757ED7431AD5398F0070A9F9 /* round_bualcool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = round_bualcool.png; sourceTree = "<group>"; };
+		757ED7441AD5398F0070A9F9 /* round_pasdsentiments.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = round_pasdsentiments.png; sourceTree = "<group>"; };
+		757ED7471AD539B20070A9F9 /* round_pasdcomp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = round_pasdcomp.png; sourceTree = "<group>"; };
+		757ED74B1AD53BAE0070A9F9 /* notemesemo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notemesemo.png; sourceTree = "<group>"; };
+		757ED74F1AD53C1B0070A9F9 /* round_emotcomp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = round_emotcomp.png; sourceTree = "<group>"; };
+		757ED7511AD599490070A9F9 /* Literature-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Literature-100.png"; sourceTree = "<group>"; };
 		758113CF1950B1EC00C58E4F /* button_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_off.png; sourceTree = "<group>"; };
 		758113D01950B1EC00C58E4F /* button_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_on.png; sourceTree = "<group>"; };
 		758113D31950B27C00C58E4F /* SecurityConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityConfigurationViewController.h; sourceTree = "<group>"; };
@@ -805,6 +834,8 @@
 				7539BBE91960ACDB004A0F19 /* Spotlite.png */,
 				7539BBE81960ACCD004A0F19 /* IconApp.png */,
 				7516A3CF18550C440047AD1A /* UIView+Framing.h */,
+				757ED7401AD531900070A9F9 /* UIImage-NSCoding.h */,
+				757ED7411AD531910070A9F9 /* UIImage-NSCoding.m */,
 				7516A3D018550C440047AD1A /* UIView+Framing.m */,
 				7516A3841854DF440047AD1A /* ScaleViewController.xib */,
 				750EACBE19646A5D005A8D60 /* Analytics */,
@@ -1140,6 +1171,9 @@
 		757ED7241AD1CB780070A9F9 /* SideMenu - Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				757ED7331AD450F30070A9F9 /* Link-100-2.png */,
+				757ED7311AD44E1B0070A9F9 /* Link.png */,
+				757ED72C1AD3FCE70070A9F9 /* shake.png */,
 				757ED7221AD1CA950070A9F9 /* leftround.png */,
 				757ED7201AD1AA8E0070A9F9 /* Home-100.png */,
 				757ED71E1AD1A65B0070A9F9 /* Faq-100.png */,
@@ -1177,6 +1211,8 @@
 				75F590B71ACFEBE200398BE8 /* FeelingsViewController.m */,
 				75C129EE1AC5DE28007EC123 /* NoteViewController.h */,
 				75C129EF1AC5DE28007EC123 /* NoteViewController.m */,
+				757ED7351AD51FE50070A9F9 /* NotesResumeViewController.h */,
+				757ED7361AD51FE50070A9F9 /* NotesResumeViewController.m */,
 			);
 			name = Circles;
 			sourceTree = "<group>";
@@ -1310,6 +1346,13 @@
 		75DE3F751AC56796004740BA /* Rounds */ = {
 			isa = PBXGroup;
 			children = (
+				757ED7511AD599490070A9F9 /* Literature-100.png */,
+				757ED74F1AD53C1B0070A9F9 /* round_emotcomp.png */,
+				757ED7471AD539B20070A9F9 /* round_pasdcomp.png */,
+				757ED74B1AD53BAE0070A9F9 /* notemesemo.png */,
+				757ED7431AD5398F0070A9F9 /* round_bualcool.png */,
+				757ED7441AD5398F0070A9F9 /* round_pasdsentiments.png */,
+				757ED7381AD5219A0070A9F9 /* 1 Circle-100.png */,
 				75F590C31ACFEE0100398BE8 /* Round11.png */,
 				75F590C11ACFED9300398BE8 /* AutreSentiment.png */,
 				75F590B91ACFEC4700398BE8 /* SenAmour.png */,
@@ -1418,6 +1461,8 @@
 				75E8C6BA1A641EB4000D237B /* SpecificInformationViewController.h */,
 				75E8C6BB1A641EB4000D237B /* SpecificInformationViewController.m */,
 				757ED72B1AD32D2A0070A9F9 /* Circles */,
+				757ED72E1AD44B9C0070A9F9 /* RecentsChainsViewController.h */,
+				757ED72F1AD44B9C0070A9F9 /* RecentsChainsViewController.m */,
 			);
 			name = UI;
 			path = ..;
@@ -1560,7 +1605,7 @@
 				ORGANIZATIONNAME = "ido zamberg";
 				TargetAttributes = {
 					7516A3491854DEF80047AD1A = {
-						DevelopmentTeam = MC9GVRT8Q8;
+						DevelopmentTeam = X7SL522Y9M;
 					};
 					7516A36A1854DEF80047AD1A = {
 						TestTargetID = 7516A3491854DEF80047AD1A;
@@ -1687,6 +1732,7 @@
 				757ED7101AD14B8D0070A9F9 /* About-100.png in Resources */,
 				753F7B75195756E90041C37D /* Ciel.m4v in Resources */,
 				75890972186820330076F415 /* round_on.png in Resources */,
+				757ED7451AD5398F0070A9F9 /* round_bualcool.png in Resources */,
 				758113D11950B1EC00C58E4F /* button_off.png in Resources */,
 				757ED6FD1AD1324A0070A9F9 /* About Filled-100.png in Resources */,
 				75E7CCC318649CA200F74E7C /* play_on.png in Resources */,
@@ -1695,6 +1741,7 @@
 				753F7B6A195742630041C37D /* marche.m4v in Resources */,
 				75F58FEF1ACE82B000398BE8 /* peur.png in Resources */,
 				75E7CCD21865992D00F74E7C /* up.png in Resources */,
+				757ED72D1AD3FCE70070A9F9 /* shake.png in Resources */,
 				7516A3BD1854F54D0047AD1A /* 5_blink.png in Resources */,
 				75890974186823170076F415 /* round_blink.png in Resources */,
 				751811E4188985FC00E277FB /* dot1.png in Resources */,
@@ -1705,6 +1752,7 @@
 				7516A38E1854E4020047AD1A /* emergency_on.png in Resources */,
 				751811F718899D9F00E277FB /* StormDetailCell.xib in Resources */,
 				758B39841AC4B1DA00E7067A /* full_moon.png in Resources */,
+				757ED7491AD539B20070A9F9 /* round_pasdcomp.png in Resources */,
 				75F67D17186376BE00A9E70E /* video_size.png in Resources */,
 				7516A3B41854F54D0047AD1A /* 2_blink.png in Resources */,
 				75C12A1A1AC70EF5007EC123 /* round_vide.png in Resources */,
@@ -1731,8 +1779,10 @@
 				7599B15F1859053500B507F5 /* urgence_on.png in Resources */,
 				7516A3971854F2E70047AD1A /* 1_off.png in Resources */,
 				7539BBED1960ADB1004A0F19 /* stop_off-2.png in Resources */,
+				757ED7501AD53C1B0070A9F9 /* round_emotcomp.png in Resources */,
 				75C12A091AC5F302007EC123 /* round_medicements.png in Resources */,
 				75E7CCD11865992D00F74E7C /* right.png in Resources */,
+				757ED74C1AD53BAE0070A9F9 /* notemesemo.png in Resources */,
 				75641F771AC2E5EE007E17FA /* RespArbre.mp3 in Resources */,
 				7599B15E1859053500B507F5 /* urgence_off.png in Resources */,
 				75F58FF21ACE82B000398BE8 /* round4.png in Resources */,
@@ -1752,8 +1802,10 @@
 				753F7B6C195742630041C37D /* respirationC.m4v in Resources */,
 				751811E5188985FC00E277FB /* dot10.png in Resources */,
 				751811E7188985FC00E277FB /* dot3.png in Resources */,
+				757ED7521AD599490070A9F9 /* Literature-100.png in Resources */,
 				75F67D10186376BE00A9E70E /* cursor.png in Resources */,
 				757ED6FF1AD1324A0070A9F9 /* Meditation Guru-100.png in Resources */,
+				757ED7391AD5219A0070A9F9 /* 1 Circle-100.png in Resources */,
 				757ED7121AD14B8D0070A9F9 /* Settings-100-2.png in Resources */,
 				7516A3CD1854F54D0047AD1A /* 10_off.png in Resources */,
 				7524A44019E72F0A006607C1 /* s6.png in Resources */,
@@ -1767,14 +1819,17 @@
 				75F590C21ACFED9300398BE8 /* AutreSentiment.png in Resources */,
 				75E8C6C51A6BC854000D237B /* emergency.png in Resources */,
 				753F7B67195742630041C37D /* body.m4v in Resources */,
+				757ED7341AD450F30070A9F9 /* Link-100-2.png in Resources */,
 				757ED6F51AD09EE40070A9F9 /* sunshine.png in Resources */,
 				7516A3B51854F54D0047AD1A /* 2_off.png in Resources */,
 				75F58FF61ACE82B000398BE8 /* Colère.png in Resources */,
 				75E7CCD41865993C00F74E7C /* round_off.png in Resources */,
 				757ED71D1AD1A60F0070A9F9 /* Good Quality-100.png in Resources */,
 				7599B1641859056F00B507F5 /* UrgenceViewController.xib in Resources */,
+				757ED7461AD5398F0070A9F9 /* round_pasdsentiments.png in Resources */,
 				757ED7111AD14B8D0070A9F9 /* Meditation Guru-100-2.png in Resources */,
 				753F7B68195742630041C37D /* Audio Eau froide CW 5'50.m4v in Resources */,
+				757ED7321AD44E1B0070A9F9 /* Link.png in Resources */,
 				751811E6188985FC00E277FB /* dot2.png in Resources */,
 				7516A3CE1854F54D0047AD1A /* 10_on.png in Resources */,
 				7516A3861854DF440047AD1A /* ScaleViewController.xib in Resources */,
@@ -1832,6 +1887,7 @@
 			files = (
 				75E7CCC818649F3C00F74E7C /* AppData.m in Sources */,
 				75B5CDCB1961C46F00012358 /* SplashMovieController.m in Sources */,
+				757ED7421AD531910070A9F9 /* UIImage-NSCoding.m in Sources */,
 				75C129F01AC5DE28007EC123 /* NoteViewController.m in Sources */,
 				75F7E1331977CC36009EA814 /* TutorialViewController.m in Sources */,
 				751811D018897B2C00E277FB /* RecentStormesViewController.m in Sources */,
@@ -1839,6 +1895,7 @@
 				753F7B241951B05F0041C37D /* ATCTransitioningDelegate.m in Sources */,
 				75181206188A5B8900E277FB /* CPTStormGraphViewController.m in Sources */,
 				753F7B231951B05F0041C37D /* ATCAnimatedTransitioningSquish.m in Sources */,
+				757ED7301AD44B9C0070A9F9 /* RecentsChainsViewController.m in Sources */,
 				75F67D231864752D00A9E70E /* MessageView.m in Sources */,
 				75E8C6BC1A641EB4000D237B /* SpecificInformationViewController.m in Sources */,
 				7516A3641854DEF80047AD1A /* ViewController.m in Sources */,
@@ -1850,6 +1907,7 @@
 				75F67D1A186390A600A9E70E /* LevelViewController.m in Sources */,
 				758C10F918804172005029EF /* EmergencyCallSettingsViewController.m in Sources */,
 				75DF53D31946364D004F4C71 /* BaseAnimation.m in Sources */,
+				757ED7371AD51FE50070A9F9 /* NotesResumeViewController.m in Sources */,
 				758170DF19E1C7D600646554 /* EMGTableHeader.m in Sources */,
 				75571E2E1961801C00D48521 /* IntegratedNavigationController.m in Sources */,
 				758C10FC18804744005029EF /* UIHelper.m in Sources */,

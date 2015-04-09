@@ -19,14 +19,15 @@
     // Do any additional setup after loading the view.
     
     // Creating array with note bubbles
-    self.bubbles = [NSArray arrayWithObjects:
-                    [UIImage imageNamed:@"round_alcol"],
-                    [UIImage imageNamed:@"round_autres"],
+    self.bubbles = [NSMutableArray arrayWithObjects:
+                    [UIImage imageNamed:@"round_bualcool"],
+                  //  [UIImage imageNamed:@"round_autres"],
                     [UIImage imageNamed:@"round_blessé"],
                     [UIImage imageNamed:@"round_horsnormes"],
                     [UIImage imageNamed:@"round_medicements"],
                     [UIImage imageNamed:@"round_prisedetox"],
                     [UIImage imageNamed:@"round_suicide"],
+                    [UIImage imageNamed:@"round_pasdcomp.png"],
                     nil];
 }
 
@@ -44,6 +45,8 @@
     self.bubbleMenu.delegate = self;
     self.bubbleMenu.easyButtons = YES;
     [self.bubbleMenu show];
+    
+    //self.bubbleMenu.userInteractionEnabled = NO;
     
 }
 
@@ -72,12 +75,19 @@
     
 }
 
+- (void) livBubbleMenuDidShow:(LIVBubbleMenu *)bubbleMenu
+{
+    //self.bubbleMenu.userInteractionEnabled = YES;
+}
+
 - (void) viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
     
     self.bubbleMenu.delegate = Nil;
 }
+
+
 /*
 #pragma mark - Navigation
 

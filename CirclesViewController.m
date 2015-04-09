@@ -40,9 +40,20 @@
 
 }
 
+- (void) viewDidAppear:(BOOL)animated
+{
+    [self bringButtonsToFront];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) bringButtonsToFront
+{
+    [self.view bringSubviewToFront:self.btnMenu];
+    [self.view bringSubviewToFront:self.btnBack];
 }
 
 /*
@@ -60,7 +71,7 @@
     // Saving chain
     [[AppData sharedInstance] saveChains];
     
-    [UIHelper showMessage:@"L'Exercice a été enregistré avec success"];
+    [UIHelper showMessage:@"L'Exercice a été enregistré avec succès"];
     
     // Goinf back to main page
     [self.navigationController popViewControllerAnimated:YES];
@@ -68,6 +79,9 @@
 
 - (void) HandleBubbleClickedForBubble : (UIButton*) button andIBubbleIndex : (NSInteger) index completion:(void (^)(BOOL finished))completion
 {
+    [self.bubbleMenu hide];
+    [self.clickedCircleImage removeFromSuperview];
+    
     // Saving clicked image
     self.clickedCircleImage =  [[UIImageView alloc] initWithImage:[self.bubbles objectAtIndex:index]];
     self.clickedCircleImage.frame = button.frame;
@@ -91,10 +105,16 @@
 
     }
     completion:^(BOOL finished){
+        
         completion(YES);
                      }];
     
     [UIView commitAnimations];
     
+}
+
+- (BOOL) shouldAutorotate
+{
+    return NO;
 }
 @end

@@ -10,10 +10,11 @@
 #import "LIVBubbleMenu.h"
 #import "AppData.h"
 #import "EmotionalChain.h"
+#import "SuperViewController.h"
 
 
 
-@interface CirclesViewController : ViewController <LIVBubbleButtonDelegate>
+@interface CirclesViewController : SuperViewController <LIVBubbleButtonDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *lblText;
 @property (weak, nonatomic) IBOutlet UIButton *btnCenter;
 @property (weak, nonatomic) IBOutlet UILabel *lblCenter;
@@ -25,6 +26,6 @@
 - (IBAction)centerClicked:(id)sender;
 
 - (void) HandleBubbleClickedForBubble : (UIButton*) button andIBubbleIndex : (NSInteger) index completion:(void (^)(BOOL finished))completion;
-
+- (void) bringButtonsToFront;
 
 @end

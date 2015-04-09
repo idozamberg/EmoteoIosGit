@@ -22,7 +22,7 @@
     BOOL tensionLowered;
     ScaleAnimation *_scaleAnimationController;
     MPMoviePlayerViewController *theMovie;
-
+    LIVBubbleMenu* bubbleMenu;
 }
 @end
 
@@ -39,6 +39,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.modalPresentationCapturesStatusBarAppearance = YES;
+    [self setNeedsStatusBarAppearanceUpdate];
     
     levelLabelsArray = [NSMutableArray new];
     self.vwTutorial.alpha = 0;
@@ -134,6 +137,10 @@
     [self returnToFirstLevel];
     // Arranging scrole view
     [self arrangeScroleView];
+    
+   // [bubbleMenu hide];
+    bubbleMenu.delegate = Nil;
+  //  [bubbleMenu removeFromSuperview];
 }
 
 - (void) revaluteLevel
@@ -532,12 +539,12 @@
     {
         if (tensionLowered)
         {
-            text = @"Votre tension a baissé, vous pouvez continuer vos activités ou vous entraîner à la pratique de pleine conscience";
+            text = @"Votre tension à baissé, vous pouvez continuer vos activités, vous entraîner à la pratique de pleine conscience ou noter vos émotions et vos comportements";
             tensionLowered = NO;
         }
         else
         {
-            text = [NSString stringWithFormat:@"Vous évaluez votre tension à %li, Vous pouvez choisir de pratiquer les exercices de pleine conscience, ou de noter vos émotioons et vos comportements !",(long)currentButtonClicked];
+            text = [NSString stringWithFormat:@"Vous évaluez votre tension à %li, Vous pouvez choisir de pratiquer les exercices de pleine conscience ou noter vos émotions et vos comportements !",(long)currentButtonClicked];
         }
     }
     else
@@ -572,17 +579,22 @@
         isButtonFlashing = YES;
     }
     
-    // showing menu
-    NSArray* images = [NSArray arrayWithObjects:
-                       [UIImage imageNamed:@"round_notercompr"],
-                       [UIImage imageNamed:@"round_pc"],
-                       nil];
+    // Show bubbles for
+    if ([self getCurrentLevel] <= 6)
+    {
+        // showing menu
+        NSArray* images = [NSArray arrayWithObjects:
+                           [UIImage imageNamed:@"round_emotcomp.png"],
+                           [UIImage imageNamed:@"round_pc"],
+                           nil];
+        
+        // Showing bubbles menu
+        bubbleMenu = [[LIVBubbleMenu alloc] initWithPoint:((UIButton*)sender).center radius:150 menuItems:images inView:self.view];
+        bubbleMenu.delegate = self;
+        bubbleMenu.easyButtons = YES;
+        [bubbleMenu show];
+    }
     
-    LIVBubbleMenu* bubbleMenu = [[LIVBubbleMenu alloc] initWithPoint:((UIButton*)sender).center radius:150 menuItems:images inView:self.view];
-    bubbleMenu.delegate = self;
-    bubbleMenu.easyButtons = YES;
-    [bubbleMenu show];
-
 }
 
 
@@ -661,7 +673,7 @@
     }
     else
     {
-        
+        [self levelClicked:self.btnLevel];
     }
 }
 
@@ -671,8 +683,14 @@
     
 }
 
--(BOOL)prefersStatusBarHidden{
-    return YES;
+-(void)livBubbleMenuDidBackgroundWasTouched:(LIVBubbleMenu *)theBubbleMenu
+{
+    [bubbleMenu hide];
+
 }
 
+- (BOOL) prefersStatusBarHidden
+{
+    return YES;
+}
 @end
