@@ -51,7 +51,6 @@
     self.bubbleMenu.easyButtons = YES;
     [self.bubbleMenu show];
     
-    
 }
 
 - (void) setBubblesImages
@@ -132,6 +131,22 @@
 
 - (void) livBubbleMenuDidShow:(LIVBubbleMenu *)bubbleMenu
 {
+    NSInteger index = 0;
+    
+    for (UIButton* button in bubbleMenu.bubbleButtons)
+    {
+        // Disabling button
+        button.enabled = NO;
+        
+        // Getting button image
+        UIImage* buttonImage = [self.bubbles objectAtIndex:index];
+        
+        // Setting image
+        [button setImage:buttonImage forState:UIControlStateDisabled];
+        
+        index += 1;
+    }
+    
     // Adding number images
     for (UIImageView* imageView in numbersImages)
     {
@@ -142,6 +157,8 @@
                          completion:^(BOOL finished){
                          }];
     }
+    
+
 }
 
 - (BOOL) shouldAutorotate

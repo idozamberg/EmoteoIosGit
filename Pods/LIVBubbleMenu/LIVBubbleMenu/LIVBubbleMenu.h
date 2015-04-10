@@ -52,6 +52,8 @@
 -(void)show; // Show the menu
 -(void)hide; // Hide the menu
 -(void)hideFromIndex:(NSInteger)index; // Hide the menu starting from a specific bubble
+- (void) disactivateAllButtons;
+
 
 @end
 
@@ -70,6 +72,7 @@
 -(void)livBubbleMenuDidShow:(LIVBubbleMenu *)bubbleMenu;
 
 -(void)livBubbleMenuDidBackgroundWasTouched:(LIVBubbleMenu *)theBubbleMenu;
+
 
 @end
 
