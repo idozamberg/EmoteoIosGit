@@ -539,7 +539,7 @@
     {
         if (tensionLowered)
         {
-            text = @"Votre tension à baissé, vous pouvez continuer vos activités, vous entraîner à la pratique de pleine conscience ou noter vos émotions et vos comportements";
+            text = @"Votre tension a baissÈ, vous pouvez continuer vos activités, vous entraîner à la pratique de pleine conscience ou noter vos émotions et vos comportements";
             tensionLowered = NO;
         }
         else
