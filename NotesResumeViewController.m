@@ -70,7 +70,12 @@
     // Getting image and setting in array for feelings
     elements = [self.selectedChain.chainElements objectForKey:[NSNumber numberWithInteger:2]];
     UIImage* sentiments = [elements objectAtIndex:0];
-    [self setNumberImageForRoundWithIndex:2 andImage:[elements objectAtIndex:1]];
+    
+    if (elements.count >1)
+    {
+        [self setNumberImageForRoundWithIndex:2 andImage:[elements objectAtIndex:1]];
+    }
+    
     [self.bubbles addObject:sentiments];
     
 }

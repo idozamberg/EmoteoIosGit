@@ -146,6 +146,14 @@ SOFTWARE.</string>
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>If we meet some day, and you think this stuff is worth it, you can buy me a beer in return.</string>
+			<key>Title</key>
+			<string>YIPopupTextView</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>BSD License
 
 For Pop software

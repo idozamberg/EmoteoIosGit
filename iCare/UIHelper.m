@@ -44,4 +44,25 @@
     
     return data;
 }
+
++ (id)viewFromStoryboard:(NSString *)storyboardID
+{
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"NavigationBoard" bundle:nil];
+    UIViewController * controller = [storyBoard instantiateViewControllerWithIdentifier:storyboardID];
+    
+    UIView * vw = controller.view;
+    return vw;
+}
+
++ (UIImage *) imageWithView:(UIView *)view
+{
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, NO, 0.0);
+    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    
+    UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return img;
+}
 @end

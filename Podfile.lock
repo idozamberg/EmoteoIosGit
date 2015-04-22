@@ -2,13 +2,16 @@ PODS:
   - FlurrySDK (5.4.0):
     - FlurrySDK/FlurrySDK
   - FlurrySDK/FlurrySDK (5.4.0)
-  - GoogleAnalytics-iOS-SDK (3.0.9)
+  - GoogleAnalytics-iOS-SDK (3.10):
+    - GoogleAnalytics-iOS-SDK/Core
+  - GoogleAnalytics-iOS-SDK/Core (3.10)
   - LIVBubbleMenu (1.1.0):
     - pop (~> 1.0.7)
   - MFSideMenu (0.5.5)
   - pop (1.0.7)
   - THPinViewController (1.1.2)
-  - UIView+draggable (0.2)
+  - UIView+draggable (0.5)
+  - YIPopupTextView (1.1.1)
 
 DEPENDENCIES:
   - FlurrySDK (~> 5.1)
@@ -17,14 +20,16 @@ DEPENDENCIES:
   - MFSideMenu
   - THPinViewController (~> 1.1.2)
   - UIView+draggable
+  - YIPopupTextView
 
 SPEC CHECKSUMS:
   FlurrySDK: 7f929b68dea38ce735979fb039229f62c0b697b5
-  GoogleAnalytics-iOS-SDK: 3b0994bef22ed2e176a9e2a4d1660c7c2542eb47
+  GoogleAnalytics-iOS-SDK: 4f98a376c1d61e6ac4ca47951655820314856eef
   LIVBubbleMenu: 1bcaa61ac0379e32e88bb40a382f135717276c30
   MFSideMenu: 268122e6894f2747fc3a2b48578100b232506c60
   pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
   THPinViewController: 3c498ac30e4736d9450fc86f83ded0d7abe8b6f0
-  UIView+draggable: 086590804d79deb07b661ad449d3a317bca1ccab
+  UIView+draggable: aa626c17818a76a2050c820edad6b7f43468ebbf
+  YIPopupTextView: fbed483a5e6fc61f5f61ff6f074a1558466c0c4d
 
 COCOAPODS: 0.34.2

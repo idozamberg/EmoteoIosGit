@@ -11,10 +11,12 @@
 #import "AppData.h"
 #import "EmotionalChain.h"
 #import "SuperViewController.h"
+#import "YIPopupTextView.h"
+#import "CustomRoundView.h"
 
 
 
-@interface CirclesViewController : SuperViewController <LIVBubbleButtonDelegate>
+@interface CirclesViewController : SuperViewController <LIVBubbleButtonDelegate,YIPopupTextViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *lblText;
 @property (weak, nonatomic) IBOutlet UIButton *btnCenter;
 @property (weak, nonatomic) IBOutlet UILabel *lblCenter;

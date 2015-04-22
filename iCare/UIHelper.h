@@ -14,5 +14,7 @@
 + (UIColor*) generateRandomColor;
 + (NSInteger) getRandomNumbergWithMaxNumber : (NSInteger) max;
 + (NSMutableDictionary*) dictionaryFromPlistWithName : (NSString*) plistName;
++ (id)viewFromStoryboard:(NSString *)storyboardID;
++ (UIImage *) imageWithView:(UIView *)view;
 
 @end

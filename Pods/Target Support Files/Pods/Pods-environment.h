@@ -21,8 +21,14 @@
 // GoogleAnalytics-iOS-SDK
 #define COCOAPODS_POD_AVAILABLE_GoogleAnalytics_iOS_SDK
 #define COCOAPODS_VERSION_MAJOR_GoogleAnalytics_iOS_SDK 3
-#define COCOAPODS_VERSION_MINOR_GoogleAnalytics_iOS_SDK 0
-#define COCOAPODS_VERSION_PATCH_GoogleAnalytics_iOS_SDK 9
+#define COCOAPODS_VERSION_MINOR_GoogleAnalytics_iOS_SDK 10
+#define COCOAPODS_VERSION_PATCH_GoogleAnalytics_iOS_SDK 0
+
+// GoogleAnalytics-iOS-SDK/Core
+#define COCOAPODS_POD_AVAILABLE_GoogleAnalytics_iOS_SDK_Core
+#define COCOAPODS_VERSION_MAJOR_GoogleAnalytics_iOS_SDK_Core 3
+#define COCOAPODS_VERSION_MINOR_GoogleAnalytics_iOS_SDK_Core 10
+#define COCOAPODS_VERSION_PATCH_GoogleAnalytics_iOS_SDK_Core 0
 
 // LIVBubbleMenu
 #define COCOAPODS_POD_AVAILABLE_LIVBubbleMenu
@@ -45,8 +51,14 @@
 // UIView+draggable
 #define COCOAPODS_POD_AVAILABLE_UIView_draggable
 #define COCOAPODS_VERSION_MAJOR_UIView_draggable 0
-#define COCOAPODS_VERSION_MINOR_UIView_draggable 2
+#define COCOAPODS_VERSION_MINOR_UIView_draggable 5
 #define COCOAPODS_VERSION_PATCH_UIView_draggable 0
+
+// YIPopupTextView
+#define COCOAPODS_POD_AVAILABLE_YIPopupTextView
+#define COCOAPODS_VERSION_MAJOR_YIPopupTextView 1
+#define COCOAPODS_VERSION_MINOR_YIPopupTextView 1
+#define COCOAPODS_VERSION_PATCH_YIPopupTextView 1
 
 // pop
 #define COCOAPODS_POD_AVAILABLE_pop

@@ -539,12 +539,15 @@
     {
         if (tensionLowered)
         {
-            text = @"Votre tension a baissÈ, vous pouvez continuer vos activités, vous entraîner à la pratique de pleine conscience ou noter vos émotions et vos comportements";
+            text = @"VOTRE TENSION A BAISSÉ, VOUS POUVEZ CONTINUER VOS ACTIVITÉS, VOUS ENTRAÎNER À LA PRATIQUE DE PLEINE CONSCIENCE OU NOTER VOS ÉMOTION ET VOS COMPORTEMENTS";
             tensionLowered = NO;
+            
         }
         else
         {
             text = [NSString stringWithFormat:@"Vous évaluez votre tension à %li, Vous pouvez choisir de pratiquer les exercices de pleine conscience ou noter vos émotions et vos comportements !",(long)currentButtonClicked];
+            
+            text = [text uppercaseString];
         }
     }
     else
@@ -557,9 +560,11 @@
         {
             text = [NSString stringWithFormat:@"Vous évaluez votre tension à %li, si vous confirmez, nous allons essayer de baisser cette tension avec vous !",(long)currentButtonClicked];
         }
+        
+        text = [text uppercaseString];
     }
     
-    text = [text uppercaseString];
+    
     
     // Reset for flashing reasons
     buttonOn = NO;

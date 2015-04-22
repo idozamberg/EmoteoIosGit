@@ -78,8 +78,12 @@
         
         // Adding object
         [[self.chainElements objectForKey:key] addObject:keyImage];
-        // Adding object
-        [[self.chainElements objectForKey:key] addObject:image];
+     
+        if (image)
+        {
+            // Adding object
+            [[self.chainElements objectForKey:key] addObject:image];
+        }
     }
     // Create array
     else
@@ -87,7 +91,11 @@
         // Setting array
         NSMutableArray* elements = [[NSMutableArray alloc] init];
         [elements addObject:keyImage];
-        [elements addObject:image];
+        
+        if (image)
+        {
+            [elements addObject:image];
+        }
         
         // Inserting to dictionary
         [self.chainElements setObject:elements forKey:key];

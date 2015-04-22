@@ -136,7 +136,6 @@
 		75571E2E1961801C00D48521 /* IntegratedNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75571E2D1961801C00D48521 /* IntegratedNavigationController.m */; };
 		75616B8D19DA140A00A8CAC6 /* ITCBook.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75616B8C19DA140A00A8CAC6 /* ITCBook.ttf */; };
 		75616B8F19DB3EB000A8CAC6 /* ITCAvaGarMM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75616B8E19DB3EB000A8CAC6 /* ITCAvaGarMM.ttf */; };
-		75641F731AC2E3A1007E17FA /* insectes.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 75641F721AC2E3A1007E17FA /* insectes.m4v */; };
 		75641F761AC2E5EE007E17FA /* MusInsc.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75641F741AC2E5EE007E17FA /* MusInsc.mp3 */; };
 		75641F771AC2E5EE007E17FA /* RespArbre.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75641F751AC2E5EE007E17FA /* RespArbre.mp3 */; };
 		75641F791AC2E870007E17FA /* eau.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75641F781AC2E870007E17FA /* eau.mp3 */; };
@@ -207,6 +206,7 @@
 		7599B15F1859053500B507F5 /* urgence_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 7599B15B1859053500B507F5 /* urgence_on.png */; };
 		7599B1631859056F00B507F5 /* UrgenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7599B1611859056F00B507F5 /* UrgenceViewController.m */; };
 		7599B1641859056F00B507F5 /* UrgenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7599B1621859056F00B507F5 /* UrgenceViewController.xib */; };
+		759B0F0B1AE3790800995413 /* CustomRoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 759B0F0A1AE3790800995413 /* CustomRoundView.m */; };
 		75B5CDCB1961C46F00012358 /* SplashMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B5CDCA1961C46F00012358 /* SplashMovieController.m */; };
 		75BB720319646FBB008617E9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BB720219646FBB008617E9 /* libsqlite3.dylib */; };
 		75BF5F79188978400076223C /* day.png in Resources */ = {isa = PBXBuildFile; fileRef = 75BF5F78188978400076223C /* day.png */; };
@@ -238,6 +238,7 @@
 		75C855E41866DB5B003D4FA2 /* pause_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C855E31866DB5B003D4FA2 /* pause_off.png */; };
 		75C855E61866DB9F003D4FA2 /* pause_off.gif in Resources */ = {isa = PBXBuildFile; fileRef = 75C855E51866DB9F003D4FA2 /* pause_off.gif */; };
 		75D3A3291A11FBDD00E36E8D /* TutorialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D3A3281A11FBDD00E36E8D /* TutorialView.m */; };
+		75DE24EA1AE6B52E0037BD8E /* insectes.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 75DE24E91AE6B52E0037BD8E /* insectes.m4v */; };
 		75DF53D31946364D004F4C71 /* BaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DF53CA1946364D004F4C71 /* BaseAnimation.m */; };
 		75DF53D41946364D004F4C71 /* ModalAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DF53CC1946364D004F4C71 /* ModalAnimation.m */; };
 		75DF53D51946364D004F4C71 /* SlideAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DF53CE1946364D004F4C71 /* SlideAnimation.m */; };
@@ -470,7 +471,6 @@
 		75571E2D1961801C00D48521 /* IntegratedNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegratedNavigationController.m; sourceTree = "<group>"; };
 		75616B8C19DA140A00A8CAC6 /* ITCBook.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ITCBook.ttf; sourceTree = "<group>"; };
 		75616B8E19DB3EB000A8CAC6 /* ITCAvaGarMM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ITCAvaGarMM.ttf; sourceTree = "<group>"; };
-		75641F721AC2E3A1007E17FA /* insectes.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = insectes.m4v; sourceTree = "<group>"; };
 		75641F741AC2E5EE007E17FA /* MusInsc.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MusInsc.mp3; sourceTree = "<group>"; };
 		75641F751AC2E5EE007E17FA /* RespArbre.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RespArbre.mp3; sourceTree = "<group>"; };
 		75641F781AC2E870007E17FA /* eau.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = eau.mp3; sourceTree = "<group>"; };
@@ -567,6 +567,8 @@
 		7599B1601859056F00B507F5 /* UrgenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrgenceViewController.h; sourceTree = "<group>"; };
 		7599B1611859056F00B507F5 /* UrgenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrgenceViewController.m; sourceTree = "<group>"; };
 		7599B1621859056F00B507F5 /* UrgenceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UrgenceViewController.xib; sourceTree = "<group>"; };
+		759B0F091AE3790800995413 /* CustomRoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomRoundView.h; sourceTree = "<group>"; };
+		759B0F0A1AE3790800995413 /* CustomRoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomRoundView.m; sourceTree = "<group>"; };
 		75AE36F619D6AD5C00E2442B /* ITCAvaGarMM.otf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ITCAvaGarMM.otf; path = ../ITCAvaGarMM.otf; sourceTree = "<group>"; };
 		75B5CDC91961C46F00012358 /* SplashMovieController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashMovieController.h; sourceTree = "<group>"; };
 		75B5CDCA1961C46F00012358 /* SplashMovieController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashMovieController.m; sourceTree = "<group>"; };
@@ -685,6 +687,7 @@
 		75C855E51866DB9F003D4FA2 /* pause_off.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pause_off.gif; sourceTree = "<group>"; };
 		75D3A3271A11FBDD00E36E8D /* TutorialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialView.h; path = iCare/TutorialView.h; sourceTree = "<group>"; };
 		75D3A3281A11FBDD00E36E8D /* TutorialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutorialView.m; path = iCare/TutorialView.m; sourceTree = "<group>"; };
+		75DE24E91AE6B52E0037BD8E /* insectes.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = insectes.m4v; path = iCare/insectes.m4v; sourceTree = "<group>"; };
 		75DF53C91946364D004F4C71 /* BaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAnimation.h; sourceTree = "<group>"; };
 		75DF53CA1946364D004F4C71 /* BaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAnimation.m; sourceTree = "<group>"; };
 		75DF53CB1946364D004F4C71 /* ModalAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalAnimation.h; sourceTree = "<group>"; };
@@ -1258,6 +1261,15 @@
 			name = Urgence;
 			sourceTree = "<group>";
 		};
+		759B0F081AE378E400995413 /* Rounds */ = {
+			isa = PBXGroup;
+			children = (
+				759B0F091AE3790800995413 /* CustomRoundView.h */,
+				759B0F0A1AE3790800995413 /* CustomRoundView.m */,
+			);
+			name = Rounds;
+			sourceTree = "<group>";
+		};
 		75C82E141A74CDFA00B05979 /* CorePlotHeaders */ = {
 			isa = PBXGroup;
 			children = (
@@ -1412,7 +1424,7 @@
 		75E7CCBF186487B200F74E7C /* Movies */ = {
 			isa = PBXGroup;
 			children = (
-				75641F721AC2E3A1007E17FA /* insectes.m4v */,
+				75DE24E91AE6B52E0037BD8E /* insectes.m4v */,
 				751DE1CA196EF1AC0060477E /* fleur.m4v */,
 				753F7B74195756E90041C37D /* Ciel.m4v */,
 				753F7B541957421B0041C37D /* pluie.m4v */,
@@ -1426,6 +1438,7 @@
 		75E7CCC418649F0200F74E7C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				759B0F081AE378E400995413 /* Rounds */,
 				757ED7251AD1CBC00070A9F9 /* SuperViewController.h */,
 				757ED7261AD1CBC00070A9F9 /* SuperViewController.m */,
 				75D3A3271A11FBDD00E36E8D /* TutorialView.h */,
@@ -1700,7 +1713,6 @@
 				7524A43F19E72F0A006607C1 /* s5.png in Resources */,
 				757ED7161AD14B8D0070A9F9 /* Ambulance-100.png in Resources */,
 				7516A3661854DEF80047AD1A /* Images.xcassets in Resources */,
-				75641F731AC2E3A1007E17FA /* insectes.m4v in Resources */,
 				757ED71B1AD1A5820070A9F9 /* Phone-100.png in Resources */,
 				7524A43E19E72F0A006607C1 /* s4.png in Resources */,
 				7599B15C1859053500B507F5 /* urgence_blink.png in Resources */,
@@ -1774,6 +1786,7 @@
 				75C12A1B1AC70EF5007EC123 /* round_amour.png in Resources */,
 				75E8C6C81A6BCB92000D237B /* splashBig.png in Resources */,
 				757ED7171AD14B8D0070A9F9 /* Key-100.png in Resources */,
+				75DE24EA1AE6B52E0037BD8E /* insectes.m4v in Resources */,
 				758170DC19E1C72300646554 /* EMGTableHeader.xib in Resources */,
 				751811ED188985FC00E277FB /* dot9.png in Resources */,
 				7599B15F1859053500B507F5 /* urgence_on.png in Resources */,
@@ -1932,6 +1945,7 @@
 				7523B8A11885B2090042E29C /* Exercise.m in Sources */,
 				7516A3D118550C440047AD1A /* UIView+Framing.m in Sources */,
 				75DF53D61946364D004F4C71 /* ShuffleAnimation.m in Sources */,
+				759B0F0B1AE3790800995413 /* CustomRoundView.m in Sources */,
 				753F7B1F1951B05F0041C37D /* ATCAnimatedTransitioning.m in Sources */,
 				757ED7271AD1CBC00070A9F9 /* SuperViewController.m in Sources */,
 				7599B1631859056F00B507F5 /* UrgenceViewController.m in Sources */,

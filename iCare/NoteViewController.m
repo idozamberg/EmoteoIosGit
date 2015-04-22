@@ -185,7 +185,7 @@
     }
 
     
-    if (currentButtonIndex !=1)
+    if (currentButtonIndex !=1 && currentNumberImage != Nil)
     {
         
         // Creating number image
@@ -259,7 +259,13 @@
     
     // Getting image and replacing in array
     UIImage* image = [elements objectAtIndex:0];
-    currentNumberImage = [elements objectAtIndex:1];
+    
+    // Only if we have a number image
+    if (elements.count > 1)
+    {
+        currentNumberImage = [elements objectAtIndex:1];
+    }
+    
     [self.bubbles replaceObjectAtIndex:currentButtonIndex withObject:image];
     
     didReturnFromChild = YES;

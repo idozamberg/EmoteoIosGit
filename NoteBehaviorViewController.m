@@ -8,6 +8,8 @@
 
 #import "NoteBehaviorViewController.h"
 
+#define OTHER_INDEX 1
+
 @interface NoteBehaviorViewController ()
 
 @end
@@ -21,7 +23,7 @@
     // Creating array with note bubbles
     self.bubbles = [NSMutableArray arrayWithObjects:
                     [UIImage imageNamed:@"round_bualcool"],
-                  //  [UIImage imageNamed:@"round_autres"],
+                    [UIImage imageNamed:@"round_autres"],
                     [UIImage imageNamed:@"round_blessé"],
                     [UIImage imageNamed:@"round_horsnormes"],
                     [UIImage imageNamed:@"round_medicements"],
@@ -60,17 +62,22 @@
     // Handeling Click
     [super HandleBubbleClickedForBubble:button andIBubbleIndex:index completion:^(BOOL finished){
         
-        // Getting current chain
-        EmotionalChain* currChain = [[AppData sharedInstance] currentChain];
-        
-        // Adding Selection
-        [currChain addNewSelection:[self.bubbles objectAtIndex:index] ToKey:[NSNumber numberWithInteger:1]];
-        
-        // Posting selection
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"BubbleChoosedInChild" object:Nil];
-        
-        // Going back
-        [self.navigationController popViewControllerAnimated:YES];
+        if (index != OTHER_INDEX)
+        {
+            // Going to main noting screen
+            [self goToMainScreenWithChoice:[self.bubbles objectAtIndex:index]];
+        }
+        else
+        {
+            // Showing pop up
+            YIPopupTextView* popupTextView = [[YIPopupTextView alloc] initWithPlaceHolder:@"Tapez vos sentiments ici" maxCount:30 buttonStyle:YIPopupTextViewButtonStyleRightDone];
+            popupTextView.delegate = self;
+            popupTextView.caretShiftGestureEnabled = YES;
+            popupTextView.outerBackgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
+            
+            [popupTextView showInViewController:self.navigationController];
+        }
+      
     }];
     
 }
@@ -85,6 +92,37 @@
     [super viewWillDisappear:animated];
     
     self.bubbleMenu.delegate = Nil;
+}
+
+- (void) goToMainScreenWithChoice : (UIImage*) choice
+{
+    // Getting current chain
+    EmotionalChain* currChain = [[AppData sharedInstance] currentChain];
+    
+    // Adding Selection
+    [currChain addNewSelection:choice ToKey:[NSNumber numberWithInteger:1]];
+    
+    // Posting selection
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"BubbleChoosedInChild" object:Nil];
+    
+    // Going back
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)popupTextView:(YIPopupTextView*)textView willDismissWithText:(NSString*)text cancelled:(BOOL)cancelled
+{
+    // Creating new image view
+    CustomRoundView* newRound = (CustomRoundView*)[UIHelper viewFromStoryboard:@"CustomRoundView"];
+    newRound.lblCenter.text = text;
+    
+    [newRound setWidth:132];
+    [newRound setHeight:132];
+    
+    // Creating image from view
+    UIImage* finalRoundImage = [UIHelper imageWithView:newRound];
+    
+    // Go to main noting view
+    [self goToMainScreenWithChoice:finalRoundImage];
 }
 
 
