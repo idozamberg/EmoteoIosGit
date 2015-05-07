@@ -154,6 +154,19 @@ static AppManager* sharedManager;
     audio10.level = [NSNumber numberWithInteger:7];
     audio10.levels = [NSMutableArray arrayWithObjects:[NSNumber numberWithInteger:1],[NSNumber numberWithInteger:2],[NSNumber numberWithInteger:3],[NSNumber numberWithInteger:4],[NSNumber numberWithInteger:5],[NSNumber numberWithInteger:6], nil];
     
+    AudioFile* audio11 = [AudioFile new];
+    audio11.fileName = @"Musique appaisante 3.mp3";
+    audio11.title = @"MUSIQUE APPAISANTE 3";
+    audio11.level = [NSNumber numberWithInteger:7];
+    audio11.levels = [NSMutableArray arrayWithObjects:[NSNumber numberWithInteger:1],[NSNumber numberWithInteger:2],[NSNumber numberWithInteger:3],[NSNumber numberWithInteger:4],[NSNumber numberWithInteger:5],[NSNumber numberWithInteger:6], nil];
+
+    AudioFile* audio12 = [AudioFile new];
+    audio12.fileName = @"Prise de conscience.mp3";
+    audio12.title = @"PRISE DE CONSCIENSE";
+    audio12.level = [NSNumber numberWithInteger:7];
+    audio12.levels = [NSMutableArray arrayWithObjects:[NSNumber numberWithInteger:1],[NSNumber numberWithInteger:2],[NSNumber numberWithInteger:3],[NSNumber numberWithInteger:4],[NSNumber numberWithInteger:5],[NSNumber numberWithInteger:6], nil];
+    
+    
     
     // Creating array
     [audios7 addObject:audio1];
@@ -166,6 +179,8 @@ static AppManager* sharedManager;
     [audios7 addObject:audio8];
     [audios7 addObject:audio9];
     [audios7 addObject:audio10];
+    [audios7 addObject:audio11];
+    [audios7 addObject:audio12];
 
     
     //[data.audioFiles setObject:audios7 forKey:level7];

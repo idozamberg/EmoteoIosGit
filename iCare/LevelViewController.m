@@ -271,6 +271,9 @@
 
 - (void) viewWillAppear:(BOOL)animated
 {
+    
+    [super viewWillAppear:animated];
+    
     [indicator stopAnimating];
     [indicator removeFromSuperview];
     self.imgPlay.hidden = NO;
@@ -295,7 +298,11 @@
     {
         // Going back to the first screen
         [AppData sharedInstance].shouldEvaluateTension = YES;
-        [self.navigationController popToRootViewControllerAnimated:YES];
+        [self.navigationController popToRootViewControllerAnimated:NO];
+    }
+    else if (isPlaying)
+    {
+        [self.navigationController popViewControllerAnimated:NO];
     }
     
     [self addCardTableView];
@@ -320,17 +327,18 @@
     [vwFrame addSubview:indicator];
     indicator.frame = self.imgPlay.frame;
     
-    
     self.imgPlay.hidden = YES;
     
     [indicator startAnimating];
     
     [self performSelector:@selector(playVideo:) withObject:@"JZGB" afterDelay:1];
     
+    // Sending analytics
     [AnalyticsManager sharedInstance].sendToGoogle =YES;
     [AnalyticsManager sharedInstance].sendToFlurry =YES;
     [AnalyticsManager sharedInstance].flurryParameters = [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"%@",self.currentVideo.title],@"Exercise Name",@"Video",@"Exercise Type", nil];
     
+    // Check for colortherapy
     if (_shouldPerformColorTherapy)
     {
         [[AnalyticsManager sharedInstance] sendEventWithName:@"Exercise Played from menu" Category:@"Exercises" Label:[NSString stringWithFormat:@"%@",self.currentVideo.title]];

@@ -237,6 +237,21 @@
     return 40;
 }
 
+- (BOOL) shouldAutorotate
+{
+    return NO;
+}
+
+-(NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationPortrait;
+}
+
 #pragma mark -
 #pragma mark - UITableViewDelegate
 
@@ -284,6 +299,8 @@
             break;
             
         case EXERCISES:
+            
+            [AppData sharedInstance].currentLevel = 0;
            
             switch (indexPath.row) {
                 case AUDIO:

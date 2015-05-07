@@ -33,6 +33,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) viewWillAppear:(BOOL)animated
+{
+   // NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationPortrait];
+ //   [[UIDevice currentDevice] setValue:value forKey:@"orientation"];
+}
+
 /*
 #pragma mark - Navigation
 
@@ -51,10 +57,27 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-
+-(NSUInteger) supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskPortrait;
+}
 
 - (BOOL)prefersStatusBarHidden {
     return YES;
+}
+
+- (BOOL) shouldAutorotate
+{
+    return YES;
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationPortrait;
+}
+
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    return NO;
 }
 
 @end

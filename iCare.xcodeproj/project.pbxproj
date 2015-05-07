@@ -17,6 +17,8 @@
 		750EACCB19646E9A005A8D60 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 750EACCA19646E9A005A8D60 /* libGoogleAnalyticsServices.a */; };
 		750F6DF31877FCB400FE6FBE /* AudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 750F6DF21877FCB400FE6FBE /* AudioFile.m */; };
 		750F6DF81878059500FE6FBE /* Globals.m in Sources */ = {isa = PBXBuildFile; fileRef = 750F6DF71878059500FE6FBE /* Globals.m */; };
+		7510C0141AE7BA100070FF5D /* Prise de conscience.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7510C0131AE7BA100070FF5D /* Prise de conscience.mp3 */; };
+		7510C0161AE7BA1B0070FF5D /* Musique appaisante 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7510C0151AE7BA1B0070FF5D /* Musique appaisante 3.mp3 */; };
 		7516A34E1854DEF80047AD1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7516A34D1854DEF80047AD1A /* Foundation.framework */; };
 		7516A3501854DEF80047AD1A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7516A34F1854DEF80047AD1A /* CoreGraphics.framework */; };
 		7516A3521854DEF80047AD1A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7516A3511854DEF80047AD1A /* UIKit.framework */; };
@@ -257,7 +259,6 @@
 		75E8C6C41A6BC854000D237B /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E8C6C11A6BC854000D237B /* settings.png */; };
 		75E8C6C51A6BC854000D237B /* emergency.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E8C6C21A6BC854000D237B /* emergency.png */; };
 		75E8C6C61A6BC854000D237B /* hand.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E8C6C31A6BC854000D237B /* hand.png */; };
-		75E8C6C81A6BCB92000D237B /* splashBig.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E8C6C71A6BCB92000D237B /* splashBig.png */; };
 		75ECB93A19D6C0030091FC77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75ECB93719D6BE290091FC77 /* Main.storyboard */; };
 		75ECB93B19D6C0070091FC77 /* NavigationBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7516A35F1854DEF80047AD1A /* NavigationBoard.storyboard */; };
 		75F58FEE1ACE82B000398BE8 /* Joie.png in Resources */ = {isa = PBXBuildFile; fileRef = 75F58FE31ACE82B000398BE8 /* Joie.png */; };
@@ -325,6 +326,8 @@
 		750F6DF21877FCB400FE6FBE /* AudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFile.m; sourceTree = "<group>"; };
 		750F6DF61878059500FE6FBE /* Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
 		750F6DF71878059500FE6FBE /* Globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Globals.m; sourceTree = "<group>"; };
+		7510C0131AE7BA100070FF5D /* Prise de conscience.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Prise de conscience.mp3"; sourceTree = "<group>"; };
+		7510C0151AE7BA1B0070FF5D /* Musique appaisante 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Musique appaisante 3.mp3"; sourceTree = "<group>"; };
 		7516A34A1854DEF80047AD1A /* Emoteo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emoteo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7516A34D1854DEF80047AD1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7516A34F1854DEF80047AD1A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -713,7 +716,6 @@
 		75E8C6C11A6BC854000D237B /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		75E8C6C21A6BC854000D237B /* emergency.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emergency.png; sourceTree = "<group>"; };
 		75E8C6C31A6BC854000D237B /* hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hand.png; sourceTree = "<group>"; };
-		75E8C6C71A6BCB92000D237B /* splashBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splashBig.png; path = "iCare/Images.xcassets/LaunchImage-1.launchimage/splashBig.png"; sourceTree = "<group>"; };
 		75ECB93719D6BE290091FC77 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		75F58FE31ACE82B000398BE8 /* Joie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Joie.png; sourceTree = "<group>"; };
 		75F58FE41ACE82B000398BE8 /* peur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peur.png; sourceTree = "<group>"; };
@@ -827,7 +829,6 @@
 				75098C7E197D50B200123FC8 /* Splash4.png */,
 				75098C7D197D4F7900123FC8 /* photo-2.PNG */,
 				75F7E11E197011F1009EA814 /* photo-1.PNG */,
-				75E8C6C71A6BCB92000D237B /* splashBig.png */,
 				7579BD88196467E800850C45 /* Splash.png */,
 				75B5CDCF1961C8C900012358 /* photo.PNG */,
 				75B5CDCE1961C8A900012358 /* photo.PNG */,
@@ -1122,6 +1123,8 @@
 		753F7B2B19572E340041C37D /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				7510C0151AE7BA1B0070FF5D /* Musique appaisante 3.mp3 */,
+				7510C0131AE7BA100070FF5D /* Prise de conscience.mp3 */,
 				75641F741AC2E5EE007E17FA /* MusInsc.mp3 */,
 				75641F751AC2E5EE007E17FA /* RespArbre.mp3 */,
 				753F7B5C195742630041C37D /* body.m4v */,
@@ -1618,7 +1621,7 @@
 				ORGANIZATIONNAME = "ido zamberg";
 				TargetAttributes = {
 					7516A3491854DEF80047AD1A = {
-						DevelopmentTeam = X7SL522Y9M;
+						DevelopmentTeam = MC9GVRT8Q8;
 					};
 					7516A36A1854DEF80047AD1A = {
 						TestTargetID = 7516A3491854DEF80047AD1A;
@@ -1721,6 +1724,7 @@
 				75C12A191AC70EF5007EC123 /* round_autre_sentiment.png in Resources */,
 				757ED7141AD14B8D0070A9F9 /* Treble Clef-100.png in Resources */,
 				75318EE91855E1A40090AF40 /* day22.png in Resources */,
+				7510C0161AE7BA1B0070FF5D /* Musique appaisante 3.mp3 in Resources */,
 				75C12A0E1AC5F302007EC123 /* round_prisedetox.png in Resources */,
 				75F58FF11ACE82B000398BE8 /* round5.png in Resources */,
 				75C12A061AC5F302007EC123 /* round_blessé.png in Resources */,
@@ -1784,7 +1788,6 @@
 				75641F761AC2E5EE007E17FA /* MusInsc.mp3 in Resources */,
 				75F67D061863559900A9E70E /* sep_bar.png in Resources */,
 				75C12A1B1AC70EF5007EC123 /* round_amour.png in Resources */,
-				75E8C6C81A6BCB92000D237B /* splashBig.png in Resources */,
 				757ED7171AD14B8D0070A9F9 /* Key-100.png in Resources */,
 				75DE24EA1AE6B52E0037BD8E /* insectes.m4v in Resources */,
 				758170DC19E1C72300646554 /* EMGTableHeader.xib in Resources */,
@@ -1839,6 +1842,7 @@
 				75E7CCD41865993C00F74E7C /* round_off.png in Resources */,
 				757ED71D1AD1A60F0070A9F9 /* Good Quality-100.png in Resources */,
 				7599B1641859056F00B507F5 /* UrgenceViewController.xib in Resources */,
+				7510C0141AE7BA100070FF5D /* Prise de conscience.mp3 in Resources */,
 				757ED7461AD5398F0070A9F9 /* round_pasdsentiments.png in Resources */,
 				757ED7111AD14B8D0070A9F9 /* Meditation Guru-100-2.png in Resources */,
 				753F7B68195742630041C37D /* Audio Eau froide CW 5'50.m4v in Resources */,

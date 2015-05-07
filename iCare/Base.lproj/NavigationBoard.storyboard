@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
@@ -1003,7 +1003,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="8rF-9h-HPK"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -1529,10 +1529,10 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="48" baselineAdjustment="alignBaselines" minimumFontSize="6" id="RiT-lM-7v9">
-                                        <rect key="frame" x="3" y="30" width="261" height="313"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <string key="text">Concepteurs :
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="56" baselineAdjustment="alignBaselines" minimumFontSize="6" id="RiT-lM-7v9">
+                                        <rect key="frame" x="3" y="30" width="261" height="343"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <mutableString key="text">Concepteurs :
 Dr Paco Prada, Dr Julien Zimmermann, Gérald Bouillault
 
 Programmation :
@@ -1556,7 +1556,9 @@ Karen Dieben, Vénus Kaby, Sophie Blin,Caroline Waeber, Jean-Jacques Kunckler, A
 
 Soutien financier :
 Fondation Artères
-</string>
+
+Icons:
+http://icons8.com</mutableString>
                                         <fontDescription key="fontDescription" name="ITCAvantGardeMM" family="ITC Avant Garde Gothic MM" pointSize="11"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -2244,7 +2246,7 @@ Les personnes qui en souffrent sont en proie à de fréquentes crises au cours d
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="backgroundColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="yo2-ae-hdq"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -2341,7 +2343,7 @@ Les personnes qui en souffrent sont en proie à de fréquentes crises au cours d
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="backgroundColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="CHv-Rs-Of2"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -2437,7 +2439,7 @@ Les personnes qui en souffrent sont en proie à de fréquentes crises au cours d
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="backgroundColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="MKW-aV-n2b"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -2533,7 +2535,7 @@ Les personnes qui en souffrent sont en proie à de fréquentes crises au cours d
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="backgroundColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Xs9-tr-p3p"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -2669,7 +2671,7 @@ Les personnes qui en souffrent sont en proie à de fréquentes crises au cours d
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="backgroundColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Rax-IP-aYk"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -2766,7 +2768,7 @@ Les personnes qui en souffrent sont en proie à de fréquentes crises au cours d
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="backgroundColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="iQu-Pk-jf9"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>

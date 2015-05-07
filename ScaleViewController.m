@@ -85,6 +85,9 @@
 
 - (void) arrangeScroleView
 {
+    // Removing old lables
+    [self removeLablesFromSuperView];
+    
     // Setting up scroll view
     [self.ivScales setHeight:self.svScales.frame.size.height * 10];
     self.svScales.contentSize = CGSizeMake(self.view.frame.size.width, self.svScales.frame.size.height * 10);
@@ -96,6 +99,15 @@
     
     // Creating objects
     [self createAndPlaceButtons];
+}
+
+- (void) removeLablesFromSuperView
+{
+    // Removing lables from view
+    for (UIView* currLable in levelLabelsArray)
+    {
+        [currLable removeFromSuperview];
+    }
 }
 
 - (void) viewWillAppear:(BOOL)animated
